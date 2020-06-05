@@ -1,24 +1,42 @@
 from enum import Enum
-from typing import List
+import requests
+from typing import List, Optional
+from pcsd_cog.players import Player
 from dataclasses import dataclass
 
 
-class EventID(Enum):
-    GameStart = 0
-    MinionsSpawning = 1
-    FirstBrick = 2
-    TurretKilled = 3
-    InhibKilled = 4
-    DragonKill = 5
-    HeraldKill = 6
-    BaronKill = 7
-    ChampionKill = 8
-    Multikill = 9
-    Ace = 10
-
-
-class Event():
+class Event:
     pass
+
+
+class EventActiveplayer(Event):
+    pass
+
+
+class EventConnected(Event):
+    pass
+
+
+class EventFriendConnected(Event):
+    pass
+
+
+class EventInvalid(Event):
+    pass
+
+
+class EventChampionSelect(Event):
+    pass
+
+
+class EventGameStats(Event):
+    pass
+
+
+class EventEndGameStats(Event):
+    pass
+
+
 
 @dataclass
 class EventData(Event):
