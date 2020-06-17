@@ -1,0 +1,1981 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Campo minato hexplosivo",
+				"id": "ZiggsE",
+				"rawDescription": "GeneratedTip_Spell_ZiggsE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZiggsE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Miccia corta",
+				"id": "ZiggsPassiveBuff",
+				"rawDescription": "GeneratedTip_Passive_ZiggsPassiveBuff_Description",
+				"rawDisplayName": "GeneratedTip_Passive_ZiggsPassiveBuff_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Ordigno rotolante",
+				"id": "ZiggsQ",
+				"rawDescription": "GeneratedTip_Spell_ZiggsQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZiggsQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Mega bomba infernale",
+				"id": "ZiggsR",
+				"rawDescription": "GeneratedTip_Spell_ZiggsR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZiggsR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 3,
+				"displayName": "Carica satchel",
+				"id": "ZiggsW",
+				"rawDescription": "GeneratedTip_Spell_ZiggsW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZiggsW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityPower": 266.1048583984375,
+			"armor": 69.3115005493164,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 99.08050537109375,
+			"attackRange": 550.0,
+			"attackSpeed": 0.8459120988845825,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": -0.30000001192092898,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 0.0,
+			"healthRegenRate": 3.0370001792907717,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 15.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 37.23749923706055,
+			"maxHealth": 2248.87646484375,
+			"moveSpeed": 405.0,
+			"physicalLethality": 0.0,
+			"resourceMax": 2470.16259765625,
+			"resourceRegenRate": 7.448332786560059,
+			"resourceType": "MANA",
+			"resourceValue": 1821.1517333984376,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 3562.344482421875,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				{
+					"displayName": "Fascia del Flusso",
+					"id": 8226,
+					"rawDescription": "perk_tooltip_8226",
+					"rawDisplayName": "perk_displayname_8226"
+				},
+				{
+					"displayName": "Trascendenza",
+					"id": 8210,
+					"rawDescription": "perk_tooltip_Transcendence",
+					"rawDisplayName": "perk_displayname_Transcendence"
+				},
+				{
+					"displayName": "Tempesta incombente",
+					"id": 8236,
+					"rawDescription": "perk_tooltip_GatheringStorm",
+					"rawDisplayName": "perk_displayname_GatheringStorm"
+				},
+				{
+					"displayName": "Collezione di Bulbi",
+					"id": 8138,
+					"rawDescription": "perk_tooltip_EyeballCollection",
+					"rawDisplayName": "perk_displayname_EyeballCollection"
+				},
+				{
+					"displayName": "Cacciatore implacabile",
+					"id": 8105,
+					"rawDescription": "perk_tooltip_8105",
+					"rawDisplayName": "perk_displayname_8105"
+				}
+			],
+			"keystone": {
+				"displayName": "Cometa arcana",
+				"id": 8229,
+				"rawDescription": "perk_tooltip_ArcaneComet",
+				"rawDisplayName": "perk_displayname_ArcaneComet"
+			},
+			"primaryRuneTree": {
+				"displayName": "Stregoneria",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Dominazione",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 16,
+		"summonerName": "Br1seurDeReves"
+	},
+	"allPlayers": [
+		{
+			"championName": "Zilean",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Zilean",
+			"rawSkinName": "game_character_skin_displayname_Zilean_1",
+			"respawnTimer": 5.6894073486328129,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 10,
+				"creepScore": 30,
+				"deaths": 7,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 1,
+			"skinName": "Zilean Vecchio Santo",
+			"summonerName": "F man13",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Lissandra",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tormento di Liandry",
+					"itemID": 3151,
+					"price": 750,
+					"rawDescription": "game_item_description_3151",
+					"rawDisplayName": "game_item_displayname_3151",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 3
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Lissandra",
+			"respawnTimer": 15.139795303344727,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 11,
+				"creepScore": 40,
+				"deaths": 6,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "MagicMarui7",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Twisted Fate",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 5,
+					"displayName": "Pozione di salute",
+					"itemID": 2003,
+					"price": 50,
+					"rawDescription": "game_item_description_2003",
+					"rawDisplayName": "game_item_displayname_2003",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Terrore dei lich",
+					"itemID": 3100,
+					"price": 450,
+					"rawDescription": "game_item_description_3100",
+					"rawDisplayName": "game_item_displayname_3100",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 3
+				}
+			],
+			"level": 13,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_TwistedFate",
+			"respawnTimer": 17.748188018798829,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 10,
+				"creepScore": 10,
+				"deaths": 7,
+				"kills": 2,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "GraefinYasmin",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Teemo",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Dente di Nashor",
+					"itemID": 3115,
+					"price": 1000,
+					"rawDescription": "game_item_description_3115",
+					"rawDisplayName": "game_item_displayname_3115",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Furia di Guinsoo",
+					"itemID": 3124,
+					"price": 790,
+					"rawDescription": "game_item_description_3124",
+					"rawDisplayName": "game_item_displayname_3124",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Daga",
+					"itemID": 1042,
+					"price": 300,
+					"rawDescription": "game_item_description_1042",
+					"rawDisplayName": "game_item_displayname_1042",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Scettro vampirico",
+					"itemID": 1053,
+					"price": 550,
+					"rawDescription": "game_item_description_1053",
+					"rawDisplayName": "game_item_displayname_1053",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Spada lunga",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "game_item_description_1036",
+					"rawDisplayName": "game_item_displayname_1036",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Teemo",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 40,
+				"deaths": 7,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "xXUselessN00BXx",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Marchio",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Malphite",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Convergenza di Zeke",
+					"itemID": 3050,
+					"price": 250,
+					"rawDescription": "game_item_description_3050",
+					"rawDisplayName": "game_item_displayname_3050",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corno del guardiano",
+					"itemID": 2051,
+					"price": 950,
+					"rawDescription": "game_item_description_2051",
+					"rawDisplayName": "game_item_displayname_2051",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Rubino di cristallo",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "game_item_description_1028",
+					"rawDisplayName": "game_item_displayname_1028",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone secolare (Carica rapida)",
+					"itemID": 3029,
+					"price": 650,
+					"rawDescription": "game_item_description_3029",
+					"rawDisplayName": "game_item_displayname_3029",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cappa anti-magia",
+					"itemID": 1033,
+					"price": 450,
+					"rawDescription": "game_item_description_1033",
+					"rawDisplayName": "game_item_displayname_1033",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Malphite",
+			"respawnTimer": 9.888641357421875,
+			"runes": {
+				"keystone": {
+					"displayName": "Presa dell'immortale",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 8,
+				"creepScore": 20,
+				"deaths": 7,
+				"kills": 6,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "N0tteTempo",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Ziggs",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 550,
+					"rawDescription": "game_item_description_3165",
+					"rawDisplayName": "game_item_displayname_3165",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ziggs",
+			"respawnTimer": 17.469337463378908,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 16,
+				"creepScore": 30,
+				"deaths": 2,
+				"kills": 9,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Br1seurDeReves",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Marchio",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Taric",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corno del guardiano",
+					"itemID": 2051,
+					"price": 950,
+					"rawDescription": "game_item_description_2051",
+					"rawDisplayName": "game_item_displayname_2051",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari di Mercurio",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "game_item_description_3111",
+					"rawDisplayName": "game_item_displayname_3111",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corazza spirituale",
+					"itemID": 3065,
+					"price": 800,
+					"rawDescription": "game_item_description_3065",
+					"rawDisplayName": "game_item_displayname_3065",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bracciale cristallino",
+					"itemID": 3801,
+					"price": 100,
+					"rawDescription": "game_item_description_3801",
+					"rawDisplayName": "game_item_displayname_3801",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Rubino di cristallo",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "game_item_description_1028",
+					"rawDisplayName": "game_item_displayname_1028",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Taric",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Sorvegliante",
+					"id": 8465,
+					"rawDescription": "perk_tooltip_Guardian",
+					"rawDisplayName": "perk_displayname_Guardian"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 23,
+				"creepScore": 10,
+				"deaths": 4,
+				"kills": 2,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Nepérien",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Marchio",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Jhin",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Perla del rinvigorimento",
+					"itemID": 1006,
+					"price": 150,
+					"rawDescription": "game_item_description_1006",
+					"rawDisplayName": "game_item_displayname_1006",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Jhin",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Attacco sostenuto",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 18,
+				"creepScore": 80,
+				"deaths": 1,
+				"kills": 7,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Aramitz",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Chiarezza",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerMana_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerMana_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ryze",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone secolare (Carica rapida)",
+					"itemID": 3029,
+					"price": 650,
+					"rawDescription": "game_item_description_3029",
+					"rawDisplayName": "game_item_displayname_3029",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali dell'acume di Ionia",
+					"itemID": 3158,
+					"price": 600,
+					"rawDescription": "game_item_description_3158",
+					"rawDisplayName": "game_item_displayname_3158",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fiamma eterea",
+					"itemID": 3113,
+					"price": 415,
+					"rawDescription": "game_item_description_3113",
+					"rawDisplayName": "game_item_displayname_3113",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ryze",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Scatto fasico",
+					"id": 8230,
+					"rawDescription": "perk_tooltip_PhaseRush",
+					"rawDisplayName": "perk_displayname_PhaseRush"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 11,
+				"creepScore": 30,
+				"deaths": 8,
+				"kills": 9,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "REALGOTAN",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ezreal",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali dell'acume di Ionia",
+					"itemID": 3158,
+					"price": 600,
+					"rawDescription": "game_item_description_3158",
+					"rawDisplayName": "game_item_displayname_3158",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Muramana",
+					"itemID": 3043,
+					"price": 2400,
+					"rawDescription": "game_item_description_3042",
+					"rawDisplayName": "game_item_displayname_3042",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama crepuscolare di Draktharr",
+					"itemID": 3147,
+					"price": 700,
+					"rawDescription": "game_item_description_3147",
+					"rawDisplayName": "game_item_displayname_3147",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Martello da guerra di Caulfield",
+					"itemID": 3133,
+					"price": 400,
+					"rawDescription": "game_item_description_3133",
+					"rawDisplayName": "game_item_displayname_3133",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lungo pugnale seghettato",
+					"itemID": 3134,
+					"price": 400,
+					"rawDescription": "game_item_description_3134",
+					"rawDisplayName": "game_item_displayname_3134",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ezreal",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Pioggia di lame",
+					"id": 9923,
+					"rawDescription": "perk_tooltip_HailOfBlades",
+					"rawDisplayName": "perk_displayname_HailOfBlades"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 16,
+				"creepScore": 20,
+				"deaths": 5,
+				"kills": 7,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Katar04",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.014519000425934792
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 45.05914306640625
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 103.90231323242188,
+				"KillerName": "Nepérien",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 103.90231323242188,
+				"Recipient": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7",
+					"xXUselessN00BXx",
+					"N0tteTempo"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 160.31590270996095,
+				"KillerName": "GraefinYasmin",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7",
+					"GraefinYasmin",
+					"N0tteTempo"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 209.08734130859376,
+				"KillerName": "xXUselessN00BXx",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7",
+					"GraefinYasmin",
+					"N0tteTempo"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 228.1182098388672,
+				"KillerName": "xXUselessN00BXx",
+				"VictimName": "Katar04"
+			},
+			{
+				"Assisters": [
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 229.39588928222657,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"Assisters": [
+					"Katar04"
+				],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 232.4367218017578,
+				"KillerName": "REALGOTAN",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"GraefinYasmin",
+					"xXUselessN00BXx"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 233.11827087402345,
+				"KillerName": "MagicMarui7",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz",
+					"REALGOTAN"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 245.28518676757813,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 271.18927001953127,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "MagicMarui7"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 288.46868896484377,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 291.98370361328127,
+				"KillerName": "Aramitz",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"Assisters": [
+					"GraefinYasmin",
+					"xXUselessN00BXx",
+					"N0tteTempo"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 292.603515625,
+				"KillerName": "F man13",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7",
+					"GraefinYasmin"
+				],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 350.87298583984377,
+				"KillerName": "N0tteTempo",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Aramitz",
+					"REALGOTAN"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 353.64373779296877,
+				"KillerName": "Katar04",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7"
+				],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 361.2936096191406,
+				"KillerName": "GraefinYasmin",
+				"VictimName": "Katar04"
+			},
+			{
+				"Assisters": [],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 371.4431457519531,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Katar04"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 410.410400390625,
+				"KillerName": "Aramitz",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 420.4017028808594,
+				"KillerName": "Aramitz",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 463.8641662597656,
+				"KillerName": "Katar04",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Nepérien"
+				],
+				"EventID": 22,
+				"EventName": "ChampionKill",
+				"EventTime": 468.37786865234377,
+				"KillerName": "Katar04",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"EventID": 23,
+				"EventName": "Multikill",
+				"EventTime": 468.37786865234377,
+				"KillStreak": 2,
+				"KillerName": "Katar04"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Katar04"
+				],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 469.1960754394531,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "MagicMarui7"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 474.2611999511719,
+				"KillerName": "Aramitz",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"Assisters": [
+					"MagicMarui7",
+					"GraefinYasmin"
+				],
+				"EventID": 26,
+				"EventName": "ChampionKill",
+				"EventTime": 487.48101806640627,
+				"KillerName": "N0tteTempo",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Aramitz",
+					"REALGOTAN"
+				],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 494.20489501953127,
+				"KillerName": "Katar04",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"Assisters": [],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 495.0216979980469,
+				"KillerName": "Turret_T1_C_08_A",
+				"VictimName": "Katar04"
+			},
+			{
+				"Assisters": [],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 497.277099609375,
+				"KillerName": "N0tteTempo",
+				"VictimName": "Nepérien"
+			},
+			{
+				"EventID": 30,
+				"EventName": "Multikill",
+				"EventTime": 497.277099609375,
+				"KillStreak": 2,
+				"KillerName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7",
+					"GraefinYasmin"
+				],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 567.0787963867188,
+				"KillerName": "N0tteTempo",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"REALGOTAN"
+				],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 570.015869140625,
+				"KillerName": "Katar04",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"Assisters": [
+					"xXUselessN00BXx",
+					"N0tteTempo"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 571.1140747070313,
+				"KillerName": "MagicMarui7",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"MagicMarui7",
+					"GraefinYasmin",
+					"xXUselessN00BXx"
+				],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 574.8458862304688,
+				"KillerName": "N0tteTempo",
+				"VictimName": "Katar04"
+			},
+			{
+				"EventID": 35,
+				"EventName": "Multikill",
+				"EventTime": 574.8458862304688,
+				"KillStreak": 2,
+				"KillerName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"Nepérien"
+				],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 603.7335205078125,
+				"KillerName": "Aramitz",
+				"VictimName": "MagicMarui7"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Katar04"
+				],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 637.86279296875,
+				"KillerName": "REALGOTAN",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"Assisters": [],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 649.8723754882813,
+				"KillerName": "MagicMarui7",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"MagicMarui7",
+					"xXUselessN00BXx",
+					"N0tteTempo"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 650.4069213867188,
+				"KillerName": "F man13",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"MagicMarui7",
+					"xXUselessN00BXx"
+				],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 650.4069213867188,
+				"KillerName": "F man13",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"EventID": 41,
+				"EventName": "Multikill",
+				"EventTime": 650.4069213867188,
+				"KillStreak": 2,
+				"KillerName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Katar04"
+				],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 684.36328125,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Aramitz",
+					"Katar04"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 726.6241455078125,
+				"KillerName": "REALGOTAN",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien"
+				],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 751.6129150390625,
+				"KillerName": "Aramitz",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 757.6338500976563,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"Assisters": [
+					"F man13",
+					"N0tteTempo"
+				],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 778.2927856445313,
+				"KillerName": "MagicMarui7",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 780.1529541015625,
+				"KillerName": "Aramitz",
+				"VictimName": "MagicMarui7"
+			},
+			{
+				"Assisters": [],
+				"EventID": 48,
+				"EventName": "TurretKilled",
+				"EventTime": 799.3384399414063,
+				"KillerName": "Katar04",
+				"TurretKilled": "Turret_T1_C_08_A"
+			},
+			{
+				"EventID": 49,
+				"EventName": "FirstBrick",
+				"EventTime": 799.3384399414063,
+				"KillerName": "Katar04"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Katar04"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 806.353271484375,
+				"KillerName": "Nepérien",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 51,
+				"EventName": "ChampionKill",
+				"EventTime": 810.7423095703125,
+				"KillerName": "Katar04",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 52,
+				"EventName": "ChampionKill",
+				"EventTime": 857.953857421875,
+				"KillerName": "REALGOTAN",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 53,
+				"EventName": "ChampionKill",
+				"EventTime": 867.1687622070313,
+				"KillerName": "REALGOTAN",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"EventID": 54,
+				"EventName": "Multikill",
+				"EventTime": 867.1687622070313,
+				"KillStreak": 2,
+				"KillerName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 873.4254760742188,
+				"KillerName": "REALGOTAN",
+				"VictimName": "MagicMarui7"
+			},
+			{
+				"EventID": 56,
+				"EventName": "Multikill",
+				"EventTime": 873.4254760742188,
+				"KillStreak": 3,
+				"KillerName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Katar04"
+				],
+				"EventID": 57,
+				"EventName": "ChampionKill",
+				"EventTime": 873.5691528320313,
+				"KillerName": "REALGOTAN",
+				"VictimName": "xXUselessN00BXx"
+			},
+			{
+				"EventID": 58,
+				"EventName": "Multikill",
+				"EventTime": 873.5691528320313,
+				"KillStreak": 4,
+				"KillerName": "REALGOTAN"
+			},
+			{
+				"Assisters": [
+					"F man13"
+				],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 878.1571655273438,
+				"KillerName": "xXUselessN00BXx",
+				"VictimName": "Katar04"
+			},
+			{
+				"Assisters": [
+					"MagicMarui7",
+					"GraefinYasmin"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 883.2644653320313,
+				"KillerName": "N0tteTempo",
+				"VictimName": "REALGOTAN"
+			},
+			{
+				"Assisters": [],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 950.977783203125,
+				"KillerName": "Katar04",
+				"VictimName": "F man13"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien",
+					"Aramitz",
+					"Katar04"
+				],
+				"EventID": 62,
+				"EventName": "ChampionKill",
+				"EventTime": 955.1770629882813,
+				"KillerName": "REALGOTAN",
+				"VictimName": "N0tteTempo"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz",
+					"REALGOTAN",
+					"Katar04"
+				],
+				"EventID": 63,
+				"EventName": "ChampionKill",
+				"EventTime": 958.42822265625,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "MagicMarui7"
+			},
+			{
+				"Assisters": [
+					"GraefinYasmin",
+					"N0tteTempo"
+				],
+				"EventID": 64,
+				"EventName": "ChampionKill",
+				"EventTime": 958.7577514648438,
+				"KillerName": "MagicMarui7",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 65,
+				"EventName": "ChampionKill",
+				"EventTime": 965.0365600585938,
+				"KillerName": "REALGOTAN",
+				"VictimName": "GraefinYasmin"
+			},
+			{
+				"EventID": 66,
+				"EventName": "Multikill",
+				"EventTime": 965.0365600585938,
+				"KillStreak": 2,
+				"KillerName": "REALGOTAN"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "ARAM",
+		"gameTime": 977.2883911132813,
+		"mapName": "Map12",
+		"mapNumber": 12,
+		"mapTerrain": "Default"
+	}
+}

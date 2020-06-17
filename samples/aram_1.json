@@ -1,0 +1,2237 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Mietitura",
+				"id": "FiddleSticksE",
+				"rawDescription": "GeneratedTip_Spell_FiddleSticksE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_FiddleSticksE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Un innocuo spaventapasseri",
+				"id": "FiddleSticksPassive",
+				"rawDescription": "GeneratedTip_Passive_FiddleSticksPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_FiddleSticksPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 4,
+				"displayName": "Terrore",
+				"id": "FiddleSticksQ",
+				"rawDescription": "GeneratedTip_Spell_FiddleSticksQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_FiddleSticksQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Tempesta di corvi",
+				"id": "FiddleSticksR",
+				"rawDescription": "GeneratedTip_Spell_FiddleSticksR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_FiddleSticksR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 4,
+				"displayName": "Raccolto abbondante",
+				"id": "FiddleSticksW",
+				"rawDescription": "GeneratedTip_Spell_FiddleSticksW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_FiddleSticksW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityPower": 294.65899658203127,
+			"armor": 129.66250610351563,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 93.35688018798828,
+			"attackRange": 480.0,
+			"attackSpeed": 0.8158891201019287,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": -0.30000001192092898,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 1966.75439453125,
+			"healthRegenRate": 2.8370001316070558,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 37.23749923706055,
+			"maxHealth": 2193.276611328125,
+			"moveSpeed": 365.36749267578127,
+			"physicalLethality": 0.0,
+			"resourceMax": 2555.300048828125,
+			"resourceRegenRate": 7.570079326629639,
+			"resourceType": "MANA",
+			"resourceValue": 2531.581298828125,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 904.1582641601563,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				{
+					"displayName": "Fascia del Flusso",
+					"id": 8226,
+					"rawDescription": "perk_tooltip_8226",
+					"rawDisplayName": "perk_displayname_8226"
+				},
+				{
+					"displayName": "Celerità",
+					"id": 8234,
+					"rawDescription": "perk_tooltip_Celerity",
+					"rawDisplayName": "perk_displayname_Celerity"
+				},
+				{
+					"displayName": "Bruciare",
+					"id": 8237,
+					"rawDescription": "perk_tooltip_Scorch",
+					"rawDisplayName": "perk_displayname_Scorch"
+				},
+				{
+					"displayName": "Assaggio di sangue",
+					"id": 8139,
+					"rawDescription": "perk_tooltip_TasteOfBlood",
+					"rawDisplayName": "perk_displayname_TasteOfBlood"
+				},
+				{
+					"displayName": "Cacciatore famelico",
+					"id": 8135,
+					"rawDescription": "perk_tooltip_RavenousHunter",
+					"rawDisplayName": "perk_displayname_RavenousHunter"
+				}
+			],
+			"keystone": {
+				"displayName": "Evoca Aery",
+				"id": 8214,
+				"rawDescription": "perk_tooltip_SummonAery",
+				"rawDisplayName": "perk_displayname_SummonAery"
+			},
+			"primaryRuneTree": {
+				"displayName": "Stregoneria",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Dominazione",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 16,
+		"summonerName": "Br1seurDeReves"
+	},
+	"allPlayers": [
+		{
+			"championName": "Blitzcrank",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone secolare (Carica rapida)",
+					"itemID": 3029,
+					"price": 650,
+					"rawDescription": "game_item_description_3029",
+					"rawDisplayName": "game_item_displayname_3029",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali dell'acume di Ionia",
+					"itemID": 3158,
+					"price": 600,
+					"rawDescription": "game_item_description_3158",
+					"rawDisplayName": "game_item_displayname_3158",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bacchetta distruttiva",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "game_item_description_1026",
+					"rawDisplayName": "game_item_displayname_1026",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fiamma eterea",
+					"itemID": 3113,
+					"price": 415,
+					"rawDescription": "game_item_description_3113",
+					"rawDisplayName": "game_item_displayname_3113",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Zaffiro di cristallo",
+					"itemID": 1027,
+					"price": 350,
+					"rawDescription": "game_item_description_1027",
+					"rawDisplayName": "game_item_displayname_1027",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Blitzcrank",
+			"rawSkinName": "game_character_skin_displayname_Blitzcrank_20",
+			"respawnTimer": 15.813425064086914,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 13,
+				"creepScore": 20,
+				"deaths": 11,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 20,
+			"skinName": "Blitzcrank Lanciere Solitario",
+			"summonerName": "XxattilaxX52",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Chiarezza",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerMana_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerMana_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Karma",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 5,
+					"displayName": "Pozione di salute",
+					"itemID": 2003,
+					"price": 50,
+					"rawDescription": "game_item_description_2003",
+					"rawDisplayName": "game_item_displayname_2003",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Empio Graal di Athene",
+					"itemID": 3174,
+					"price": 400,
+					"rawDescription": "game_item_description_3174",
+					"rawDisplayName": "game_item_displayname_3174",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bacchetta distruttiva",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "game_item_description_1026",
+					"rawDisplayName": "game_item_displayname_1026",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sfera dell'oblio",
+					"itemID": 3916,
+					"price": 765,
+					"rawDescription": "game_item_description_3916",
+					"rawDisplayName": "game_item_displayname_3916",
+					"slot": 5
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Karma",
+			"rawSkinName": "game_character_skin_displayname_Karma_2",
+			"respawnTimer": 9.465839385986329,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 12,
+				"creepScore": 30,
+				"deaths": 8,
+				"kills": 4,
+				"wardScore": 0.0
+			},
+			"skinID": 2,
+			"skinName": "Sakura Karma",
+			"summonerName": "ihascheesecake",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Kai'Sa",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pozione ricaricabile",
+					"itemID": 2031,
+					"price": 150,
+					"rawDescription": "game_item_description_2031",
+					"rawDisplayName": "game_item_displayname_2031",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama del re in rovina",
+					"itemID": 3153,
+					"price": 700,
+					"rawDescription": "game_item_description_3153",
+					"rawDisplayName": "game_item_displayname_3153",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Kaisa",
+			"rawSkinName": "game_character_skin_displayname_Kaisa_14",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 13,
+				"creepScore": 60,
+				"deaths": 7,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 14,
+			"skinName": "Kai'Sa K/DA",
+			"summonerName": "Doc Whiterock",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Fiddlesticks",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Clessidra di Zhonya",
+					"itemID": 3157,
+					"price": 250,
+					"rawDescription": "game_item_description_3157",
+					"rawDisplayName": "game_item_displayname_3157",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Maschera stregata",
+					"itemID": 3136,
+					"price": 665,
+					"rawDescription": "game_item_description_3136",
+					"rawDisplayName": "game_item_displayname_3136",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bacchetta distruttiva",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "game_item_description_1026",
+					"rawDisplayName": "game_item_displayname_1026",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_FiddleSticks",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 11,
+				"creepScore": 20,
+				"deaths": 7,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Br1seurDeReves",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Marchio",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Draven",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lacrima della dea (Carica rapida)",
+					"itemID": 3073,
+					"price": 375,
+					"rawDescription": "game_item_description_3073",
+					"rawDisplayName": "game_item_displayname_3073",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Draven",
+			"respawnTimer": 20.1986083984375,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 8,
+				"creepScore": 20,
+				"deaths": 7,
+				"kills": 7,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Punkdevil",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "LeBlanc",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 3,
+					"displayName": "Pozione di salute",
+					"itemID": 2003,
+					"price": 50,
+					"rawDescription": "game_item_description_2003",
+					"rawDisplayName": "game_item_displayname_2003",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Capitolo perduto",
+					"itemID": 3802,
+					"price": 80,
+					"rawDescription": "game_item_description_3802",
+					"rawDisplayName": "game_item_displayname_3802",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Terrore dei lich",
+					"itemID": 3100,
+					"price": 450,
+					"rawDescription": "game_item_description_3100",
+					"rawDisplayName": "game_item_displayname_3100",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Leblanc",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 12,
+				"creepScore": 50,
+				"deaths": 3,
+				"kills": 23,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Rasmas0",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Lux",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lacrima della dea (Carica rapida)",
+					"itemID": 3073,
+					"price": 375,
+					"rawDescription": "game_item_description_3073",
+					"rawDisplayName": "game_item_displayname_3073",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 4,
+					"displayName": "Pozione di salute",
+					"itemID": 2003,
+					"price": 50,
+					"rawDescription": "game_item_description_2003",
+					"rawDisplayName": "game_item_displayname_2003",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone del Vuoto",
+					"itemID": 3135,
+					"price": 1365,
+					"rawDescription": "game_item_description_3135",
+					"rawDisplayName": "game_item_displayname_3135",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Lux",
+			"rawSkinName": "game_character_skin_displayname_Lux_8",
+			"respawnTimer": 24.242313385009767,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 24,
+				"creepScore": 20,
+				"deaths": 2,
+				"kills": 4,
+				"wardScore": 0.0
+			},
+			"skinID": 8,
+			"skinName": "Lux Imperatrice Lunare",
+			"summonerName": "Darkforest Angel",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Nautilus",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corazza spinata",
+					"itemID": 3075,
+					"price": 500,
+					"rawDescription": "game_item_description_3075",
+					"rawDisplayName": "game_item_displayname_3075",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari di Mercurio",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "game_item_description_3111",
+					"rawDisplayName": "game_item_displayname_3111",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone secolare (Carica rapida)",
+					"itemID": 3029,
+					"price": 650,
+					"rawDescription": "game_item_description_3029",
+					"rawDisplayName": "game_item_displayname_3029",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fulcro dei geli",
+					"itemID": 3110,
+					"price": 800,
+					"rawDescription": "game_item_description_3110",
+					"rawDisplayName": "game_item_displayname_3110",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 16,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Nautilus",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 21,
+				"creepScore": 40,
+				"deaths": 8,
+				"kills": 4,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "NinoooPT",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Chiarezza",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerMana_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerMana_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Soraka",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali dell'acume di Ionia",
+					"itemID": 3158,
+					"price": 600,
+					"rawDescription": "game_item_description_3158",
+					"rawDisplayName": "game_item_displayname_3158",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sogno di Shurelya",
+					"itemID": 2065,
+					"price": 600,
+					"rawDescription": "game_item_description_2065",
+					"rawDisplayName": "game_item_displayname_2065",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Soraka",
+			"rawSkinName": "game_character_skin_displayname_Soraka_1",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Scossa di assestamento",
+					"id": 8439,
+					"rawDescription": "perk_tooltip_VeteranAftershock",
+					"rawDisplayName": "perk_displayname_VeteranAftershock"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 25,
+				"creepScore": 30,
+				"deaths": 6,
+				"kills": 4,
+				"wardScore": 0.0
+			},
+			"skinID": 1,
+			"skinName": "Soraka Driade",
+			"summonerName": "zegatox93",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Yuumi",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Empio Graal di Athene",
+					"itemID": 3174,
+					"price": 400,
+					"rawDescription": "game_item_description_3174",
+					"rawDisplayName": "game_item_displayname_3174",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pozione ricaricabile",
+					"itemID": 2031,
+					"price": 150,
+					"rawDescription": "game_item_description_2031",
+					"rawDisplayName": "game_item_displayname_2031",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bacchetta distruttiva",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "game_item_description_1026",
+					"rawDisplayName": "game_item_displayname_1026",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Zaffiro di cristallo",
+					"itemID": 1027,
+					"price": 350,
+					"rawDescription": "game_item_description_1027",
+					"rawDisplayName": "game_item_displayname_1027",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Yuumi",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 28,
+				"creepScore": 10,
+				"deaths": 3,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Suma Sama",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.24739080667495728
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 45.03182601928711
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 78.08112335205078,
+				"KillerName": "Punkdevil",
+				"VictimName": "zegatox93"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 78.08112335205078,
+				"Recipient": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 78.79660034179688,
+				"KillerName": "Rasmas0",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 138.6724395751953,
+				"KillerName": "Rasmas0",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 185.21620178222657,
+				"KillerName": "Punkdevil",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 188.93946838378907,
+				"KillerName": "Rasmas0",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 190.31016540527345,
+				"KillerName": "Punkdevil",
+				"VictimName": "Suma Sama"
+			},
+			{
+				"EventID": 9,
+				"EventName": "Multikill",
+				"EventTime": 190.31016540527345,
+				"KillStreak": 2,
+				"KillerName": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 215.0039520263672,
+				"KillerName": "Punkdevil",
+				"VictimName": "zegatox93"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"zegatox93"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 228.10421752929688,
+				"KillerName": "Suma Sama",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"Doc Whiterock",
+					"Br1seurDeReves",
+					"Punkdevil"
+				],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 228.95907592773438,
+				"KillerName": "ihascheesecake",
+				"VictimName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 255.27806091308595,
+				"KillerName": "Suma Sama",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 261.1266784667969,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"Suma Sama"
+				],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 272.2263488769531,
+				"KillerName": "zegatox93",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 310.8440856933594,
+				"KillerName": "zegatox93",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"Doc Whiterock",
+					"Punkdevil"
+				],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 314.1366882324219,
+				"KillerName": "ihascheesecake",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"NinoooPT",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 329.2196350097656,
+				"KillerName": "Rasmas0",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"zegatox93"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 346.8431396484375,
+				"KillerName": "Suma Sama",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"NinoooPT",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 362.90740966796877,
+				"KillerName": "Darkforest Angel",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"ihascheesecake",
+					"Doc Whiterock"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 372.6744689941406,
+				"KillerName": "XxattilaxX52",
+				"VictimName": "zegatox93"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 22,
+				"EventName": "ChampionKill",
+				"EventTime": 374.71435546875,
+				"KillerName": "NinoooPT",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake",
+					"Br1seurDeReves",
+					"Punkdevil"
+				],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 426.9707946777344,
+				"KillerName": "Doc Whiterock",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"Suma Sama"
+				],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 483.164306640625,
+				"KillerName": "Rasmas0",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 491.0865173339844,
+				"KillerName": "NinoooPT",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 26,
+				"EventName": "ChampionKill",
+				"EventTime": 565.748779296875,
+				"KillerName": "Rasmas0",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"Br1seurDeReves",
+					"Punkdevil"
+				],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 596.9955444335938,
+				"KillerName": "Doc Whiterock",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 631.5741577148438,
+				"KillerName": "Punkdevil",
+				"VictimName": "zegatox93"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 654.1943969726563,
+				"KillerName": "Rasmas0",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"NinoooPT"
+				],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 656.3091430664063,
+				"KillerName": "Suma Sama",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 665.5938110351563,
+				"KillerName": "Rasmas0",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"Doc Whiterock"
+				],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 714.07177734375,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 750.7704467773438,
+				"KillerName": "Suma Sama",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 755.340576171875,
+				"KillerName": "zegatox93",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 35,
+				"EventName": "ChampionKill",
+				"EventTime": 756.041015625,
+				"KillerName": "XxattilaxX52",
+				"VictimName": "Suma Sama"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 36,
+				"EventName": "TurretKilled",
+				"EventTime": 787.483642578125,
+				"KillerName": "Minion_T200L1S29N0187",
+				"TurretKilled": "Turret_T1_C_08_A"
+			},
+			{
+				"EventID": 37,
+				"EventName": "FirstBrick",
+				"EventTime": 787.483642578125,
+				"KillerName": "Minion_T200L1S29N0187"
+			},
+			{
+				"Assisters": [
+					"ihascheesecake"
+				],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 789.1239624023438,
+				"KillerName": "Doc Whiterock",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 790.3485107421875,
+				"KillerName": "Rasmas0",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 793.7590942382813,
+				"KillerName": "Rasmas0",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"EventID": 41,
+				"EventName": "Multikill",
+				"EventTime": 793.7590942382813,
+				"KillStreak": 2,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 811.28173828125,
+				"KillerName": "XxattilaxX52",
+				"VictimName": "zegatox93"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"Suma Sama"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 844.4896850585938,
+				"KillerName": "Rasmas0",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 849.8541259765625,
+				"KillerName": "Punkdevil",
+				"VictimName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 880.4300537109375,
+				"KillerName": "NinoooPT",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Doc Whiterock",
+					"Br1seurDeReves"
+				],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 884.924560546875,
+				"KillerName": "ihascheesecake",
+				"VictimName": "Darkforest Angel"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"Doc Whiterock",
+					"Punkdevil"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 899.9340209960938,
+				"KillerName": "ihascheesecake",
+				"VictimName": "zegatox93"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 912.7421875,
+				"KillerName": "NinoooPT",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake",
+					"Punkdevil"
+				],
+				"EventID": 49,
+				"EventName": "ChampionKill",
+				"EventTime": 912.7421875,
+				"KillerName": "Doc Whiterock",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 913.516845703125,
+				"KillerName": "Rasmas0",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 51,
+				"EventName": "ChampionKill",
+				"EventTime": 919.5326538085938,
+				"KillerName": "Rasmas0",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"EventID": 52,
+				"EventName": "Multikill",
+				"EventTime": 919.5326538085938,
+				"KillStreak": 2,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 53,
+				"EventName": "ChampionKill",
+				"EventTime": 923.3253173828125,
+				"KillerName": "Rasmas0",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"EventID": 54,
+				"EventName": "Multikill",
+				"EventTime": 923.3253173828125,
+				"KillStreak": 3,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"NinoooPT",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 984.5608520507813,
+				"KillerName": "Darkforest Angel",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"Br1seurDeReves",
+					"Punkdevil"
+				],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 1002.1778564453125,
+				"KillerName": "Doc Whiterock",
+				"VictimName": "Suma Sama"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"NinoooPT",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 57,
+				"EventName": "ChampionKill",
+				"EventTime": 1002.5362548828125,
+				"KillerName": "Darkforest Angel",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"Suma Sama"
+				],
+				"EventID": 58,
+				"EventName": "ChampionKill",
+				"EventTime": 1002.831298828125,
+				"KillerName": "zegatox93",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 1004.1897583007813,
+				"KillerName": "Rasmas0",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"NinoooPT",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 1004.1897583007813,
+				"KillerName": "Rasmas0",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"EventID": 61,
+				"EventName": "Multikill",
+				"EventTime": 1004.1897583007813,
+				"KillStreak": 2,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Acer": "Rasmas0",
+				"AcingTeam": "CHAOS",
+				"EventID": 62,
+				"EventName": "Ace",
+				"EventTime": 1004.1897583007813
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 63,
+				"EventName": "TurretKilled",
+				"EventTime": 1029.5810546875,
+				"KillerName": "Darkforest Angel",
+				"TurretKilled": "Turret_T1_C_07_A"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"Darkforest Angel",
+					"NinoooPT"
+				],
+				"EventID": 64,
+				"EventName": "InhibKilled",
+				"EventTime": 1039.29150390625,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "zegatox93"
+			},
+			{
+				"Assisters": [
+					"XxattilaxX52",
+					"ihascheesecake",
+					"Doc Whiterock",
+					"Punkdevil"
+				],
+				"EventID": 65,
+				"EventName": "ChampionKill",
+				"EventTime": 1053.1600341796876,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "NinoooPT"
+			},
+			{
+				"Assisters": [
+					"NinoooPT",
+					"zegatox93"
+				],
+				"EventID": 66,
+				"EventName": "ChampionKill",
+				"EventTime": 1055.0177001953126,
+				"KillerName": "Rasmas0",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"zegatox93"
+				],
+				"EventID": 67,
+				"EventName": "ChampionKill",
+				"EventTime": 1059.65380859375,
+				"KillerName": "Rasmas0",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"EventID": 68,
+				"EventName": "Multikill",
+				"EventTime": 1059.65380859375,
+				"KillStreak": 2,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"zegatox93"
+				],
+				"EventID": 69,
+				"EventName": "ChampionKill",
+				"EventTime": 1060.859375,
+				"KillerName": "Rasmas0",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"EventID": 70,
+				"EventName": "Multikill",
+				"EventTime": 1060.859375,
+				"KillStreak": 3,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 71,
+				"EventName": "ChampionKill",
+				"EventTime": 1081.138916015625,
+				"KillerName": "Rasmas0",
+				"VictimName": "Doc Whiterock"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 72,
+				"EventName": "ChampionKill",
+				"EventTime": 1090.2984619140626,
+				"KillerName": "Rasmas0",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"EventID": 73,
+				"EventName": "Multikill",
+				"EventTime": 1090.2984619140626,
+				"KillStreak": 2,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [
+					"Rasmas0",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 74,
+				"EventName": "ChampionKill",
+				"EventTime": 1110.6754150390626,
+				"KillerName": "Darkforest Angel",
+				"VictimName": "ihascheesecake"
+			},
+			{
+				"Assisters": [],
+				"EventID": 75,
+				"EventName": "TurretKilled",
+				"EventTime": 1111.3868408203126,
+				"KillerName": "Darkforest Angel",
+				"TurretKilled": "Turret_T1_C_010_A"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"zegatox93",
+					"Suma Sama"
+				],
+				"EventID": 76,
+				"EventName": "ChampionKill",
+				"EventTime": 1117.02294921875,
+				"KillerName": "Rasmas0",
+				"VictimName": "XxattilaxX52"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel",
+					"Suma Sama"
+				],
+				"EventID": 77,
+				"EventName": "ChampionKill",
+				"EventTime": 1121.408203125,
+				"KillerName": "Rasmas0",
+				"VictimName": "Punkdevil"
+			},
+			{
+				"EventID": 78,
+				"EventName": "Multikill",
+				"EventTime": 1121.408203125,
+				"KillStreak": 2,
+				"KillerName": "Rasmas0"
+			},
+			{
+				"Assisters": [],
+				"EventID": 79,
+				"EventName": "ChampionKill",
+				"EventTime": 1121.451904296875,
+				"KillerName": "Punkdevil",
+				"VictimName": "Darkforest Angel"
+			},
+			{
+				"Assisters": [
+					"Darkforest Angel"
+				],
+				"EventID": 80,
+				"EventName": "TurretKilled",
+				"EventTime": 1132.0350341796876,
+				"KillerName": "Minion_T200L1S42N0266",
+				"TurretKilled": "Turret_T1_C_09_A"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "ARAM",
+		"gameTime": 1135.2095947265626,
+		"mapName": "Map12",
+		"mapNumber": 12,
+		"mapTerrain": "Default"
+	}
+}

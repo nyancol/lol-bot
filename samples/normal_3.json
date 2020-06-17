@@ -1,0 +1,1961 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Nebbia funerea",
+				"id": "YorickE",
+				"rawDescription": "GeneratedTip_Spell_YorickE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_YorickE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Pastore delle anime",
+				"id": "YorickPassive",
+				"rawDescription": "GeneratedTip_Passive_YorickPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_YorickPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Estrema Unzione",
+				"id": "YorickQ",
+				"rawDescription": "GeneratedTip_Spell_YorickQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_YorickQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 2,
+				"displayName": "Epitaffio delle Isole",
+				"id": "YorickR",
+				"rawDescription": "GeneratedTip_Spell_YorickR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_YorickR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 3,
+				"displayName": "Sinodo oscuro",
+				"id": "YorickW",
+				"rawDescription": "GeneratedTip_Spell_YorickW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_YorickW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityPower": 0.0,
+			"armor": 97.58360290527344,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 228.2875213623047,
+			"attackRange": 175.0,
+			"attackSpeed": 1.0408124923706055,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": -0.20000000298023225,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 1458.7265625,
+			"healthRegenRate": 9.306000709533692,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 104.49612426757813,
+			"maxHealth": 2933.2646484375,
+			"moveSpeed": 411.43896484375,
+			"physicalLethality": 0.0,
+			"resourceMax": 1330.60009765625,
+			"resourceRegenRate": 3.489750385284424,
+			"resourceType": "MANA",
+			"resourceValue": 1330.60009765625,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 312.38031005859377,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				{
+					"displayName": "Fascia del Flusso",
+					"id": 8226,
+					"rawDescription": "perk_tooltip_8226",
+					"rawDisplayName": "perk_displayname_8226"
+				},
+				{
+					"displayName": "Celerità",
+					"id": 8234,
+					"rawDescription": "perk_tooltip_Celerity",
+					"rawDisplayName": "perk_displayname_Celerity"
+				},
+				{
+					"displayName": "Bruciare",
+					"id": 8237,
+					"rawDescription": "perk_tooltip_Scorch",
+					"rawDisplayName": "perk_displayname_Scorch"
+				},
+				{
+					"displayName": "Assaggio di sangue",
+					"id": 8139,
+					"rawDescription": "perk_tooltip_TasteOfBlood",
+					"rawDisplayName": "perk_displayname_TasteOfBlood"
+				},
+				{
+					"displayName": "Cacciatore famelico",
+					"id": 8135,
+					"rawDescription": "perk_tooltip_RavenousHunter",
+					"rawDisplayName": "perk_displayname_RavenousHunter"
+				}
+			],
+			"keystone": {
+				"displayName": "Evoca Aery",
+				"id": 8214,
+				"rawDescription": "perk_tooltip_SummonAery",
+				"rawDisplayName": "perk_displayname_SummonAery"
+			},
+			"primaryRuneTree": {
+				"displayName": "Stregoneria",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Dominazione",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 15,
+		"summonerName": "Br1seurDeReves"
+	},
+	"allPlayers": [
+		{
+			"championName": "Wukong",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gemma del Guerriero",
+					"itemID": 1400,
+					"price": 525,
+					"rawDescription": "game_item_description_1400",
+					"rawDisplayName": "game_item_displayname_1400",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pozione ricaricabile",
+					"itemID": 2031,
+					"price": 150,
+					"rawDescription": "game_item_description_2031",
+					"rawDisplayName": "game_item_displayname_2031",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari di Mercurio",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "game_item_description_3111",
+					"rawDisplayName": "game_item_displayname_3111",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama crepuscolare di Draktharr",
+					"itemID": 3147,
+					"price": 700,
+					"rawDescription": "game_item_description_3147",
+					"rawDisplayName": "game_item_displayname_3147",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cappa anti-magia",
+					"itemID": 1033,
+					"price": 450,
+					"rawDescription": "game_item_description_1033",
+					"rawDisplayName": "game_item_displayname_1033",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lente dell'oracolo",
+					"itemID": 3364,
+					"price": 0,
+					"rawDescription": "game_item_description_3364",
+					"rawDisplayName": "game_item_displayname_3364",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_MonkeyKing",
+			"respawnTimer": 17.06376838684082,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 80,
+				"deaths": 5,
+				"kills": 2,
+				"wardScore": 16.874998092651368
+			},
+			"skinID": 0,
+			"summonerName": "alicesa",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Punizione ghiacciata",
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Yorick",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pozione della corruzione",
+					"itemID": 2033,
+					"price": 350,
+					"rawDescription": "game_item_description_2033",
+					"rawDisplayName": "game_item_displayname_2033",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Virtù della Triade",
+					"itemID": 3078,
+					"price": 333,
+					"rawDescription": "game_item_description_3078",
+					"rawDisplayName": "game_item_displayname_3078",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari di Mercurio",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "game_item_description_3111",
+					"rawDisplayName": "game_item_displayname_3111",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pegno di Sterak",
+					"itemID": 3053,
+					"price": 725,
+					"rawDescription": "game_item_description_3053",
+					"rawDisplayName": "game_item_displayname_3053",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cappuccio spettrale",
+					"itemID": 3211,
+					"price": 350,
+					"rawDescription": "game_item_description_3211",
+					"rawDisplayName": "game_item_displayname_3211",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Yorick",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 160,
+				"deaths": 7,
+				"kills": 3,
+				"wardScore": 9.771992683410645
+			},
+			"skinID": 0,
+			"summonerName": "Br1seurDeReves",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Teletrasporto",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Ashe",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cronografo di precisione",
+					"itemID": 2423,
+					"price": 650,
+					"rawDescription": "game_item_description_2423",
+					"rawDisplayName": "game_item_displayname_2423",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama di Doran",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "game_item_description_1055",
+					"rawDisplayName": "game_item_displayname_1055",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Predatore d'essenza",
+					"itemID": 3508,
+					"price": 100,
+					"rawDescription": "game_item_description_3508",
+					"rawDisplayName": "game_item_displayname_3508",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Uragano di Runaan",
+					"itemID": 3085,
+					"price": 600,
+					"rawDescription": "game_item_description_3085",
+					"rawDisplayName": "game_item_displayname_3085",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sciabola di Bilgewater",
+					"itemID": 3144,
+					"price": 350,
+					"rawDescription": "game_item_description_3144",
+					"rawDisplayName": "game_item_displayname_3144",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ashe",
+			"rawSkinName": "game_character_skin_displayname_Ashe_6",
+			"respawnTimer": 29.30792236328125,
+			"runes": {
+				"keystone": {
+					"displayName": "Piede lesto",
+					"id": 8021,
+					"rawDescription": "perk_tooltip_FleetFootwork",
+					"rawDisplayName": "perk_displayname_FleetFootwork"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 5,
+				"creepScore": 200,
+				"deaths": 5,
+				"kills": 2,
+				"wardScore": 11.550775527954102
+			},
+			"skinID": 6,
+			"skinName": "Ashe Cerca Cuori ",
+			"summonerName": "Nepérien",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Viktor",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Nucleo incantato perfetto",
+					"itemID": 3198,
+					"price": 850,
+					"rawDescription": "game_item_description_3198",
+					"rawDisplayName": "game_item_displayname_3198",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Maschera stregata",
+					"itemID": 3136,
+					"price": 665,
+					"rawDescription": "game_item_description_3136",
+					"rawDisplayName": "game_item_displayname_3136",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Viktor",
+			"respawnTimer": 8.399410247802735,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 3,
+				"creepScore": 170,
+				"deaths": 5,
+				"kills": 4,
+				"wardScore": 19.700197219848634
+			},
+			"skinID": 0,
+			"summonerName": "Aramitz",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Teletrasporto",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Karma",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento di Vero Ghiaccio",
+					"itemID": 3853,
+					"price": 400,
+					"rawDescription": "game_item_description_3853",
+					"rawDisplayName": "game_item_displayname_3853",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Empio Graal di Athene",
+					"itemID": 3174,
+					"price": 400,
+					"rawDescription": "game_item_description_3174",
+					"rawDisplayName": "game_item_displayname_3174",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sogno di Shurelya",
+					"itemID": 2065,
+					"price": 600,
+					"rawDescription": "game_item_description_2065",
+					"rawDisplayName": "game_item_displayname_2065",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della mobilità",
+					"itemID": 3117,
+					"price": 700,
+					"rawDescription": "game_item_description_3117",
+					"rawDisplayName": "game_item_displayname_3117",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 11,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Karma",
+			"rawSkinName": "game_character_skin_displayname_Karma_8",
+			"respawnTimer": 3.1195716857910158,
+			"runes": {
+				"keystone": {
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 1,
+				"creepScore": 20,
+				"deaths": 4,
+				"kills": 2,
+				"wardScore": 39.35944747924805
+			},
+			"skinID": 8,
+			"skinName": "Karma Stella Oscura",
+			"summonerName": "nuggetse ",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Alistar",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Baluardo della montagna",
+					"itemID": 3860,
+					"price": 400,
+					"rawDescription": "game_item_description_3860",
+					"rawDisplayName": "game_item_displayname_3860",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della mobilità",
+					"itemID": 3117,
+					"price": 700,
+					"rawDescription": "game_item_description_3117",
+					"rawDisplayName": "game_item_displayname_3117",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corazza spinata",
+					"itemID": 3075,
+					"price": 500,
+					"rawDescription": "game_item_description_3075",
+					"rawDisplayName": "game_item_displayname_3075",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cappuccio spettrale",
+					"itemID": 3211,
+					"price": 350,
+					"rawDescription": "game_item_description_3211",
+					"rawDisplayName": "game_item_displayname_3211",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gemma infuocata",
+					"itemID": 3067,
+					"price": 400,
+					"rawDescription": "game_item_description_3067",
+					"rawDisplayName": "game_item_displayname_3067",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lente dell'oracolo",
+					"itemID": 3364,
+					"price": 0,
+					"rawDescription": "game_item_description_3364",
+					"rawDisplayName": "game_item_displayname_3364",
+					"slot": 6
+				}
+			],
+			"level": 12,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Alistar",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Scossa di assestamento",
+					"id": 8439,
+					"rawDescription": "perk_tooltip_VeteranAftershock",
+					"rawDisplayName": "perk_displayname_VeteranAftershock"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 11,
+				"creepScore": 20,
+				"deaths": 6,
+				"kills": 1,
+				"wardScore": 30.09537124633789
+			},
+			"skinID": 0,
+			"summonerName": "Felipe99bm",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ezreal",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Guanto del gelo",
+					"itemID": 3025,
+					"price": 750,
+					"rawDescription": "game_item_description_3025",
+					"rawDisplayName": "game_item_displayname_3025",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sciabola di Bilgewater",
+					"itemID": 3144,
+					"price": 350,
+					"rawDescription": "game_item_description_3144",
+					"rawDisplayName": "game_item_displayname_3144",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Muramana",
+					"itemID": 3042,
+					"price": 2400,
+					"rawDescription": "game_item_description_3042",
+					"rawDisplayName": "game_item_displayname_3042",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Arco ricurvo",
+					"itemID": 1043,
+					"price": 400,
+					"rawDescription": "game_item_description_1043",
+					"rawDisplayName": "game_item_displayname_1043",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama di Doran",
+					"itemID": 1055,
+					"price": 450,
+					"rawDescription": "game_item_description_1055",
+					"rawDisplayName": "game_item_displayname_1055",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali dell'acume di Ionia",
+					"itemID": 3158,
+					"price": 600,
+					"rawDescription": "game_item_description_3158",
+					"rawDisplayName": "game_item_displayname_3158",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ezreal",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 6,
+				"creepScore": 160,
+				"deaths": 1,
+				"kills": 5,
+				"wardScore": 15.2634859085083
+			},
+			"skinID": 0,
+			"summonerName": "Oxylio",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Vel'Koz",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sigillo oscuro",
+					"itemID": 1082,
+					"price": 350,
+					"rawDescription": "game_item_description_1082",
+					"rawDisplayName": "game_item_displayname_1082",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pozione ricaricabile",
+					"itemID": 2031,
+					"price": 150,
+					"rawDescription": "game_item_description_2031",
+					"rawDisplayName": "game_item_displayname_2031",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tormento di Liandry",
+					"itemID": 3151,
+					"price": 750,
+					"rawDescription": "game_item_description_3151",
+					"rawDisplayName": "game_item_displayname_3151",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Velkoz",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 4,
+				"creepScore": 130,
+				"deaths": 2,
+				"kills": 3,
+				"wardScore": 33.32707595825195
+			},
+			"skinID": 0,
+			"summonerName": "KeepCalm45",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Annie",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 550,
+					"rawDescription": "game_item_description_3165",
+					"rawDisplayName": "game_item_displayname_3165",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Annie",
+			"rawSkinName": "game_character_skin_displayname_Annie_4",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 2,
+				"creepScore": 160,
+				"deaths": 3,
+				"kills": 13,
+				"wardScore": 21.14342498779297
+			},
+			"skinID": 4,
+			"skinName": "Annie Reginetta del Ballo",
+			"summonerName": "PF kToken",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Teletrasporto",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Sett",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Idra titanica",
+					"itemID": 3748,
+					"price": 575,
+					"rawDescription": "game_item_description_3748",
+					"rawDisplayName": "game_item_displayname_3748",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bracciale cristallino",
+					"itemID": 3801,
+					"price": 100,
+					"rawDescription": "game_item_description_3801",
+					"rawDisplayName": "game_item_displayname_3801",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gemma del Colosso cinereo",
+					"itemID": 1401,
+					"price": 600,
+					"rawDescription": "game_item_description_1401",
+					"rawDisplayName": "game_item_displayname_1401",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cintura del gigante",
+					"itemID": 1011,
+					"price": 600,
+					"rawDescription": "game_item_description_1011",
+					"rawDisplayName": "game_item_displayname_1011",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Sett",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 130,
+				"deaths": 1,
+				"kills": 4,
+				"wardScore": 14.771854400634766
+			},
+			"skinID": 0,
+			"summonerName": "Arcadiact",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Punizione ghiacciata",
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.03396080061793327
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.04497528076172
+			},
+			{
+				"Assisters": [],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 179.06565856933595,
+				"KillerName": "PF kToken",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 179.06565856933595,
+				"Recipient": "PF kToken"
+			},
+			{
+				"Assisters": [],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 437.3299255371094,
+				"KillerName": "PF kToken",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Nepérien"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 538.3203735351563,
+				"KillerName": "nuggetse ",
+				"VictimName": "Felipe99bm"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 599.2889404296875,
+				"KillerName": "Arcadiact",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Arcadiact"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 600.8321533203125,
+				"KillerName": "Oxylio",
+				"VictimName": "nuggetse "
+			},
+			{
+				"Assisters": [
+					"Oxylio",
+					"KeepCalm45"
+				],
+				"DragonType": "Water",
+				"EventID": 8,
+				"EventName": "DragonKill",
+				"EventTime": 645.38720703125,
+				"KillerName": "Arcadiact",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 654.3441162109375,
+				"KillerName": "PF kToken",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 721.8107299804688,
+				"KillerName": "alicesa",
+				"VictimName": "PF kToken"
+			},
+			{
+				"Assisters": [
+					"Arcadiact"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 824.9771728515625,
+				"KillerName": "PF kToken",
+				"VictimName": "alicesa"
+			},
+			{
+				"Assisters": [
+					"alicesa",
+					"PF kToken",
+					"Arcadiact",
+					"alicesa"
+				],
+				"EventID": 12,
+				"EventName": "HeraldKill",
+				"EventTime": 828.4901733398438,
+				"KillerName": "Aramitz",
+				"Stolen": "True"
+			},
+			{
+				"Assisters": [
+					"PF kToken",
+					"Arcadiact"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 832.7303466796875,
+				"KillerName": "KeepCalm45",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 893.240234375,
+				"KillerName": "Aramitz",
+				"VictimName": "KeepCalm45"
+			},
+			{
+				"Assisters": [],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 940.27392578125,
+				"KillerName": "PF kToken",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [],
+				"EventID": 16,
+				"EventName": "TurretKilled",
+				"EventTime": 969.4309692382813,
+				"KillerName": "PF kToken",
+				"TurretKilled": "Turret_T1_L_03_A"
+			},
+			{
+				"EventID": 17,
+				"EventName": "FirstBrick",
+				"EventTime": 969.4309692382813,
+				"KillerName": "PF kToken"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Earth",
+				"EventID": 18,
+				"EventName": "DragonKill",
+				"EventTime": 985.505615234375,
+				"KillerName": "alicesa",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"alicesa",
+					"Nepérien"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 1003.7817993164063,
+				"KillerName": "nuggetse ",
+				"VictimName": "Felipe99bm"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Arcadiact"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 1007.0471801757813,
+				"KillerName": "Oxylio",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Arcadiact"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 1015.9619140625,
+				"KillerName": "Oxylio",
+				"VictimName": "alicesa"
+			},
+			{
+				"EventID": 22,
+				"EventName": "Multikill",
+				"EventTime": 1015.9619140625,
+				"KillStreak": 2,
+				"KillerName": "Oxylio"
+			},
+			{
+				"Assisters": [],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 1030.9178466796876,
+				"KillerName": "PF kToken",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 1035.6435546875,
+				"KillerName": "Oxylio",
+				"VictimName": "nuggetse "
+			},
+			{
+				"Assisters": [
+					"Oxylio"
+				],
+				"EventID": 25,
+				"EventName": "TurretKilled",
+				"EventTime": 1051.1927490234376,
+				"KillerName": "Minion_T200L0S32N0200",
+				"TurretKilled": "Turret_T1_R_03_A"
+			},
+			{
+				"Assisters": [
+					"KeepCalm45"
+				],
+				"EventID": 26,
+				"EventName": "TurretKilled",
+				"EventTime": 1087.9398193359376,
+				"KillerName": "Felipe99bm",
+				"TurretKilled": "Turret_T1_C_05_A"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Oxylio"
+				],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 1121.041015625,
+				"KillerName": "KeepCalm45",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"KeepCalm45",
+					"Arcadiact"
+				],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 1122.474853515625,
+				"KillerName": "PF kToken",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"nuggetse "
+				],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 1131.7513427734376,
+				"KillerName": "alicesa",
+				"VictimName": "KeepCalm45"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45"
+				],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 1134.2584228515626,
+				"KillerName": "Arcadiact",
+				"VictimName": "nuggetse "
+			},
+			{
+				"Assisters": [],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 1235.294921875,
+				"KillerName": "Aramitz",
+				"VictimName": "Felipe99bm"
+			},
+			{
+				"Assisters": [],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 1258.2052001953126,
+				"KillerName": "PF kToken",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Oxylio",
+					"Arcadiact"
+				],
+				"DragonType": "Fire",
+				"EventID": 33,
+				"EventName": "DragonKill",
+				"EventTime": 1297.1580810546876,
+				"KillerName": "KeepCalm45",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 34,
+				"EventName": "TurretKilled",
+				"EventTime": 1307.429443359375,
+				"KillerName": "Aramitz",
+				"TurretKilled": "Turret_T2_C_05_A"
+			},
+			{
+				"Assisters": [
+					"PF kToken",
+					"Arcadiact"
+				],
+				"EventID": 35,
+				"EventName": "ChampionKill",
+				"EventTime": 1312.720458984375,
+				"KillerName": "Felipe99bm",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45",
+					"PF kToken"
+				],
+				"EventID": 36,
+				"EventName": "TurretKilled",
+				"EventTime": 1330.3646240234376,
+				"KillerName": "Arcadiact",
+				"TurretKilled": "Turret_T1_C_04_A"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45",
+					"PF kToken"
+				],
+				"EventID": 37,
+				"EventName": "TurretKilled",
+				"EventTime": 1346.2655029296876,
+				"KillerName": "Arcadiact",
+				"TurretKilled": "Turret_T1_C_03_A"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45",
+					"Arcadiact"
+				],
+				"EventID": 38,
+				"EventName": "InhibKilled",
+				"EventTime": 1355.3895263671876,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "PF kToken"
+			},
+			{
+				"Assisters": [],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 1364.6513671875,
+				"KillerName": "PF kToken",
+				"VictimName": "Nepérien"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Nepérien"
+				],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 1365.615478515625,
+				"KillerName": "Aramitz",
+				"VictimName": "PF kToken"
+			},
+			{
+				"Assisters": [
+					"alicesa",
+					"Aramitz"
+				],
+				"EventID": 41,
+				"EventName": "ChampionKill",
+				"EventTime": 1370.9541015625,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Arcadiact"
+			},
+			{
+				"Assisters": [
+					"alicesa"
+				],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 1416.927734375,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Oxylio"
+			},
+			{
+				"Assisters": [
+					"Oxylio"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 1425.64208984375,
+				"KillerName": "PF kToken",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Oxylio"
+				],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 1428.541015625,
+				"KillerName": "PF kToken",
+				"VictimName": "alicesa"
+			},
+			{
+				"EventID": 45,
+				"EventName": "Multikill",
+				"EventTime": 1428.541015625,
+				"KillStreak": 2,
+				"KillerName": "PF kToken"
+			},
+			{
+				"Assisters": [],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 1473.0352783203126,
+				"KillerName": "Nepérien",
+				"VictimName": "Felipe99bm"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 1544.834716796875,
+				"KillerName": "Nepérien",
+				"VictimName": "PF kToken"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 1554.9080810546876,
+				"KillerName": "Oxylio",
+				"VictimName": "alicesa"
+			},
+			{
+				"Assisters": [
+					"Nepérien",
+					"Aramitz"
+				],
+				"EventID": 49,
+				"EventName": "ChampionKill",
+				"EventTime": 1556.953857421875,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Felipe99bm"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Oxylio",
+					"KeepCalm45"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 1562.3187255859376,
+				"KillerName": "Arcadiact",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [],
+				"EventID": 51,
+				"EventName": "TurretKilled",
+				"EventTime": 1592.62548828125,
+				"KillerName": "Minion_T200L0S49N0313",
+				"TurretKilled": "Turret_T1_R_02_A"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45",
+					"PF kToken"
+				],
+				"DragonType": "Fire",
+				"EventID": 52,
+				"EventName": "DragonKill",
+				"EventTime": 1630.18798828125,
+				"KillerName": "Arcadiact",
+				"Stolen": "False"
+			},
+			{
+				"EventID": 53,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1640.376220703125,
+				"InhibRespawningSoon": "Barracks_T1_C1"
+			},
+			{
+				"EventID": 54,
+				"EventName": "InhibRespawned",
+				"EventTime": 1655.448486328125,
+				"InhibRespawned": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"alicesa",
+					"Br1seurDeReves",
+					"Nepérien"
+				],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 1680.7984619140626,
+				"KillerName": "Aramitz",
+				"VictimName": "Felipe99bm"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Oxylio",
+					"KeepCalm45",
+					"Arcadiact"
+				],
+				"EventID": 56,
+				"EventName": "InhibKilled",
+				"EventTime": 1763.9383544921876,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "PF kToken"
+			},
+			{
+				"Assisters": [
+					"Oxylio"
+				],
+				"EventID": 57,
+				"EventName": "ChampionKill",
+				"EventTime": 1801.0081787109376,
+				"KillerName": "KeepCalm45",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm"
+				],
+				"EventID": 58,
+				"EventName": "ChampionKill",
+				"EventTime": 1806.9833984375,
+				"KillerName": "Arcadiact",
+				"VictimName": "nuggetse "
+			},
+			{
+				"Assisters": [
+					"Felipe99bm"
+				],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 1818.0655517578126,
+				"KillerName": "PF kToken",
+				"VictimName": "alicesa"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"Oxylio"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 1824.6356201171876,
+				"KillerName": "PF kToken",
+				"VictimName": "Nepérien"
+			},
+			{
+				"EventID": 61,
+				"EventName": "Multikill",
+				"EventTime": 1824.6356201171876,
+				"KillStreak": 2,
+				"KillerName": "PF kToken"
+			},
+			{
+				"Assisters": [
+					"Oxylio",
+					"KeepCalm45"
+				],
+				"EventID": 62,
+				"EventName": "TurretKilled",
+				"EventTime": 1827.4549560546876,
+				"KillerName": "Felipe99bm",
+				"TurretKilled": "Turret_T1_C_01_A"
+			},
+			{
+				"Assisters": [
+					"Felipe99bm",
+					"KeepCalm45",
+					"Arcadiact"
+				],
+				"EventID": 63,
+				"EventName": "TurretKilled",
+				"EventTime": 1831.4970703125,
+				"KillerName": "Minion_T200L1S58N0367",
+				"TurretKilled": "Turret_T1_C_02_A"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "CLASSIC",
+		"gameTime": 1843.3507080078126,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Infernal"
+	}
+}

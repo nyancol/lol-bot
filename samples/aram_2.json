@@ -1,0 +1,3183 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Lama dello zenith",
+				"id": "LeonaZenithBlade",
+				"rawDescription": "GeneratedTip_Spell_LeonaZenithBlade_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LeonaZenithBlade_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Luce del sole",
+				"id": "LeonaSunlightPassive",
+				"rawDescription": "GeneratedTip_Passive_LeonaSunlightPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_LeonaSunlightPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Scudo dell'alba",
+				"id": "LeonaShieldOfDaybreak",
+				"rawDescription": "GeneratedTip_Spell_LeonaShieldOfDaybreak_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LeonaShieldOfDaybreak_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Fiamma solare",
+				"id": "LeonaSolarFlare",
+				"rawDescription": "GeneratedTip_Spell_LeonaSolarFlare_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LeonaSolarFlare_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 5,
+				"displayName": "Eclissi",
+				"id": "LeonaSolarBarrier",
+				"rawDescription": "GeneratedTip_Spell_LeonaSolarBarrier_Description",
+				"rawDisplayName": "GeneratedTip_Spell_LeonaSolarBarrier_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityPower": 0.0,
+			"armor": 294.20001220703127,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 156.44000244140626,
+			"attackRange": 125.0,
+			"attackSpeed": 0.9331250190734863,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": -0.4000000059604645,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 386.14007568359377,
+			"healthRegenRate": 23.09870147705078,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 148.35000610351563,
+			"maxHealth": 3715.815673828125,
+			"moveSpeed": 360.0,
+			"physicalLethality": 0.0,
+			"resourceMax": 1682.2000732421876,
+			"resourceRegenRate": 6.3255462646484379,
+			"resourceType": "MANA",
+			"resourceValue": 1682.2000732421876,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 384.7440185546875,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Presa dell'immortale",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				{
+					"displayName": "Demolire",
+					"id": 8446,
+					"rawDescription": "perk_tooltip_8446",
+					"rawDisplayName": "perk_displayname_8446"
+				},
+				{
+					"displayName": "Secondo fiato",
+					"id": 8444,
+					"rawDescription": "perk_tooltip_SecondWind",
+					"rawDisplayName": "perk_displayname_SecondWind"
+				},
+				{
+					"displayName": "Crescita eccessiva",
+					"id": 8451,
+					"rawDescription": "perk_tooltip_Overgrowth",
+					"rawDisplayName": "perk_displayname_Overgrowth"
+				},
+				{
+					"displayName": "Sfera dell'annullamento",
+					"id": 8224,
+					"rawDescription": "perk_tooltip_RunicArmor",
+					"rawDisplayName": "perk_displayname_RunicArmor"
+				},
+				{
+					"displayName": "Bruciare",
+					"id": 8237,
+					"rawDescription": "perk_tooltip_Scorch",
+					"rawDisplayName": "perk_displayname_Scorch"
+				}
+			],
+			"keystone": {
+				"displayName": "Presa dell'immortale",
+				"id": 8437,
+				"rawDescription": "perk_tooltip_GraspOfTheUndying",
+				"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+			},
+			"primaryRuneTree": {
+				"displayName": "Determinazione",
+				"id": 8400,
+				"rawDescription": "perkstyle_tooltip_7204",
+				"rawDisplayName": "perkstyle_displayname_7204"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Stregoneria",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5002,
+					"rawDescription": "perk_tooltip_StatModArmor"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 18,
+		"summonerName": "Br1seurDeReves"
+	},
+	"allPlayers": [
+		{
+			"championName": "Zilean",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 550,
+					"rawDescription": "game_item_description_3165",
+					"rawDisplayName": "game_item_displayname_3165",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone del Vuoto",
+					"itemID": 3135,
+					"price": 1365,
+					"rawDescription": "game_item_description_3135",
+					"rawDisplayName": "game_item_displayname_3135",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Zilean",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 34,
+				"creepScore": 80,
+				"deaths": 8,
+				"kills": 19,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Skit Kill",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Veigar",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cronografo di precisione",
+					"itemID": 2423,
+					"price": 650,
+					"rawDescription": "game_item_description_2423",
+					"rawDisplayName": "game_item_displayname_2423",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 3,
+					"displayName": "Biscotto eterno della volontà",
+					"itemID": 2010,
+					"price": 75,
+					"rawDescription": "game_item_description_2010",
+					"rawDisplayName": "game_item_displayname_2010",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 550,
+					"rawDescription": "game_item_description_3165",
+					"rawDisplayName": "game_item_displayname_3165",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Veigar",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Potenziamento glaciale",
+					"id": 8351,
+					"rawDescription": "perk_tooltip_GlacialAugment",
+					"rawDisplayName": "perk_displayname_GlacialAugment"
+				},
+				"primaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 27,
+				"creepScore": 0,
+				"deaths": 14,
+				"kills": 2,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Kiiraxa",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Draven",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danza della Morte",
+					"itemID": 3812,
+					"price": 500,
+					"rawDescription": "game_item_description_3812",
+					"rawDisplayName": "game_item_displayname_3812",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danzatore fantasma",
+					"itemID": 3046,
+					"price": 900,
+					"rawDescription": "game_item_description_3046",
+					"rawDisplayName": "game_item_displayname_3046",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Archibugio a ripetizione",
+					"itemID": 3094,
+					"price": 500,
+					"rawDescription": "game_item_description_3094",
+					"rawDisplayName": "game_item_displayname_3094",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Chiamata del carnefice",
+					"itemID": 3123,
+					"price": 450,
+					"rawDescription": "game_item_description_3123",
+					"rawDisplayName": "game_item_displayname_3123",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Draven",
+			"rawSkinName": "game_character_skin_displayname_Draven_1",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 27,
+				"creepScore": 90,
+				"deaths": 18,
+				"kills": 17,
+				"wardScore": 0.0
+			},
+			"skinID": 1,
+			"skinName": "Draven Predatore di Anime",
+			"summonerName": "Lesasang",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Sfinimento",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Senna",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della rapidità",
+					"itemID": 3009,
+					"price": 600,
+					"rawDescription": "game_item_description_3009",
+					"rawDisplayName": "game_item_displayname_3009",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 3,
+					"displayName": "Biscotto eterno della volontà",
+					"itemID": 2010,
+					"price": 75,
+					"rawDescription": "game_item_description_2010",
+					"rawDisplayName": "game_item_displayname_2010",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Uragano di Runaan",
+					"itemID": 3085,
+					"price": 600,
+					"rawDescription": "game_item_description_3085",
+					"rawDisplayName": "game_item_displayname_3085",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Memento mori",
+					"itemID": 3033,
+					"price": 550,
+					"rawDescription": "game_item_description_3033",
+					"rawDisplayName": "game_item_displayname_3033",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Empio Graal di Athene",
+					"itemID": 3174,
+					"price": 400,
+					"rawDescription": "game_item_description_3174",
+					"rawDisplayName": "game_item_displayname_3174",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Senna",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Potenziamento glaciale",
+					"id": 8351,
+					"rawDescription": "perk_tooltip_GlacialAugment",
+					"rawDisplayName": "perk_displayname_GlacialAugment"
+				},
+				"primaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 30,
+				"creepScore": 10,
+				"deaths": 12,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Hinoribi",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Ezreal",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Muramana",
+					"itemID": 3043,
+					"price": 2400,
+					"rawDescription": "game_item_description_3042",
+					"rawDisplayName": "game_item_displayname_3042",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama di Youmuu",
+					"itemID": 3142,
+					"price": 700,
+					"rawDescription": "game_item_description_3142",
+					"rawDisplayName": "game_item_displayname_3142",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Guanto del gelo",
+					"itemID": 3025,
+					"price": 750,
+					"rawDescription": "game_item_description_3025",
+					"rawDisplayName": "game_item_displayname_3025",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danza della Morte",
+					"itemID": 3812,
+					"price": 500,
+					"rawDescription": "game_item_description_3812",
+					"rawDisplayName": "game_item_displayname_3812",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ezreal",
+			"rawSkinName": "game_character_skin_displayname_Ezreal_2",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 30,
+				"creepScore": 170,
+				"deaths": 7,
+				"kills": 27,
+				"wardScore": 0.0
+			},
+			"skinID": 2,
+			"skinName": "Ezreal Attaccante",
+			"summonerName": "Melaz",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Sfinimento",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Leona",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Maschera dell'abisso",
+					"itemID": 3001,
+					"price": 1180,
+					"rawDescription": "game_item_description_3001",
+					"rawDisplayName": "game_item_displayname_3001",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Voto del cavaliere",
+					"itemID": 3109,
+					"price": 600,
+					"rawDescription": "game_item_description_3109",
+					"rawDisplayName": "game_item_displayname_3109",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Idra titanica",
+					"itemID": 3748,
+					"price": 575,
+					"rawDescription": "game_item_description_3748",
+					"rawDisplayName": "game_item_displayname_3748",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fulcro dei geli",
+					"itemID": 3110,
+					"price": 800,
+					"rawDescription": "game_item_description_3110",
+					"rawDisplayName": "game_item_displayname_3110",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Egida della legione",
+					"itemID": 3105,
+					"price": 350,
+					"rawDescription": "game_item_description_3105",
+					"rawDisplayName": "game_item_displayname_3105",
+					"slot": 5
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Leona",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Presa dell'immortale",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 26,
+				"creepScore": 10,
+				"deaths": 9,
+				"kills": 3,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Br1seurDeReves",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Marchio",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Graves",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Speranza perduta",
+					"itemID": 3091,
+					"price": 880,
+					"rawDescription": "game_item_description_3091",
+					"rawDisplayName": "game_item_displayname_3091",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Guanto del gelo",
+					"itemID": 3025,
+					"price": 750,
+					"rawDescription": "game_item_description_3025",
+					"rawDisplayName": "game_item_displayname_3025",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del ninja",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "game_item_description_3047",
+					"rawDisplayName": "game_item_displayname_3047",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danza della Morte",
+					"itemID": 3812,
+					"price": 500,
+					"rawDescription": "game_item_description_3812",
+					"rawDisplayName": "game_item_displayname_3812",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danzatore fantasma",
+					"itemID": 3046,
+					"price": 900,
+					"rawDescription": "game_item_description_3046",
+					"rawDisplayName": "game_item_displayname_3046",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fauci di Malmortius",
+					"itemID": 3156,
+					"price": 850,
+					"rawDescription": "game_item_description_3156",
+					"rawDisplayName": "game_item_displayname_3156",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Graves",
+			"rawSkinName": "game_character_skin_displayname_Graves_14",
+			"respawnTimer": 35.32543182373047,
+			"runes": {
+				"keystone": {
+					"displayName": "Scatto fasico",
+					"id": 8230,
+					"rawDescription": "perk_tooltip_PhaseRush",
+					"rawDisplayName": "perk_displayname_PhaseRush"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 22,
+				"creepScore": 130,
+				"deaths": 14,
+				"kills": 18,
+				"wardScore": 0.0
+			},
+			"skinID": 14,
+			"skinName": "Graves Vittorioso",
+			"summonerName": "NicKlaws",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Twitch",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danzatore fantasma",
+					"itemID": 3046,
+					"price": 900,
+					"rawDescription": "game_item_description_3046",
+					"rawDisplayName": "game_item_displayname_3046",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Uragano di Runaan",
+					"itemID": 3085,
+					"price": 600,
+					"rawDescription": "game_item_description_3085",
+					"rawDisplayName": "game_item_displayname_3085",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fauci di Malmortius",
+					"itemID": 3156,
+					"price": 850,
+					"rawDescription": "game_item_description_3156",
+					"rawDisplayName": "game_item_displayname_3156",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Twitch",
+			"respawnTimer": 10.828250885009766,
+			"runes": {
+				"keystone": {
+					"displayName": "Attacco sostenuto",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 32,
+				"creepScore": 70,
+				"deaths": 18,
+				"kills": 10,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Aramitz",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Chiarezza",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerMana_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerMana_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Jhin",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pugnale di Statikk",
+					"itemID": 3087,
+					"price": 500,
+					"rawDescription": "game_item_description_3087",
+					"rawDisplayName": "game_item_displayname_3087",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Archibugio a ripetizione",
+					"itemID": 3094,
+					"price": 500,
+					"rawDescription": "game_item_description_3094",
+					"rawDisplayName": "game_item_displayname_3094",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danzatore fantasma",
+					"itemID": 3046,
+					"price": 900,
+					"rawDescription": "game_item_description_3046",
+					"rawDisplayName": "game_item_displayname_3046",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Predatore d'essenza",
+					"itemID": 3508,
+					"price": 100,
+					"rawDescription": "game_item_description_3508",
+					"rawDisplayName": "game_item_displayname_3508",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Jhin",
+			"respawnTimer": 17.120346069335939,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 30,
+				"creepScore": 100,
+				"deaths": 14,
+				"kills": 20,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Zöen",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Vayne",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pugnale di Statikk",
+					"itemID": 3087,
+					"price": 500,
+					"rawDescription": "game_item_description_3087",
+					"rawDisplayName": "game_item_displayname_3087",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danza della Morte",
+					"itemID": 3812,
+					"price": 500,
+					"rawDescription": "game_item_description_3812",
+					"rawDisplayName": "game_item_displayname_3812",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Vayne",
+			"respawnTimer": 34.88871765136719,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 18,
+				"creepScore": 40,
+				"deaths": 15,
+				"kills": 8,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Velaskeh",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.01831189915537834
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 45.01543045043945
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 48.83369064331055,
+				"KillerName": "Velaskeh",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 48.83369064331055,
+				"Recipient": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Velaskeh"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 97.68649291992188,
+				"KillerName": "Zöen",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Zöen"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 107.95085906982422,
+				"KillerName": "NicKlaws",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Hinoribi"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 114.02041625976563,
+				"KillerName": "Melaz",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Melaz"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 140.64134216308595,
+				"KillerName": "Hinoribi",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Velaskeh"
+				],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 140.90493774414063,
+				"KillerName": "Aramitz",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 150.15707397460938,
+				"KillerName": "Zöen",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 158.39141845703126,
+				"KillerName": "Skit Kill",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 205.13294982910157,
+				"KillerName": "Aramitz",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 207.98284912109376,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 210.22088623046876,
+				"KillerName": "Velaskeh",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 213.658935546875,
+				"KillerName": "Lesasang",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"EventID": 15,
+				"EventName": "Multikill",
+				"EventTime": 213.658935546875,
+				"KillStreak": 2,
+				"KillerName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 216.76187133789063,
+				"KillerName": "Zöen",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 218.06214904785157,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 237.8985137939453,
+				"KillerName": "Zöen",
+				"VictimName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Zöen"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 238.15127563476563,
+				"KillerName": "NicKlaws",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 261.69317626953127,
+				"KillerName": "Velaskeh",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 268.9517517089844,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 22,
+				"EventName": "ChampionKill",
+				"EventTime": 286.5082092285156,
+				"KillerName": "Zöen",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Melaz"
+				],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 289.45404052734377,
+				"KillerName": "Skit Kill",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 336.30841064453127,
+				"KillerName": "Zöen",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 348.328857421875,
+				"KillerName": "Skit Kill",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [],
+				"EventID": 26,
+				"EventName": "ChampionKill",
+				"EventTime": 387.35467529296877,
+				"KillerName": "Velaskeh",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 387.3909912109375,
+				"KillerName": "Zöen",
+				"VictimName": "Melaz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 393.3293762207031,
+				"KillerName": "Lesasang",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 397.5906677246094,
+				"KillerName": "Kiiraxa",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa"
+				],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 401.0580139160156,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"EventID": 31,
+				"EventName": "Multikill",
+				"EventTime": 401.0580139160156,
+				"KillStreak": 2,
+				"KillerName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang"
+				],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 406.07537841796877,
+				"KillerName": "Hinoribi",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 408.45062255859377,
+				"KillerName": "Hinoribi",
+				"VictimName": "Zöen"
+			},
+			{
+				"EventID": 34,
+				"EventName": "Multikill",
+				"EventTime": 408.45062255859377,
+				"KillStreak": 2,
+				"KillerName": "Hinoribi"
+			},
+			{
+				"Acer": "Hinoribi",
+				"AcingTeam": "ORDER",
+				"EventID": 35,
+				"EventName": "Ace",
+				"EventTime": 408.45062255859377
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 408.4874267578125,
+				"KillerName": "Zöen",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 492.3016662597656,
+				"KillerName": "NicKlaws",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 498.5759582519531,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 499.6932373046875,
+				"KillerName": "NicKlaws",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"EventID": 40,
+				"EventName": "Multikill",
+				"EventTime": 499.6932373046875,
+				"KillStreak": 2,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 41,
+				"EventName": "ChampionKill",
+				"EventTime": 500.8422546386719,
+				"KillerName": "NicKlaws",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"EventID": 42,
+				"EventName": "Multikill",
+				"EventTime": 500.8422546386719,
+				"KillStreak": 3,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 501.03509521484377,
+				"KillerName": "Skit Kill",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 501.03509521484377,
+				"KillerName": "Skit Kill",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"EventID": 45,
+				"EventName": "Multikill",
+				"EventTime": 501.03509521484377,
+				"KillStreak": 2,
+				"KillerName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Hinoribi"
+				],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 513.525390625,
+				"KillerName": "Melaz",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Velaskeh"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 546.0407104492188,
+				"KillerName": "Aramitz",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Melaz"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 559.4605712890625,
+				"KillerName": "Hinoribi",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 49,
+				"EventName": "ChampionKill",
+				"EventTime": 560.1900024414063,
+				"KillerName": "Zöen",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 575.3726806640625,
+				"KillerName": "Zöen",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 51,
+				"EventName": "ChampionKill",
+				"EventTime": 598.9945678710938,
+				"KillerName": "Velaskeh",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 52,
+				"EventName": "ChampionKill",
+				"EventTime": 600.4979858398438,
+				"KillerName": "Zöen",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 53,
+				"EventName": "TurretKilled",
+				"EventTime": 608.7831420898438,
+				"KillerName": "Br1seurDeReves",
+				"TurretKilled": "Turret_T1_C_08_A"
+			},
+			{
+				"EventID": 54,
+				"EventName": "FirstBrick",
+				"EventTime": 608.7831420898438,
+				"KillerName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 614.380615234375,
+				"KillerName": "Aramitz",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa"
+				],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 627.609130859375,
+				"KillerName": "Melaz",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 57,
+				"EventName": "ChampionKill",
+				"EventTime": 631.9867553710938,
+				"KillerName": "Aramitz",
+				"VictimName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 58,
+				"EventName": "ChampionKill",
+				"EventTime": 632.86962890625,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 59,
+				"EventName": "Multikill",
+				"EventTime": 632.86962890625,
+				"KillStreak": 2,
+				"KillerName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 677.35498046875,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 688.1710205078125,
+				"KillerName": "Skit Kill",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 62,
+				"EventName": "ChampionKill",
+				"EventTime": 696.4268798828125,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Hinoribi"
+				],
+				"EventID": 63,
+				"EventName": "ChampionKill",
+				"EventTime": 706.7269287109375,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Melaz"
+				],
+				"EventID": 64,
+				"EventName": "ChampionKill",
+				"EventTime": 719.0650024414063,
+				"KillerName": "Skit Kill",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Melaz"
+				],
+				"EventID": 65,
+				"EventName": "ChampionKill",
+				"EventTime": 723.6710815429688,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 66,
+				"EventName": "ChampionKill",
+				"EventTime": 725.108154296875,
+				"KillerName": "Zöen",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Lesasang"
+				],
+				"EventID": 67,
+				"EventName": "ChampionKill",
+				"EventTime": 727.0283203125,
+				"KillerName": "Melaz",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Melaz"
+				],
+				"EventID": 68,
+				"EventName": "ChampionKill",
+				"EventTime": 756.612060546875,
+				"KillerName": "Skit Kill",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi"
+				],
+				"EventID": 69,
+				"EventName": "TurretKilled",
+				"EventTime": 759.790283203125,
+				"KillerName": "Melaz",
+				"TurretKilled": "Turret_T2_L_01_A"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Zöen"
+				],
+				"EventID": 70,
+				"EventName": "ChampionKill",
+				"EventTime": 788.2124633789063,
+				"KillerName": "NicKlaws",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 71,
+				"EventName": "ChampionKill",
+				"EventTime": 791.0828857421875,
+				"KillerName": "Aramitz",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 72,
+				"EventName": "ChampionKill",
+				"EventTime": 801.6282958984375,
+				"KillerName": "NicKlaws",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 73,
+				"EventName": "ChampionKill",
+				"EventTime": 805.4178466796875,
+				"KillerName": "Zöen",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 74,
+				"EventName": "ChampionKill",
+				"EventTime": 809.0243530273438,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 75,
+				"EventName": "ChampionKill",
+				"EventTime": 850.9879150390625,
+				"KillerName": "Velaskeh",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Lesasang"
+				],
+				"EventID": 76,
+				"EventName": "ChampionKill",
+				"EventTime": 852.3594970703125,
+				"KillerName": "Melaz",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Melaz"
+				],
+				"EventID": 77,
+				"EventName": "ChampionKill",
+				"EventTime": 861.0049438476563,
+				"KillerName": "Skit Kill",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Melaz"
+				],
+				"EventID": 78,
+				"EventName": "ChampionKill",
+				"EventTime": 863.8688354492188,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Lesasang"
+				],
+				"EventID": 79,
+				"EventName": "ChampionKill",
+				"EventTime": 868.8731689453125,
+				"KillerName": "Melaz",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 80,
+				"EventName": "ChampionKill",
+				"EventTime": 917.9952392578125,
+				"KillerName": "Lesasang",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Hinoribi"
+				],
+				"EventID": 81,
+				"EventName": "ChampionKill",
+				"EventTime": 924.4121704101563,
+				"KillerName": "Lesasang",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"EventID": 82,
+				"EventName": "Multikill",
+				"EventTime": 924.4121704101563,
+				"KillStreak": 2,
+				"KillerName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 83,
+				"EventName": "ChampionKill",
+				"EventTime": 924.5967407226563,
+				"KillerName": "NicKlaws",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 84,
+				"EventName": "ChampionKill",
+				"EventTime": 927.0054931640625,
+				"KillerName": "NicKlaws",
+				"VictimName": "Melaz"
+			},
+			{
+				"EventID": 85,
+				"EventName": "Multikill",
+				"EventTime": 927.0054931640625,
+				"KillStreak": 2,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 86,
+				"EventName": "ChampionKill",
+				"EventTime": 931.6948852539063,
+				"KillerName": "NicKlaws",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"EventID": 87,
+				"EventName": "Multikill",
+				"EventTime": 931.6948852539063,
+				"KillStreak": 3,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Zöen"
+				],
+				"EventID": 88,
+				"EventName": "ChampionKill",
+				"EventTime": 944.4984130859375,
+				"KillerName": "NicKlaws",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Hinoribi"
+				],
+				"EventID": 89,
+				"EventName": "ChampionKill",
+				"EventTime": 952.4522705078125,
+				"KillerName": "Skit Kill",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Lesasang"
+				],
+				"EventID": 90,
+				"EventName": "ChampionKill",
+				"EventTime": 976.8292236328125,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 91,
+				"EventName": "ChampionKill",
+				"EventTime": 1007.875732421875,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 92,
+				"EventName": "ChampionKill",
+				"EventTime": 1008.0091552734375,
+				"KillerName": "Velaskeh",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 93,
+				"EventName": "ChampionKill",
+				"EventTime": 1034.1551513671876,
+				"KillerName": "Zöen",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 94,
+				"EventName": "ChampionKill",
+				"EventTime": 1042.9801025390626,
+				"KillerName": "Zöen",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"EventID": 95,
+				"EventName": "Multikill",
+				"EventTime": 1042.9801025390626,
+				"KillStreak": 2,
+				"KillerName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 96,
+				"EventName": "ChampionKill",
+				"EventTime": 1043.9488525390626,
+				"KillerName": "Melaz",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 97,
+				"EventName": "ChampionKill",
+				"EventTime": 1046.7728271484376,
+				"KillerName": "Melaz",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"EventID": 98,
+				"EventName": "Multikill",
+				"EventTime": 1046.7728271484376,
+				"KillStreak": 2,
+				"KillerName": "Melaz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 99,
+				"EventName": "ChampionKill",
+				"EventTime": 1050.353515625,
+				"KillerName": "Melaz",
+				"VictimName": "Zöen"
+			},
+			{
+				"EventID": 100,
+				"EventName": "Multikill",
+				"EventTime": 1050.353515625,
+				"KillStreak": 3,
+				"KillerName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Hinoribi"
+				],
+				"EventID": 101,
+				"EventName": "ChampionKill",
+				"EventTime": 1051.1123046875,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 102,
+				"EventName": "Multikill",
+				"EventTime": 1051.1123046875,
+				"KillStreak": 4,
+				"KillerName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 103,
+				"EventName": "ChampionKill",
+				"EventTime": 1056.12451171875,
+				"KillerName": "NicKlaws",
+				"VictimName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 104,
+				"EventName": "ChampionKill",
+				"EventTime": 1119.4486083984376,
+				"KillerName": "Skit Kill",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Melaz"
+				],
+				"EventID": 105,
+				"EventName": "ChampionKill",
+				"EventTime": 1125.6431884765626,
+				"KillerName": "Hinoribi",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 106,
+				"EventName": "ChampionKill",
+				"EventTime": 1125.78564453125,
+				"KillerName": "Zöen",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 107,
+				"EventName": "ChampionKill",
+				"EventTime": 1134.2271728515626,
+				"KillerName": "Skit Kill",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Hinoribi"
+				],
+				"EventID": 108,
+				"EventName": "TurretKilled",
+				"EventTime": 1151.8614501953126,
+				"KillerName": "Melaz",
+				"TurretKilled": "Turret_T2_L_02_A"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 109,
+				"EventName": "ChampionKill",
+				"EventTime": 1159.4815673828126,
+				"KillerName": "Melaz",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi"
+				],
+				"EventID": 110,
+				"EventName": "InhibKilled",
+				"EventTime": 1163.242431640625,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Velaskeh"
+				],
+				"EventID": 111,
+				"EventName": "ChampionKill",
+				"EventTime": 1208.9033203125,
+				"KillerName": "Zöen",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 112,
+				"EventName": "ChampionKill",
+				"EventTime": 1215.359619140625,
+				"KillerName": "Velaskeh",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 113,
+				"EventName": "ChampionKill",
+				"EventTime": 1218.008544921875,
+				"KillerName": "Skit Kill",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Velaskeh"
+				],
+				"EventID": 114,
+				"EventName": "ChampionKill",
+				"EventTime": 1218.7535400390626,
+				"KillerName": "Zöen",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"EventID": 115,
+				"EventName": "Multikill",
+				"EventTime": 1218.7535400390626,
+				"KillStreak": 2,
+				"KillerName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Melaz"
+				],
+				"EventID": 116,
+				"EventName": "ChampionKill",
+				"EventTime": 1241.5196533203126,
+				"KillerName": "Skit Kill",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 117,
+				"EventName": "ChampionKill",
+				"EventTime": 1242.36279296875,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 118,
+				"EventName": "ChampionKill",
+				"EventTime": 1252.4993896484376,
+				"KillerName": "Melaz",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Zöen"
+				],
+				"EventID": 119,
+				"EventName": "ChampionKill",
+				"EventTime": 1254.22607421875,
+				"KillerName": "NicKlaws",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 120,
+				"EventName": "ChampionKill",
+				"EventTime": 1257.1085205078126,
+				"KillerName": "Melaz",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"EventID": 121,
+				"EventName": "Multikill",
+				"EventTime": 1257.1085205078126,
+				"KillStreak": 2,
+				"KillerName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 122,
+				"EventName": "ChampionKill",
+				"EventTime": 1328.3963623046876,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 123,
+				"EventName": "ChampionKill",
+				"EventTime": 1330.469482421875,
+				"KillerName": "Zöen",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 124,
+				"EventName": "ChampionKill",
+				"EventTime": 1332.8082275390626,
+				"KillerName": "NicKlaws",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 125,
+				"EventName": "ChampionKill",
+				"EventTime": 1338.7447509765626,
+				"KillerName": "Zöen",
+				"VictimName": "Melaz"
+			},
+			{
+				"EventID": 126,
+				"EventName": "Multikill",
+				"EventTime": 1338.7447509765626,
+				"KillStreak": 2,
+				"KillerName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 127,
+				"EventName": "ChampionKill",
+				"EventTime": 1339.96533203125,
+				"KillerName": "Lesasang",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 128,
+				"EventName": "ChampionKill",
+				"EventTime": 1359.109375,
+				"KillerName": "NicKlaws",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Lesasang"
+				],
+				"EventID": 129,
+				"EventName": "ChampionKill",
+				"EventTime": 1359.7630615234376,
+				"KillerName": "Skit Kill",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Lesasang"
+				],
+				"EventID": 130,
+				"EventName": "ChampionKill",
+				"EventTime": 1369.4263916015626,
+				"KillerName": "Skit Kill",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"EventID": 131,
+				"EventName": "Multikill",
+				"EventTime": 1369.4263916015626,
+				"KillStreak": 2,
+				"KillerName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Lesasang"
+				],
+				"EventID": 132,
+				"EventName": "ChampionKill",
+				"EventTime": 1378.916015625,
+				"KillerName": "Skit Kill",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"EventID": 133,
+				"EventName": "Multikill",
+				"EventTime": 1378.916015625,
+				"KillStreak": 3,
+				"KillerName": "Skit Kill"
+			},
+			{
+				"EventID": 134,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1398.2352294921876,
+				"InhibRespawningSoon": "Barracks_T2_C1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 135,
+				"EventName": "TurretKilled",
+				"EventTime": 1403.771240234375,
+				"KillerName": "Aramitz",
+				"TurretKilled": "Turret_T1_C_07_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 136,
+				"EventName": "ChampionKill",
+				"EventTime": 1412.44921875,
+				"KillerName": "Lesasang",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 137,
+				"EventName": "InhibRespawned",
+				"EventTime": 1413.293701171875,
+				"InhibRespawned": "Barracks_T2_C1"
+			},
+			{
+				"Assisters": [
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 138,
+				"EventName": "InhibKilled",
+				"EventTime": 1418.8875732421876,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Hinoribi"
+				],
+				"EventID": 139,
+				"EventName": "ChampionKill",
+				"EventTime": 1433.1724853515626,
+				"KillerName": "Skit Kill",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 140,
+				"EventName": "ChampionKill",
+				"EventTime": 1439.3895263671876,
+				"KillerName": "Melaz",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Zöen"
+				],
+				"EventID": 141,
+				"EventName": "ChampionKill",
+				"EventTime": 1440.2049560546876,
+				"KillerName": "NicKlaws",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [],
+				"EventID": 142,
+				"EventName": "ChampionKill",
+				"EventTime": 1490.408203125,
+				"KillerName": "Aramitz",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"Kiiraxa"
+				],
+				"EventID": 143,
+				"EventName": "ChampionKill",
+				"EventTime": 1492.4818115234376,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 144,
+				"EventName": "ChampionKill",
+				"EventTime": 1500.5751953125,
+				"KillerName": "NicKlaws",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Melaz"
+				],
+				"EventID": 145,
+				"EventName": "ChampionKill",
+				"EventTime": 1525.861328125,
+				"KillerName": "Skit Kill",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Melaz"
+				],
+				"EventID": 146,
+				"EventName": "ChampionKill",
+				"EventTime": 1527.18603515625,
+				"KillerName": "Lesasang",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [],
+				"EventID": 147,
+				"EventName": "ChampionKill",
+				"EventTime": 1529.7520751953126,
+				"KillerName": "Melaz",
+				"VictimName": "Zöen"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 148,
+				"EventName": "ChampionKill",
+				"EventTime": 1541.77099609375,
+				"KillerName": "Aramitz",
+				"VictimName": "Melaz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz",
+					"Zöen",
+					"Velaskeh"
+				],
+				"EventID": 149,
+				"EventName": "ChampionKill",
+				"EventTime": 1543.3720703125,
+				"KillerName": "NicKlaws",
+				"VictimName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Zöen"
+				],
+				"EventID": 150,
+				"EventName": "ChampionKill",
+				"EventTime": 1543.974853515625,
+				"KillerName": "Aramitz",
+				"VictimName": "Skit Kill"
+			},
+			{
+				"EventID": 151,
+				"EventName": "Multikill",
+				"EventTime": 1543.974853515625,
+				"KillStreak": 2,
+				"KillerName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 152,
+				"EventName": "InhibKilled",
+				"EventTime": 1583.0692138671876,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 153,
+				"EventName": "ChampionKill",
+				"EventTime": 1589.9395751953126,
+				"KillerName": "Aramitz",
+				"VictimName": "Kiiraxa"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Aramitz",
+					"Zöen"
+				],
+				"EventID": 154,
+				"EventName": "ChampionKill",
+				"EventTime": 1591.9410400390626,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Hinoribi"
+			},
+			{
+				"Assisters": [
+					"Lesasang"
+				],
+				"EventID": 155,
+				"EventName": "ChampionKill",
+				"EventTime": 1605.07958984375,
+				"KillerName": "Melaz",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Melaz"
+				],
+				"EventID": 156,
+				"EventName": "ChampionKill",
+				"EventTime": 1627.3367919921876,
+				"KillerName": "Lesasang",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Melaz"
+				],
+				"EventID": 157,
+				"EventName": "ChampionKill",
+				"EventTime": 1631.027587890625,
+				"KillerName": "Lesasang",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"EventID": 158,
+				"EventName": "Multikill",
+				"EventTime": 1631.027587890625,
+				"KillStreak": 2,
+				"KillerName": "Lesasang"
+			},
+			{
+				"Assisters": [
+					"Skit Kill"
+				],
+				"EventID": 159,
+				"EventName": "ChampionKill",
+				"EventTime": 1636.6226806640626,
+				"KillerName": "Melaz",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"EventID": 160,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1653.8719482421876,
+				"InhibRespawningSoon": "Barracks_T2_C1"
+			},
+			{
+				"Assisters": [
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 161,
+				"EventName": "ChampionKill",
+				"EventTime": 1664.00927734375,
+				"KillerName": "Lesasang",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 162,
+				"EventName": "TurretKilled",
+				"EventTime": 1666.6976318359376,
+				"KillerName": "Skit Kill",
+				"TurretKilled": "Turret_T2_L_04_A"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 163,
+				"EventName": "TurretKilled",
+				"EventTime": 1668.7261962890626,
+				"KillerName": "Melaz",
+				"TurretKilled": "Turret_T2_L_03_A"
+			},
+			{
+				"EventID": 164,
+				"EventName": "InhibRespawned",
+				"EventTime": 1668.92138671875,
+				"InhibRespawned": "Barracks_T2_C1"
+			},
+			{
+				"Assisters": [
+					"Lesasang",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 165,
+				"EventName": "ChampionKill",
+				"EventTime": 1670.3013916015626,
+				"KillerName": "Kiiraxa",
+				"VictimName": "Zöen"
+			},
+			{
+				"Acer": "Kiiraxa",
+				"AcingTeam": "ORDER",
+				"EventID": 166,
+				"EventName": "Ace",
+				"EventTime": 1670.3013916015626
+			},
+			{
+				"Assisters": [
+					"Kiiraxa",
+					"Lesasang",
+					"Hinoribi"
+				],
+				"EventID": 167,
+				"EventName": "InhibKilled",
+				"EventTime": 1677.0396728515626,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "Skit Kill"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Kiiraxa",
+					"Hinoribi",
+					"Melaz"
+				],
+				"EventID": 168,
+				"EventName": "ChampionKill",
+				"EventTime": 1687.06982421875,
+				"KillerName": "Lesasang",
+				"VictimName": "Velaskeh"
+			},
+			{
+				"Assisters": [
+					"Skit Kill",
+					"Hinoribi"
+				],
+				"EventID": 169,
+				"EventName": "ChampionKill",
+				"EventTime": 1687.5064697265626,
+				"KillerName": "Melaz",
+				"VictimName": "NicKlaws"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "ARAM",
+		"gameTime": 1696.1810302734376,
+		"mapName": "Map12",
+		"mapNumber": 12,
+		"mapTerrain": "Default"
+	}
+}

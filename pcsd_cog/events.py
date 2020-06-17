@@ -1,8 +1,28 @@
 from enum import Enum
 import requests
-from typing import List, Optional
+from typing import List, Optional, Mapping
 from pcsd_cog.players import Player
 from dataclasses import dataclass
+
+
+class Rule:
+    def __init__(self, rule):
+        self._rule: Mapping[str, str] = rule
+
+    def __equal__(self, other: Mapping[str, str]):
+        return self._rule.items() <= other.items()
+
+    def __repr__(self):
+        return str(self._rule)
+
+    def distance(self, rule):
+        score = 0
+        for k, v in {k: v for k, v in rule._rule.items() if k in self._rule}.items():
+            if self._rule[k] == v:
+                score += 1
+            else:
+                return 0
+        return score
 
 
 class Event:
@@ -43,6 +63,9 @@ class EventData(Event):
     EventID: int
     EventName: str
     EventTime: float
+
+    def to_rule(self, players: List[Player]) -> Rule:
+        raise NotImplementedError
 
 
 class EventGameStart(EventData):
@@ -102,12 +125,28 @@ class EventChampionKill(EventData):
     KillerName: str
     Assisters: List[str]
 
+    def to_rule(self, players: Mapping[str, Player]) -> Rule:
+        rule = {"team": players[self.VictimName].team}
+        rule["championVictim"] = players[self.VictimName].championName
+        if players[self.VictimName].position:
+            rule["killerPosition"] = players[self.VictimName].position
+        if self.KillerName in players and players[self.KillerName].position:
+            rule["victimPosition"] = players[self.VictimName].position
+        if any([self.KillerName.startswith(e) for e in ["Minion_", "Turret_", "Dragon", "Herald_", "Baron_", "SRU_Baron"]]):
+            rule["killer"] = self.KillerName.split('_')[0]
+        else:
+            rule["championKiller"] = players[self.KillerName].championName
+        return Rule(rule)
 
 @dataclass
 class EventMultikill(EventData):
     KillerName: str
     KillStreak: int
 
+
+@dataclass
+class EventInhibRespawned(EventData):
+    pass
 
 @dataclass
 class EventInhibKilled(EventData):

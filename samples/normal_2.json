@@ -1,0 +1,2665 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Carica dell'audace",
+				"id": "XinZhaoE",
+				"rawDescription": "GeneratedTip_Spell_XinZhaoE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_XinZhaoE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Determinazione",
+				"id": "XinZhaoP",
+				"rawDescription": "GeneratedTip_Passive_XinZhaoP_Description",
+				"rawDisplayName": "GeneratedTip_Passive_XinZhaoP_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 4,
+				"displayName": "Triplo colpo dell'artiglio",
+				"id": "XinZhaoQ",
+				"rawDescription": "GeneratedTip_Spell_XinZhaoQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_XinZhaoQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 2,
+				"displayName": "Mezzaluna difensiva",
+				"id": "XinZhaoR",
+				"rawDescription": "GeneratedTip_Spell_XinZhaoR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_XinZhaoR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 4,
+				"displayName": "Il vento diventa fulmine",
+				"id": "XinZhaoW",
+				"rawDescription": "GeneratedTip_Spell_XinZhaoW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_XinZhaoW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityPower": 0.0,
+			"armor": 128.71315002441407,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 284.9949951171875,
+			"attackRange": 175.0,
+			"attackSpeed": 1.3830574750900269,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": -0.30000001192092898,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 0.0,
+			"healthRegenRate": 3.4571003913879396,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 51.60212707519531,
+			"maxHealth": 2467.144775390625,
+			"moveSpeed": 394.05499267578127,
+			"physicalLethality": 0.0,
+			"resourceMax": 988.0750732421875,
+			"resourceRegenRate": 2.645050048828125,
+			"resourceType": "MANA",
+			"resourceValue": 309.64776611328127,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 541.3885498046875,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Piede lesto",
+					"id": 8021,
+					"rawDescription": "perk_tooltip_FleetFootwork",
+					"rawDisplayName": "perk_displayname_FleetFootwork"
+				},
+				{
+					"displayName": "Trionfo",
+					"id": 9111,
+					"rawDescription": "perk_tooltip_9111",
+					"rawDisplayName": "perk_displayname_9111"
+				},
+				{
+					"displayName": "Leggenda: Alacrità",
+					"id": 9104,
+					"rawDescription": "perk_tooltip_9104",
+					"rawDisplayName": "perk_displayname_9104"
+				},
+				{
+					"displayName": "Colpo di grazia",
+					"id": 8014,
+					"rawDescription": "perk_tooltip_CoupDeGrace",
+					"rawDisplayName": "perk_displayname_CoupDeGrace"
+				},
+				{
+					"displayName": "Celerità",
+					"id": 8234,
+					"rawDescription": "perk_tooltip_Celerity",
+					"rawDisplayName": "perk_displayname_Celerity"
+				},
+				{
+					"displayName": "Tempesta incombente",
+					"id": 8236,
+					"rawDescription": "perk_tooltip_GatheringStorm",
+					"rawDisplayName": "perk_displayname_GatheringStorm"
+				}
+			],
+			"keystone": {
+				"displayName": "Piede lesto",
+				"id": 8021,
+				"rawDescription": "perk_tooltip_FleetFootwork",
+				"rawDisplayName": "perk_displayname_FleetFootwork"
+			},
+			"primaryRuneTree": {
+				"displayName": "Precisione",
+				"id": 8000,
+				"rawDescription": "perkstyle_tooltip_7201",
+				"rawDisplayName": "perkstyle_displayname_7201"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Stregoneria",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"statRunes": [
+				{
+					"id": 5005,
+					"rawDescription": "perk_tooltip_StatModAttackSpeed"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 15,
+		"summonerName": "Br1seurDeReves"
+	},
+	"allPlayers": [
+		{
+			"championName": "Annie",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lacrima della dea",
+					"itemID": 3070,
+					"price": 375,
+					"rawDescription": "game_item_description_3070",
+					"rawDisplayName": "game_item_displayname_3070",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone secolare",
+					"itemID": 3027,
+					"price": 650,
+					"rawDescription": "game_item_description_3027",
+					"rawDisplayName": "game_item_displayname_3027",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Capitolo perduto",
+					"itemID": 3802,
+					"price": 80,
+					"rawDescription": "game_item_description_3802",
+					"rawDisplayName": "game_item_displayname_3802",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Velo della Banshee",
+					"itemID": 3102,
+					"price": 800,
+					"rawDescription": "game_item_description_3102",
+					"rawDisplayName": "game_item_displayname_3102",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bacchetta distruttiva",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "game_item_description_1026",
+					"rawDisplayName": "game_item_displayname_1026",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Annie",
+			"rawSkinName": "game_character_skin_displayname_Annie_3",
+			"respawnTimer": 4.957267761230469,
+			"runes": {
+				"keystone": {
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 13,
+				"creepScore": 60,
+				"deaths": 13,
+				"kills": 4,
+				"wardScore": 14.30021858215332
+			},
+			"skinID": 3,
+			"skinName": "Annie nel Paese delle Meraviglie",
+			"summonerName": "IpwnYeh",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Vayne",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama del re in rovina",
+					"itemID": 3153,
+					"price": 700,
+					"rawDescription": "game_item_description_3153",
+					"rawDisplayName": "game_item_displayname_3153",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Furia di Guinsoo",
+					"itemID": 3124,
+					"price": 790,
+					"rawDescription": "game_item_description_3124",
+					"rawDisplayName": "game_item_displayname_3124",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danzatore fantasma",
+					"itemID": 3046,
+					"price": 900,
+					"rawDescription": "game_item_description_3046",
+					"rawDisplayName": "game_item_displayname_3046",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Vayne",
+			"rawSkinName": "game_character_skin_displayname_Vayne_11",
+			"respawnTimer": 6.527488708496094,
+			"runes": {
+				"keystone": {
+					"displayName": "Attacco sostenuto",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 160,
+				"deaths": 8,
+				"kills": 13,
+				"wardScore": 18.495943069458009
+			},
+			"skinID": 11,
+			"skinName": "PROGETTO: Vayne",
+			"summonerName": "Dinocookie2006",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Xin Zhao",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gemma del Guerriero",
+					"itemID": 1412,
+					"price": 525,
+					"rawDescription": "game_item_description_1412",
+					"rawDisplayName": "game_item_displayname_1412",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Angelo custode",
+					"itemID": 3026,
+					"price": 50,
+					"rawDescription": "game_item_description_3026",
+					"rawDisplayName": "game_item_displayname_3026",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della velocità",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "game_item_description_1001",
+					"rawDisplayName": "game_item_displayname_1001",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Virtù della Triade",
+					"itemID": 3078,
+					"price": 333,
+					"rawDescription": "game_item_description_3078",
+					"rawDisplayName": "game_item_displayname_3078",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pugno di Jaurim",
+					"itemID": 3052,
+					"price": 450,
+					"rawDescription": "game_item_description_3052",
+					"rawDisplayName": "game_item_displayname_3052",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Rubino di cristallo",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "game_item_description_1028",
+					"rawDisplayName": "game_item_displayname_1028",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_XinZhao",
+			"respawnTimer": 6.757377624511719,
+			"runes": {
+				"keystone": {
+					"displayName": "Piede lesto",
+					"id": 8021,
+					"rawDescription": "perk_tooltip_FleetFootwork",
+					"rawDisplayName": "perk_displayname_FleetFootwork"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 15,
+				"creepScore": 130,
+				"deaths": 11,
+				"kills": 7,
+				"wardScore": 11.555445671081543
+			},
+			"skinID": 0,
+			"summonerName": "Br1seurDeReves",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Punizione di sfida",
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmiteDuel_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmiteDuel_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Yasuo",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Scettro vampirico",
+					"itemID": 1053,
+					"price": 550,
+					"rawDescription": "game_item_description_1053",
+					"rawDisplayName": "game_item_displayname_1053",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Orgoglio di Randuin",
+					"itemID": 3143,
+					"price": 900,
+					"rawDescription": "game_item_description_3143",
+					"rawDisplayName": "game_item_displayname_3143",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Angelo custode",
+					"itemID": 3026,
+					"price": 50,
+					"rawDescription": "game_item_description_3026",
+					"rawDisplayName": "game_item_displayname_3026",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Danzatore fantasma",
+					"itemID": 3046,
+					"price": 900,
+					"rawDescription": "game_item_description_3046",
+					"rawDisplayName": "game_item_displayname_3046",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Modifica lungavisione",
+					"itemID": 3363,
+					"price": 0,
+					"rawDescription": "game_item_description_3363",
+					"rawDisplayName": "game_item_displayname_3363",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Yasuo",
+			"respawnTimer": 20.389488220214845,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 210,
+				"deaths": 9,
+				"kills": 10,
+				"wardScore": 8.986794471740723
+			},
+			"skinID": 0,
+			"summonerName": "NicKlaws",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Nautilus",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Baluardo della montagna",
+					"itemID": 3860,
+					"price": 400,
+					"rawDescription": "game_item_description_3860",
+					"rawDisplayName": "game_item_displayname_3860",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del ninja",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "game_item_description_3047",
+					"rawDisplayName": "game_item_displayname_3047",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mantello del Sole",
+					"itemID": 3068,
+					"price": 650,
+					"rawDescription": "game_item_description_3068",
+					"rawDisplayName": "game_item_displayname_3068",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corazza dell'uomo morto",
+					"itemID": 3742,
+					"price": 1100,
+					"rawDescription": "game_item_description_3742",
+					"rawDisplayName": "game_item_displayname_3742",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cintura del gigante",
+					"itemID": 1011,
+					"price": 600,
+					"rawDescription": "game_item_description_1011",
+					"rawDisplayName": "game_item_displayname_1011",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Armatura del custode",
+					"itemID": 3082,
+					"price": 400,
+					"rawDescription": "game_item_description_3082",
+					"rawDisplayName": "game_item_displayname_3082",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lente dell'oracolo",
+					"itemID": 3364,
+					"price": 0,
+					"rawDescription": "game_item_description_3364",
+					"rawDisplayName": "game_item_displayname_3364",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Nautilus",
+			"respawnTimer": 0.8274307250976563,
+			"runes": {
+				"keystone": {
+					"displayName": "Presa dell'immortale",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 16,
+				"creepScore": 90,
+				"deaths": 9,
+				"kills": 4,
+				"wardScore": 56.0504264831543
+			},
+			"skinID": 0,
+			"summonerName": "Aramitz",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Teletrasporto",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Zed",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama di Youmuu",
+					"itemID": 3142,
+					"price": 700,
+					"rawDescription": "game_item_description_3142",
+					"rawDisplayName": "game_item_displayname_3142",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del ninja",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "game_item_description_3047",
+					"rawDisplayName": "game_item_displayname_3047",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama crepuscolare di Draktharr",
+					"itemID": 3147,
+					"price": 700,
+					"rawDescription": "game_item_description_3147",
+					"rawDisplayName": "game_item_displayname_3147",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mannaia oscura",
+					"itemID": 3071,
+					"price": 950,
+					"rawDescription": "game_item_description_3071",
+					"rawDisplayName": "game_item_displayname_3071",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Egida della legione",
+					"itemID": 3105,
+					"price": 350,
+					"rawDescription": "game_item_description_3105",
+					"rawDisplayName": "game_item_displayname_3105",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Scettro vampirico",
+					"itemID": 1053,
+					"price": 550,
+					"rawDescription": "game_item_description_1053",
+					"rawDisplayName": "game_item_displayname_1053",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Zed",
+			"rawSkinName": "game_character_skin_displayname_Zed_3",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 12,
+				"creepScore": 180,
+				"deaths": 5,
+				"kills": 11,
+				"wardScore": 21.336021423339845
+			},
+			"skinID": 3,
+			"skinName": "PROGETTO: Zed",
+			"summonerName": "HeavenRise02",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Lucian",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del ninja",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "game_item_description_3047",
+					"rawDisplayName": "game_item_displayname_3047",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama del re in rovina",
+					"itemID": 3153,
+					"price": 700,
+					"rawDescription": "game_item_description_3153",
+					"rawDisplayName": "game_item_displayname_3153",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Predatore d'essenza",
+					"itemID": 3508,
+					"price": 100,
+					"rawDescription": "game_item_description_3508",
+					"rawDisplayName": "game_item_displayname_3508",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Archibugio a ripetizione",
+					"itemID": 3094,
+					"price": 500,
+					"rawDescription": "game_item_description_3094",
+					"rawDisplayName": "game_item_displayname_3094",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Fervore",
+					"itemID": 3086,
+					"price": 300,
+					"rawDescription": "game_item_description_3086",
+					"rawDisplayName": "game_item_displayname_3086",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Lucian",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Attacco sostenuto",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 220,
+				"deaths": 9,
+				"kills": 17,
+				"wardScore": 23.992082595825197
+			},
+			"skinID": 0,
+			"summonerName": "samskull007",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Jax",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gemma degli Artigli rossi",
+					"itemID": 1416,
+					"price": 625,
+					"rawDescription": "game_item_description_1416",
+					"rawDisplayName": "game_item_displayname_1416",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del ninja",
+					"itemID": 3047,
+					"price": 500,
+					"rawDescription": "game_item_description_3047",
+					"rawDisplayName": "game_item_displayname_3047",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Virtù della Triade",
+					"itemID": 3078,
+					"price": 333,
+					"rawDescription": "game_item_description_3078",
+					"rawDisplayName": "game_item_displayname_3078",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Furia di Guinsoo",
+					"itemID": 3124,
+					"price": 790,
+					"rawDescription": "game_item_description_3124",
+					"rawDisplayName": "game_item_displayname_3124",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Perla del rinvigorimento",
+					"itemID": 1006,
+					"price": 150,
+					"rawDescription": "game_item_description_1006",
+					"rawDisplayName": "game_item_displayname_1006",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Spada lunga",
+					"itemID": 1036,
+					"price": 350,
+					"rawDescription": "game_item_description_1036",
+					"rawDisplayName": "game_item_displayname_1036",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 15,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Jax",
+			"respawnTimer": 0.17675018310546876,
+			"runes": {
+				"keystone": {
+					"displayName": "Conquistatore",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 7,
+				"creepScore": 140,
+				"deaths": 10,
+				"kills": 8,
+				"wardScore": 10.060029983520508
+			},
+			"skinID": 0,
+			"summonerName": "Slimm4",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Punizione ghiacciata",
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmitePlayerGanker_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ezreal",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pistola a lame hextech",
+					"itemID": 3146,
+					"price": 750,
+					"rawDescription": "game_item_description_3146",
+					"rawDisplayName": "game_item_displayname_3146",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Muramana",
+					"itemID": 3042,
+					"price": 2400,
+					"rawDescription": "game_item_description_3042",
+					"rawDisplayName": "game_item_displayname_3042",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Terrore dei lich",
+					"itemID": 3100,
+					"price": 450,
+					"rawDescription": "game_item_description_3100",
+					"rawDisplayName": "game_item_displayname_3100",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ezreal",
+			"rawSkinName": "game_character_skin_displayname_Ezreal_18",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 8,
+				"creepScore": 210,
+				"deaths": 3,
+				"kills": 13,
+				"wardScore": 19.359874725341798
+			},
+			"skinID": 18,
+			"skinName": "Ezreal Guardiano Stellare",
+			"summonerName": "Mario1125",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Blitzcrank",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Spallacci di Pietrabianca",
+					"itemID": 3857,
+					"price": 400,
+					"rawDescription": "game_item_description_3857",
+					"rawDisplayName": "game_item_displayname_3857",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della mobilità",
+					"itemID": 3117,
+					"price": 700,
+					"rawDescription": "game_item_description_3117",
+					"rawDisplayName": "game_item_displayname_3117",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Convergenza di Zeke",
+					"itemID": 3050,
+					"price": 250,
+					"rawDescription": "game_item_description_3050",
+					"rawDisplayName": "game_item_displayname_3050",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 3,
+					"displayName": "Pozione di salute",
+					"itemID": 2003,
+					"price": 50,
+					"rawDescription": "game_item_description_2003",
+					"rawDisplayName": "game_item_displayname_2003",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Voto del cavaliere",
+					"itemID": 3109,
+					"price": 600,
+					"rawDescription": "game_item_description_3109",
+					"rawDisplayName": "game_item_displayname_3109",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cotta di maglia",
+					"itemID": 1031,
+					"price": 500,
+					"rawDescription": "game_item_description_1031",
+					"rawDisplayName": "game_item_displayname_1031",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Totem guardiano (trinket)",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "game_item_description_3340",
+					"rawDisplayName": "game_item_displayname_3340",
+					"slot": 6
+				}
+			],
+			"level": 14,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Blitzcrank",
+			"rawSkinName": "game_character_skin_displayname_Blitzcrank_2",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Scossa di assestamento",
+					"id": 8439,
+					"rawDescription": "perk_tooltip_VeteranAftershock",
+					"rawDisplayName": "perk_displayname_VeteranAftershock"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 11,
+				"creepScore": 20,
+				"deaths": 11,
+				"kills": 0,
+				"wardScore": 2.9363555908203127
+			},
+			"skinID": 2,
+			"skinName": "Blitzcrank Portiere",
+			"summonerName": "Stedefreund",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.013624399900436402
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.0337142944336
+			},
+			{
+				"Assisters": [
+					"Stedefreund"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 124.78777313232422,
+				"KillerName": "Mario1125",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 124.78777313232422,
+				"Recipient": "Mario1125"
+			},
+			{
+				"Assisters": [],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 135.0774688720703,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"Dinocookie2006",
+					"Aramitz"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 148.95057678222657,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"Mario1125"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 179.12059020996095,
+				"KillerName": "Slimm4",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 301.96612548828127,
+				"KillerName": "Slimm4",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves"
+				],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 304.7771911621094,
+				"KillerName": "NicKlaws",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"Stedefreund"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 312.0035705566406,
+				"KillerName": "Mario1125",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 353.8978271484375,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"Dinocookie2006",
+					"Aramitz"
+				],
+				"DragonType": "Earth",
+				"EventID": 11,
+				"EventName": "DragonKill",
+				"EventTime": 405.7945251464844,
+				"KillerName": "Br1seurDeReves",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 456.85882568359377,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 473.11669921875,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"Mario1125",
+					"Stedefreund"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 482.4915466308594,
+				"KillerName": "Slimm4",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 551.1473999023438,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"Mario1125",
+					"Stedefreund"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 555.3345336914063,
+				"KillerName": "HeavenRise02",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 598.5234985351563,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 642.3636474609375,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"NicKlaws"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 642.5460205078125,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Br1seurDeReves"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 645.913818359375,
+				"KillerName": "NicKlaws",
+				"VictimName": "HeavenRise02"
+			},
+			{
+				"Assisters": [
+					"Stedefreund"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 679.8881225585938,
+				"KillerName": "Mario1125",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"NicKlaws",
+					"Slimm4"
+				],
+				"EventID": 22,
+				"EventName": "HeraldKill",
+				"EventTime": 691.5831909179688,
+				"KillerName": "Br1seurDeReves",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"NicKlaws"
+				],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 700.7319946289063,
+				"KillerName": "IpwnYeh",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [],
+				"EventID": 24,
+				"EventName": "ChampionKill",
+				"EventTime": 711.65185546875,
+				"KillerName": "samskull007",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 715.171875,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"EventID": 26,
+				"EventName": "Multikill",
+				"EventTime": 715.171875,
+				"KillStreak": 2,
+				"KillerName": "samskull007"
+			},
+			{
+				"Assisters": [],
+				"EventID": 27,
+				"EventName": "TurretKilled",
+				"EventTime": 783.466552734375,
+				"KillerName": "samskull007",
+				"TurretKilled": "Turret_T1_L_03_A"
+			},
+			{
+				"EventID": 28,
+				"EventName": "FirstBrick",
+				"EventTime": 783.466552734375,
+				"KillerName": "samskull007"
+			},
+			{
+				"Assisters": [],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 792.735595703125,
+				"KillerName": "Turret_T2_C_05_A",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 792.975830078125,
+				"KillerName": "HeavenRise02",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Dinocookie2006"
+				],
+				"DragonType": "Water",
+				"EventID": 31,
+				"EventName": "DragonKill",
+				"EventTime": 795.0535278320313,
+				"KillerName": "Br1seurDeReves",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 814.9080810546875,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [],
+				"EventID": 33,
+				"EventName": "TurretKilled",
+				"EventTime": 826.1583862304688,
+				"KillerName": "Minion_T200L2S22N0137",
+				"TurretKilled": "Turret_T1_L_02_A"
+			},
+			{
+				"Assisters": [
+					"Mario1125"
+				],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 827.33154296875,
+				"KillerName": "Slimm4",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 35,
+				"EventName": "ChampionKill",
+				"EventTime": 827.33154296875,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh"
+				],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 840.1436767578125,
+				"KillerName": "NicKlaws",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 897.2289428710938,
+				"KillerName": "HeavenRise02",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 919.987060546875,
+				"KillerName": "HeavenRise02",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 944.3687133789063,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"Slimm4"
+				],
+				"EventID": 40,
+				"EventName": "TurretKilled",
+				"EventTime": 967.0955810546875,
+				"KillerName": "samskull007",
+				"TurretKilled": "Turret_T1_C_05_A"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"EventID": 41,
+				"EventName": "ChampionKill",
+				"EventTime": 979.4414672851563,
+				"KillerName": "Slimm4",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Slimm4"
+				],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 989.2130737304688,
+				"KillerName": "samskull007",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Slimm4"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 1005.8663940429688,
+				"KillerName": "samskull007",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 1023.5528564453125,
+				"KillerName": "HeavenRise02",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 1039.155029296875,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 1082.75244140625,
+				"KillerName": "NicKlaws",
+				"VictimName": "HeavenRise02"
+			},
+			{
+				"Assisters": [
+					"Dinocookie2006",
+					"Aramitz"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 1102.1334228515626,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 1118.2786865234376,
+				"KillerName": "samskull007",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"EventID": 49,
+				"EventName": "ChampionKill",
+				"EventTime": 1140.3623046875,
+				"KillerName": "Mario1125",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"DragonType": "Air",
+				"EventID": 50,
+				"EventName": "DragonKill",
+				"EventTime": 1156.5972900390626,
+				"KillerName": "Slimm4",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 51,
+				"EventName": "TurretKilled",
+				"EventTime": 1171.2022705078126,
+				"KillerName": "Mario1125",
+				"TurretKilled": "Turret_T1_R_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 52,
+				"EventName": "ChampionKill",
+				"EventTime": 1189.246826171875,
+				"KillerName": "HeavenRise02",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Dinocookie2006"
+				],
+				"EventID": 53,
+				"EventName": "ChampionKill",
+				"EventTime": 1204.91796875,
+				"KillerName": "Aramitz",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"EventID": 54,
+				"EventName": "ChampionKill",
+				"EventTime": 1206.9688720703126,
+				"KillerName": "Slimm4",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 1207.66015625,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Mario1125"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves"
+				],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 1208.879150390625,
+				"KillerName": "IpwnYeh",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 57,
+				"EventName": "TurretKilled",
+				"EventTime": 1258.7957763671876,
+				"KillerName": "Dinocookie2006",
+				"TurretKilled": "Turret_T2_R_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 58,
+				"EventName": "TurretKilled",
+				"EventTime": 1272.0379638671876,
+				"KillerName": "samskull007",
+				"TurretKilled": "Turret_T1_C_06_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 1273.37109375,
+				"KillerName": "NicKlaws",
+				"VictimName": "HeavenRise02"
+			},
+			{
+				"Assisters": [],
+				"EventID": 60,
+				"EventName": "InhibKilled",
+				"EventTime": 1290.992431640625,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S40N0253"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Br1seurDeReves"
+				],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 1309.6392822265626,
+				"KillerName": "Aramitz",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 62,
+				"EventName": "ChampionKill",
+				"EventTime": 1313.71826171875,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [],
+				"EventID": 63,
+				"EventName": "TurretKilled",
+				"EventTime": 1336.119140625,
+				"KillerName": "Minion_T200L1S42N0265",
+				"TurretKilled": "Turret_T1_C_04_A"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh"
+				],
+				"EventID": 64,
+				"EventName": "ChampionKill",
+				"EventTime": 1365.524169921875,
+				"KillerName": "NicKlaws",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [],
+				"EventID": 65,
+				"EventName": "ChampionKill",
+				"EventTime": 1375.0760498046876,
+				"KillerName": "HeavenRise02",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Dinocookie2006",
+					"NicKlaws"
+				],
+				"EventID": 66,
+				"EventName": "ChampionKill",
+				"EventTime": 1381.378173828125,
+				"KillerName": "Aramitz",
+				"VictimName": "HeavenRise02"
+			},
+			{
+				"Assisters": [
+					"Slimm4"
+				],
+				"EventID": 67,
+				"EventName": "ChampionKill",
+				"EventTime": 1399.6253662109376,
+				"KillerName": "Mario1125",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [],
+				"EventID": 68,
+				"EventName": "ChampionKill",
+				"EventTime": 1401.7435302734376,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 69,
+				"EventName": "ChampionKill",
+				"EventTime": 1406.2164306640626,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Mario1125"
+			},
+			{
+				"EventID": 70,
+				"EventName": "Multikill",
+				"EventTime": 1406.2164306640626,
+				"KillStreak": 2,
+				"KillerName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [],
+				"EventID": 71,
+				"EventName": "TurretKilled",
+				"EventTime": 1424.7476806640626,
+				"KillerName": "samskull007",
+				"TurretKilled": "Turret_T1_C_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 72,
+				"EventName": "ChampionKill",
+				"EventTime": 1431.07666015625,
+				"KillerName": "samskull007",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [],
+				"EventID": 73,
+				"EventName": "ChampionKill",
+				"EventTime": 1435.68212890625,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"EventID": 74,
+				"EventName": "Multikill",
+				"EventTime": 1435.68212890625,
+				"KillStreak": 2,
+				"KillerName": "samskull007"
+			},
+			{
+				"Assisters": [],
+				"EventID": 75,
+				"EventName": "TurretKilled",
+				"EventTime": 1447.1197509765626,
+				"KillerName": "Minion_T100L0S45N0285",
+				"TurretKilled": "Turret_T2_R_02_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 76,
+				"EventName": "InhibKilled",
+				"EventTime": 1447.80029296875,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "samskull007"
+			},
+			{
+				"Assisters": [],
+				"EventID": 77,
+				"EventName": "ChampionKill",
+				"EventTime": 1450.8858642578126,
+				"KillerName": "HeavenRise02",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [],
+				"EventID": 78,
+				"EventName": "ChampionKill",
+				"EventTime": 1462.842041015625,
+				"KillerName": "NicKlaws",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 79,
+				"EventName": "ChampionKill",
+				"EventTime": 1515.720703125,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"Stedefreund"
+				],
+				"EventID": 80,
+				"EventName": "ChampionKill",
+				"EventTime": 1520.559326171875,
+				"KillerName": "Mario1125",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 81,
+				"EventName": "ChampionKill",
+				"EventTime": 1521.1961669921876,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "HeavenRise02"
+			},
+			{
+				"EventID": 82,
+				"EventName": "Multikill",
+				"EventTime": 1521.1961669921876,
+				"KillStreak": 2,
+				"KillerName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves"
+				],
+				"EventID": 83,
+				"EventName": "ChampionKill",
+				"EventTime": 1524.9517822265626,
+				"KillerName": "IpwnYeh",
+				"VictimName": "Mario1125"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"Mario1125"
+				],
+				"EventID": 84,
+				"EventName": "ChampionKill",
+				"EventTime": 1527.5697021484376,
+				"KillerName": "Slimm4",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Aramitz"
+				],
+				"EventID": 85,
+				"EventName": "ChampionKill",
+				"EventTime": 1528.97314453125,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"DragonType": "Air",
+				"EventID": 86,
+				"EventName": "DragonKill",
+				"EventTime": 1562.4183349609376,
+				"KillerName": "Br1seurDeReves",
+				"Stolen": "True"
+			},
+			{
+				"Assisters": [],
+				"EventID": 87,
+				"EventName": "ChampionKill",
+				"EventTime": 1567.4091796875,
+				"KillerName": "samskull007",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"EventID": 88,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1575.9862060546876,
+				"InhibRespawningSoon": "Barracks_T1_L1"
+			},
+			{
+				"EventID": 89,
+				"EventName": "InhibRespawned",
+				"EventTime": 1591.065185546875,
+				"InhibRespawned": "Barracks_T1_L1"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Dinocookie2006",
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 90,
+				"EventName": "ChampionKill",
+				"EventTime": 1633.6566162109376,
+				"KillerName": "NicKlaws",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"Dinocookie2006",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 91,
+				"EventName": "ChampionKill",
+				"EventTime": 1642.2708740234376,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"Slimm4"
+				],
+				"EventID": 92,
+				"EventName": "ChampionKill",
+				"EventTime": 1683.0208740234376,
+				"KillerName": "Mario1125",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02"
+				],
+				"EventID": 93,
+				"EventName": "ChampionKill",
+				"EventTime": 1690.4395751953126,
+				"KillerName": "Mario1125",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"EventID": 94,
+				"EventName": "Multikill",
+				"EventTime": 1690.4395751953126,
+				"KillStreak": 2,
+				"KillerName": "Mario1125"
+			},
+			{
+				"Assisters": [],
+				"EventID": 95,
+				"EventName": "ChampionKill",
+				"EventTime": 1721.08154296875,
+				"KillerName": "NicKlaws",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"samskull007",
+					"Slimm4"
+				],
+				"EventID": 96,
+				"EventName": "ChampionKill",
+				"EventTime": 1724.332275390625,
+				"KillerName": "HeavenRise02",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"EventID": 97,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1732.7947998046876,
+				"InhibRespawningSoon": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02"
+				],
+				"EventID": 98,
+				"EventName": "ChampionKill",
+				"EventTime": 1740.153076171875,
+				"KillerName": "Slimm4",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"EventID": 99,
+				"EventName": "InhibRespawned",
+				"EventTime": 1747.872314453125,
+				"InhibRespawned": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02"
+				],
+				"EventID": 100,
+				"EventName": "ChampionKill",
+				"EventTime": 1762.4505615234376,
+				"KillerName": "Mario1125",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"samskull007",
+					"Stedefreund"
+				],
+				"EventID": 101,
+				"EventName": "ChampionKill",
+				"EventTime": 1820.0556640625,
+				"KillerName": "Mario1125",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"samskull007",
+					"Mario1125"
+				],
+				"EventID": 102,
+				"EventName": "BaronKill",
+				"EventTime": 1839.0540771484376,
+				"KillerName": "Slimm4",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 103,
+				"EventName": "ChampionKill",
+				"EventTime": 1853.027099609375,
+				"KillerName": "IpwnYeh",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"Aramitz"
+				],
+				"EventID": 104,
+				"EventName": "ChampionKill",
+				"EventTime": 1856.18359375,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh"
+				],
+				"EventID": 105,
+				"EventName": "TurretKilled",
+				"EventTime": 1869.7415771484376,
+				"KillerName": "Dinocookie2006",
+				"TurretKilled": "Turret_T2_C_05_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 106,
+				"EventName": "ChampionKill",
+				"EventTime": 1877.814453125,
+				"KillerName": "samskull007",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Mario1125"
+				],
+				"EventID": 107,
+				"EventName": "ChampionKill",
+				"EventTime": 1881.4825439453126,
+				"KillerName": "HeavenRise02",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"DragonType": "Air",
+				"EventID": 108,
+				"EventName": "DragonKill",
+				"EventTime": 1883.0994873046876,
+				"KillerName": "samskull007",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 109,
+				"EventName": "TurretKilled",
+				"EventTime": 1938.8675537109376,
+				"KillerName": "samskull007",
+				"TurretKilled": "Turret_T1_R_02_A"
+			},
+			{
+				"Assisters": [
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 110,
+				"EventName": "ChampionKill",
+				"EventTime": 1956.4541015625,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh"
+				],
+				"EventID": 111,
+				"EventName": "ChampionKill",
+				"EventTime": 1957.2598876953126,
+				"KillerName": "NicKlaws",
+				"VictimName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Dinocookie2006",
+					"NicKlaws"
+				],
+				"EventID": 112,
+				"EventName": "ChampionKill",
+				"EventTime": 1960.445068359375,
+				"KillerName": "Aramitz",
+				"VictimName": "Stedefreund"
+			},
+			{
+				"Assisters": [
+					"Stedefreund"
+				],
+				"EventID": 113,
+				"EventName": "ChampionKill",
+				"EventTime": 1969.9725341796876,
+				"KillerName": "Mario1125",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02"
+				],
+				"EventID": 114,
+				"EventName": "ChampionKill",
+				"EventTime": 1976.34033203125,
+				"KillerName": "Mario1125",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 115,
+				"EventName": "Multikill",
+				"EventTime": 1976.34033203125,
+				"KillStreak": 2,
+				"KillerName": "Mario1125"
+			},
+			{
+				"Assisters": [
+					"IpwnYeh",
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 116,
+				"EventName": "ChampionKill",
+				"EventTime": 2097.607421875,
+				"KillerName": "Dinocookie2006",
+				"VictimName": "Slimm4"
+			},
+			{
+				"Assisters": [
+					"Slimm4",
+					"Mario1125",
+					"Stedefreund"
+				],
+				"EventID": 117,
+				"EventName": "ChampionKill",
+				"EventTime": 2098.2548828125,
+				"KillerName": "HeavenRise02",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 118,
+				"EventName": "ChampionKill",
+				"EventTime": 2103.929443359375,
+				"KillerName": "samskull007",
+				"VictimName": "Dinocookie2006"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"samskull007",
+					"Slimm4",
+					"Stedefreund"
+				],
+				"EventID": 119,
+				"EventName": "ChampionKill",
+				"EventTime": 2104.158203125,
+				"KillerName": "Mario1125",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02"
+				],
+				"EventID": 120,
+				"EventName": "ChampionKill",
+				"EventTime": 2105.248291015625,
+				"KillerName": "samskull007",
+				"VictimName": "IpwnYeh"
+			},
+			{
+				"EventID": 121,
+				"EventName": "Multikill",
+				"EventTime": 2105.248291015625,
+				"KillStreak": 2,
+				"KillerName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"Mario1125",
+					"Stedefreund"
+				],
+				"EventID": 122,
+				"EventName": "ChampionKill",
+				"EventTime": 2109.080322265625,
+				"KillerName": "samskull007",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"EventID": 123,
+				"EventName": "Multikill",
+				"EventTime": 2109.080322265625,
+				"KillStreak": 3,
+				"KillerName": "samskull007"
+			},
+			{
+				"Acer": "samskull007",
+				"AcingTeam": "CHAOS",
+				"EventID": 124,
+				"EventName": "Ace",
+				"EventTime": 2109.080322265625
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"Mario1125"
+				],
+				"EventID": 125,
+				"EventName": "InhibKilled",
+				"EventTime": 2125.59912109375,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "samskull007"
+			},
+			{
+				"Assisters": [
+					"samskull007"
+				],
+				"EventID": 126,
+				"EventName": "TurretKilled",
+				"EventTime": 2133.732421875,
+				"KillerName": "HeavenRise02",
+				"TurretKilled": "Turret_T1_C_01_A"
+			},
+			{
+				"Assisters": [
+					"HeavenRise02",
+					"Mario1125"
+				],
+				"EventID": 127,
+				"EventName": "TurretKilled",
+				"EventTime": 2138.1220703125,
+				"KillerName": "samskull007",
+				"TurretKilled": "Turret_T1_C_02_A"
+			},
+			{
+				"Assisters": [
+					"Mario1125"
+				],
+				"EventID": 128,
+				"EventName": "InhibKilled",
+				"EventTime": 2141.73095703125,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "samskull007"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "CLASSIC",
+		"gameTime": 2149.5068359375,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Cloud"
+	}
+}

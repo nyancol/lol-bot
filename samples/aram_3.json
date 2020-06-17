@@ -1,0 +1,2544 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Contrattacco stordente",
+				"id": "JaxCounterStrike",
+				"rawDescription": "GeneratedTip_Spell_JaxCounterStrike_Description",
+				"rawDisplayName": "GeneratedTip_Spell_JaxCounterStrike_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Assalto implacabile",
+				"rawDescription": "game_character_passiveDescription_Jax",
+				"rawDisplayName": "game_character_passiveName_Jax"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Balzo mistico",
+				"id": "JaxLeapStrike",
+				"rawDescription": "GeneratedTip_Spell_JaxLeapStrike_Description",
+				"rawDisplayName": "GeneratedTip_Spell_JaxLeapStrike_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Assalto del gran maestro",
+				"id": "JaxRelentlessAssault",
+				"rawDescription": "GeneratedTip_Spell_JaxRelentlessAssault_Description",
+				"rawDisplayName": "GeneratedTip_Spell_JaxRelentlessAssault_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 5,
+				"displayName": "Caricamento energetico",
+				"id": "JaxEmpowerTwo",
+				"rawDescription": "GeneratedTip_Spell_JaxEmpowerTwo_Description",
+				"rawDisplayName": "GeneratedTip_Spell_JaxEmpowerTwo_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityPower": 0.0,
+			"armor": 102.00000762939453,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 287.9750061035156,
+			"attackRange": 125.0,
+			"attackSpeed": 1.421464204788208,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"cooldownReduction": -0.30000001192092898,
+			"critChance": 0.0,
+			"critDamage": 200.0,
+			"currentHealth": 0.0,
+			"healthRegenRate": 7.140000343322754,
+			"lifeSteal": 0.11999999731779099,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 63.349998474121097,
+			"maxHealth": 2827.800048828125,
+			"moveSpeed": 415.6399841308594,
+			"physicalLethality": 0.0,
+			"resourceMax": 1382.800048828125,
+			"resourceRegenRate": 5.8726043701171879,
+			"resourceType": "MANA",
+			"resourceValue": 1290.824462890625,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 620.3076171875,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				{
+					"displayName": "Fascia del Flusso",
+					"id": 8226,
+					"rawDescription": "perk_tooltip_8226",
+					"rawDisplayName": "perk_displayname_8226"
+				},
+				{
+					"displayName": "Trascendenza",
+					"id": 8210,
+					"rawDescription": "perk_tooltip_Transcendence",
+					"rawDisplayName": "perk_displayname_Transcendence"
+				},
+				{
+					"displayName": "Tempesta incombente",
+					"id": 8236,
+					"rawDescription": "perk_tooltip_GatheringStorm",
+					"rawDisplayName": "perk_displayname_GatheringStorm"
+				},
+				{
+					"displayName": "Collezione di Bulbi",
+					"id": 8138,
+					"rawDescription": "perk_tooltip_EyeballCollection",
+					"rawDisplayName": "perk_displayname_EyeballCollection"
+				},
+				{
+					"displayName": "Cacciatore implacabile",
+					"id": 8105,
+					"rawDescription": "perk_tooltip_8105",
+					"rawDisplayName": "perk_displayname_8105"
+				}
+			],
+			"keystone": {
+				"displayName": "Cometa arcana",
+				"id": 8229,
+				"rawDescription": "perk_tooltip_ArcaneComet",
+				"rawDisplayName": "perk_displayname_ArcaneComet"
+			},
+			"primaryRuneTree": {
+				"displayName": "Stregoneria",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Dominazione",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 18,
+		"summonerName": "Br1seurDeReves"
+	},
+	"allPlayers": [
+		{
+			"championName": "Janna",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Abbraccio serafico",
+					"itemID": 3048,
+					"price": 3200,
+					"rawDescription": "game_item_description_3040",
+					"rawDisplayName": "game_item_displayname_3040",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Empio Graal di Athene",
+					"itemID": 3174,
+					"price": 400,
+					"rawDescription": "game_item_description_3174",
+					"rawDisplayName": "game_item_displayname_3174",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Codice del diavolo",
+					"itemID": 3108,
+					"price": 465,
+					"rawDescription": "game_item_description_3108",
+					"rawDisplayName": "game_item_displayname_3108",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Janna",
+			"respawnTimer": 18.80976104736328,
+			"runes": {
+				"keystone": {
+					"displayName": "Evoca Aery",
+					"id": 8214,
+					"rawDescription": "perk_tooltip_SummonAery",
+					"rawDisplayName": "perk_displayname_SummonAery"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Ispirazione",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 17,
+				"creepScore": 10,
+				"deaths": 12,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Lenfan",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Bard",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Terrore dei lich",
+					"itemID": 3100,
+					"price": 450,
+					"rawDescription": "game_item_description_3100",
+					"rawDisplayName": "game_item_displayname_3100",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Furia di Guinsoo",
+					"itemID": 3124,
+					"price": 790,
+					"rawDescription": "game_item_description_3124",
+					"rawDisplayName": "game_item_displayname_3124",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tormento di Liandry",
+					"itemID": 3151,
+					"price": 750,
+					"rawDescription": "game_item_description_3151",
+					"rawDisplayName": "game_item_displayname_3151",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Scheggia di Kircheis",
+					"itemID": 2015,
+					"price": 400,
+					"rawDescription": "game_item_description_2015",
+					"rawDisplayName": "game_item_displayname_2015",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Bard",
+			"rawSkinName": "game_character_skin_displayname_Bard_5",
+			"respawnTimer": 25.46731185913086,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 21,
+				"creepScore": 50,
+				"deaths": 7,
+				"kills": 10,
+				"wardScore": 0.0
+			},
+			"skinID": 5,
+			"skinName": "Bard della Nevicata",
+			"summonerName": "Xelphosis",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Jax",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Virtù della Triade",
+					"itemID": 3078,
+					"price": 333,
+					"rawDescription": "game_item_description_3078",
+					"rawDisplayName": "game_item_displayname_3078",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Idra titanica",
+					"itemID": 3748,
+					"price": 575,
+					"rawDescription": "game_item_description_3748",
+					"rawDisplayName": "game_item_displayname_3748",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama del re in rovina",
+					"itemID": 3153,
+					"price": 700,
+					"rawDescription": "game_item_description_3153",
+					"rawDisplayName": "game_item_displayname_3153",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Armatura di stoffa",
+					"itemID": 1029,
+					"price": 300,
+					"rawDescription": "game_item_description_1029",
+					"rawDisplayName": "game_item_displayname_1029",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Jax",
+			"respawnTimer": 28.677711486816408,
+			"runes": {
+				"keystone": {
+					"displayName": "Cometa arcana",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 9,
+				"creepScore": 10,
+				"deaths": 12,
+				"kills": 6,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Br1seurDeReves",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Marchio",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Ezreal",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mangiamagia",
+					"itemID": 3155,
+					"price": 500,
+					"rawDescription": "game_item_description_3155",
+					"rawDisplayName": "game_item_displayname_3155",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama del re in rovina",
+					"itemID": 3153,
+					"price": 700,
+					"rawDescription": "game_item_description_3153",
+					"rawDisplayName": "game_item_displayname_3153",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Guanto del gelo",
+					"itemID": 3025,
+					"price": 750,
+					"rawDescription": "game_item_description_3025",
+					"rawDisplayName": "game_item_displayname_3025",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Speranza perduta",
+					"itemID": 3091,
+					"price": 880,
+					"rawDescription": "game_item_description_3091",
+					"rawDisplayName": "game_item_displayname_3091",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari di Mercurio",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "game_item_description_3111",
+					"rawDisplayName": "game_item_displayname_3111",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Muramana",
+					"itemID": 3043,
+					"price": 2400,
+					"rawDescription": "game_item_description_3042",
+					"rawDisplayName": "game_item_displayname_3042",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ezreal",
+			"rawSkinName": "game_character_skin_displayname_Ezreal_5",
+			"respawnTimer": 33.04661560058594,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 16,
+				"creepScore": 40,
+				"deaths": 11,
+				"kills": 13,
+				"wardScore": 0.0
+			},
+			"skinID": 5,
+			"skinName": "Ezreal Pulsefire",
+			"summonerName": "NicKlaws",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Graves",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "La Bramasangue",
+					"itemID": 3072,
+					"price": 950,
+					"rawDescription": "game_item_description_3072",
+					"rawDisplayName": "game_item_displayname_3072",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gambali del berserker",
+					"itemID": 3006,
+					"price": 500,
+					"rawDescription": "game_item_description_3006",
+					"rawDisplayName": "game_item_displayname_3006",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Frammento d'infinito",
+					"itemID": 3031,
+					"price": 425,
+					"rawDescription": "game_item_description_3031",
+					"rawDisplayName": "game_item_displayname_3031",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "M.C. Spada",
+					"itemID": 1038,
+					"price": 1300,
+					"rawDescription": "game_item_description_1038",
+					"rawDisplayName": "game_item_displayname_1038",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Graves",
+			"respawnTimer": 20.731454849243165,
+			"runes": {
+				"keystone": {
+					"displayName": "Attacco sostenuto",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 13,
+				"creepScore": 130,
+				"deaths": 11,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Aramitz",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Chiarezza",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerMana_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerMana_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Guarigione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Karthus",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone del Vuoto",
+					"itemID": 3135,
+					"price": 1365,
+					"rawDescription": "game_item_description_3135",
+					"rawDisplayName": "game_item_displayname_3135",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Clessidra di Zhonya",
+					"itemID": 3157,
+					"price": 250,
+					"rawDescription": "game_item_description_3157",
+					"rawDisplayName": "game_item_displayname_3157",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Hextech GLP-800",
+					"itemID": 3030,
+					"price": 450,
+					"rawDescription": "game_item_description_3030",
+					"rawDisplayName": "game_item_displayname_3030",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Karthus",
+			"respawnTimer": 24.29631805419922,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 20,
+				"creepScore": 40,
+				"deaths": 8,
+				"kills": 12,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "SharkForcee",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Chiarezza",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerMana_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerMana_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Vel'Koz",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 550,
+					"rawDescription": "game_item_description_3165",
+					"rawDisplayName": "game_item_displayname_3165",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tormento di Liandry",
+					"itemID": 3151,
+					"price": 750,
+					"rawDescription": "game_item_description_3151",
+					"rawDisplayName": "game_item_displayname_3151",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bastone colossale",
+					"itemID": 1058,
+					"price": 1250,
+					"rawDescription": "game_item_description_1058",
+					"rawDisplayName": "game_item_displayname_1058",
+					"slot": 4
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Velkoz",
+			"respawnTimer": 28.05321502685547,
+			"runes": {
+				"keystone": {
+					"displayName": "Raccolto oscuro",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 33,
+				"creepScore": 40,
+				"deaths": 4,
+				"kills": 6,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Asesina de anos",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Zed",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stivali della rapidità",
+					"itemID": 3009,
+					"price": 600,
+					"rawDescription": "game_item_description_3009",
+					"rawDisplayName": "game_item_displayname_3009",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama di Youmuu",
+					"itemID": 3142,
+					"price": 700,
+					"rawDescription": "game_item_description_3142",
+					"rawDisplayName": "game_item_displayname_3142",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Pegno di Sterak",
+					"itemID": 3053,
+					"price": 725,
+					"rawDescription": "game_item_description_3053",
+					"rawDisplayName": "game_item_displayname_3053",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama crepuscolare di Draktharr",
+					"itemID": 3147,
+					"price": 700,
+					"rawDescription": "game_item_description_3147",
+					"rawDisplayName": "game_item_displayname_3147",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lama sanguigna",
+					"itemID": 3181,
+					"price": 1000,
+					"rawDescription": "game_item_description_3181",
+					"rawDisplayName": "game_item_displayname_3181",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Lungo pugnale seghettato",
+					"itemID": 3134,
+					"price": 400,
+					"rawDescription": "game_item_description_3134",
+					"rawDisplayName": "game_item_displayname_3134",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Zed",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Precisione",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 14,
+				"creepScore": 100,
+				"deaths": 9,
+				"kills": 12,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "jaime20026",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Garen",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Mannaia oscura",
+					"itemID": 3071,
+					"price": 950,
+					"rawDescription": "game_item_description_3071",
+					"rawDisplayName": "game_item_displayname_3071",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corazza spirituale",
+					"itemID": 3065,
+					"price": 800,
+					"rawDescription": "game_item_description_3065",
+					"rawDisplayName": "game_item_displayname_3065",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Corazza spinata",
+					"itemID": 3075,
+					"price": 500,
+					"rawDescription": "game_item_description_3075",
+					"rawDisplayName": "game_item_displayname_3075",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari di Mercurio",
+					"itemID": 3111,
+					"price": 350,
+					"rawDescription": "game_item_description_3111",
+					"rawDisplayName": "game_item_displayname_3111",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Cintura del gigante",
+					"itemID": 1011,
+					"price": 600,
+					"rawDescription": "game_item_description_1011",
+					"rawDisplayName": "game_item_displayname_1011",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Gemma infuocata",
+					"itemID": 3067,
+					"price": 400,
+					"rawDescription": "game_item_description_3067",
+					"rawDisplayName": "game_item_displayname_3067",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Garen",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Presa dell'immortale",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Determinazione",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 18,
+				"creepScore": 20,
+				"deaths": 5,
+				"kills": 10,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "elboghdady",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ustione",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "Ahri",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Eco di Luden",
+					"itemID": 3285,
+					"price": 1050,
+					"rawDescription": "game_item_description_3285",
+					"rawDisplayName": "game_item_displayname_3285",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Calzari del mago",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "game_item_description_3020",
+					"rawDisplayName": "game_item_displayname_3020",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Copricapo di Rabadon",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "game_item_description_3089",
+					"rawDisplayName": "game_item_displayname_3089",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 550,
+					"rawDescription": "game_item_description_3165",
+					"rawDisplayName": "game_item_displayname_3165",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Bacchetta distruttiva",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "game_item_description_1026",
+					"rawDisplayName": "game_item_displayname_1026",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tomo del potenziamento",
+					"itemID": 1052,
+					"price": 435,
+					"rawDescription": "game_item_description_1052",
+					"rawDisplayName": "game_item_displayname_1052",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "Poro-Snax",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "game_item_description_2052",
+					"rawDisplayName": "game_item_displayname_2052",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Ahri",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Elettroshock",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Dominazione",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Stregoneria",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 19,
+				"creepScore": 40,
+				"deaths": 8,
+				"kills": 13,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "ImPôsSibLé",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Barriera",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.04251530021429062
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 45.05030822753906
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Br1seurDeReves"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 102.61991119384766,
+				"KillerName": "Xelphosis",
+				"VictimName": "jaime20026"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 102.61991119384766,
+				"Recipient": "Xelphosis"
+			},
+			{
+				"Assisters": [
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 105.2387466430664,
+				"KillerName": "Asesina de anos",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"Assisters": [],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 128.2545623779297,
+				"KillerName": "Asesina de anos",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 194.68809509277345,
+				"KillerName": "jaime20026",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"NicKlaws"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 241.92884826660157,
+				"KillerName": "Aramitz",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 247.121337890625,
+				"KillerName": "SharkForcee",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 300.3275146484375,
+				"KillerName": "elboghdady",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 302.6188659667969,
+				"KillerName": "NicKlaws",
+				"VictimName": "jaime20026"
+			},
+			{
+				"Assisters": [],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 326.7805480957031,
+				"KillerName": "Xelphosis",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos"
+				],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 332.32000732421877,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 332.5650329589844,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"elboghdady"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 335.64691162109377,
+				"KillerName": "Asesina de anos",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"Assisters": [],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 377.51947021484377,
+				"KillerName": "jaime20026",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"SharkForcee"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 386.1064147949219,
+				"KillerName": "Asesina de anos",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026"
+				],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 423.8599548339844,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 445.10113525390627,
+				"KillerName": "SharkForcee",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 448.25970458984377,
+				"KillerName": "NicKlaws",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Br1seurDeReves"
+				],
+				"EventID": 20,
+				"EventName": "ChampionKill",
+				"EventTime": 465.7862854003906,
+				"KillerName": "Xelphosis",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"Assisters": [
+					"SharkForcee"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 466.06390380859377,
+				"KillerName": "elboghdady",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"NicKlaws"
+				],
+				"EventID": 22,
+				"EventName": "ChampionKill",
+				"EventTime": 468.9909973144531,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "elboghdady"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"NicKlaws"
+				],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 472.39678955078127,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "jaime20026"
+			},
+			{
+				"EventID": 24,
+				"EventName": "Multikill",
+				"EventTime": 472.39678955078127,
+				"KillStreak": 2,
+				"KillerName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos"
+				],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 472.7817687988281,
+				"KillerName": "SharkForcee",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"elboghdady"
+				],
+				"EventID": 26,
+				"EventName": "ChampionKill",
+				"EventTime": 474.3816223144531,
+				"KillerName": "jaime20026",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 506.6687927246094,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 527.7689819335938,
+				"KillerName": "SharkForcee",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 588.5464477539063,
+				"KillerName": "SharkForcee",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"ImPôsSibLé"
+				],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 590.9229125976563,
+				"KillerName": "jaime20026",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 595.141845703125,
+				"KillerName": "SharkForcee",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 32,
+				"EventName": "Multikill",
+				"EventTime": 595.141845703125,
+				"KillStreak": 2,
+				"KillerName": "SharkForcee"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 596.6575927734375,
+				"KillerName": "elboghdady",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 34,
+				"EventName": "TurretKilled",
+				"EventTime": 628.068115234375,
+				"KillerName": "elboghdady",
+				"TurretKilled": "Turret_T1_C_08_A"
+			},
+			{
+				"EventID": 35,
+				"EventName": "FirstBrick",
+				"EventTime": 628.068115234375,
+				"KillerName": "elboghdady"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Br1seurDeReves",
+					"NicKlaws"
+				],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 636.0466918945313,
+				"KillerName": "Aramitz",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 638.1280517578125,
+				"KillerName": "SharkForcee",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 644.5086669921875,
+				"KillerName": "Xelphosis",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 651.6918334960938,
+				"KillerName": "NicKlaws",
+				"VictimName": "Asesina de anos"
+			},
+			{
+				"Assisters": [
+					"SharkForcee"
+				],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 661.68701171875,
+				"KillerName": "jaime20026",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 41,
+				"EventName": "ChampionKill",
+				"EventTime": 662.5938720703125,
+				"KillerName": "NicKlaws",
+				"VictimName": "jaime20026"
+			},
+			{
+				"Assisters": [],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 678.1942749023438,
+				"KillerName": "elboghdady",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"NicKlaws"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 679.0262451171875,
+				"KillerName": "Aramitz",
+				"VictimName": "elboghdady"
+			},
+			{
+				"Assisters": [],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 686.8204956054688,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos"
+				],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 727.8132934570313,
+				"KillerName": "SharkForcee",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos"
+				],
+				"EventID": 46,
+				"EventName": "ChampionKill",
+				"EventTime": 754.2838134765625,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"elboghdady"
+				],
+				"EventID": 47,
+				"EventName": "ChampionKill",
+				"EventTime": 788.33056640625,
+				"KillerName": "Asesina de anos",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"SharkForcee"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 789.98974609375,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"elboghdady"
+				],
+				"EventID": 49,
+				"EventName": "ChampionKill",
+				"EventTime": 792.4378051757813,
+				"KillerName": "jaime20026",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 833.3519287109375,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "elboghdady"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"ImPôsSibLé"
+				],
+				"EventID": 51,
+				"EventName": "ChampionKill",
+				"EventTime": 861.5172729492188,
+				"KillerName": "SharkForcee",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 52,
+				"EventName": "ChampionKill",
+				"EventTime": 869.1461791992188,
+				"KillerName": "Xelphosis",
+				"VictimName": "jaime20026"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"ImPôsSibLé"
+				],
+				"EventID": 53,
+				"EventName": "ChampionKill",
+				"EventTime": 870.7766723632813,
+				"KillerName": "jaime20026",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026"
+				],
+				"EventID": 54,
+				"EventName": "ChampionKill",
+				"EventTime": 870.7766723632813,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 896.5390014648438,
+				"KillerName": "Xelphosis",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [
+					"NicKlaws"
+				],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 896.7192993164063,
+				"KillerName": "Xelphosis",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"EventID": 57,
+				"EventName": "Multikill",
+				"EventTime": 896.7192993164063,
+				"KillStreak": 2,
+				"KillerName": "Xelphosis"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"elboghdady"
+				],
+				"EventID": 58,
+				"EventName": "ChampionKill",
+				"EventTime": 951.7859497070313,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"NicKlaws"
+				],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 1021.4978637695313,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"elboghdady"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 1023.3171997070313,
+				"KillerName": "jaime20026",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"ImPôsSibLé"
+				],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 1026.696044921875,
+				"KillerName": "jaime20026",
+				"VictimName": "Aramitz"
+			},
+			{
+				"EventID": 62,
+				"EventName": "Multikill",
+				"EventTime": 1026.696044921875,
+				"KillStreak": 2,
+				"KillerName": "jaime20026"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 63,
+				"EventName": "ChampionKill",
+				"EventTime": 1027.2623291015626,
+				"KillerName": "elboghdady",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"jaime20026",
+					"elboghdady"
+				],
+				"EventID": 64,
+				"EventName": "ChampionKill",
+				"EventTime": 1033.15234375,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 65,
+				"EventName": "TurretKilled",
+				"EventTime": 1047.8968505859376,
+				"KillerName": "elboghdady",
+				"TurretKilled": "Turret_T1_C_07_A"
+			},
+			{
+				"Assisters": [
+					"jaime20026"
+				],
+				"EventID": 66,
+				"EventName": "ChampionKill",
+				"EventTime": 1053.980224609375,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Acer": "ImPôsSibLé",
+				"AcingTeam": "CHAOS",
+				"EventID": 67,
+				"EventName": "Ace",
+				"EventTime": 1053.980224609375
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026",
+					"ImPôsSibLé"
+				],
+				"EventID": 68,
+				"EventName": "InhibKilled",
+				"EventTime": 1058.2230224609376,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "Minion_T200L1S40N0254"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 69,
+				"EventName": "ChampionKill",
+				"EventTime": 1071.97900390625,
+				"KillerName": "NicKlaws",
+				"VictimName": "jaime20026"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 70,
+				"EventName": "ChampionKill",
+				"EventTime": 1077.732666015625,
+				"KillerName": "NicKlaws",
+				"VictimName": "Asesina de anos"
+			},
+			{
+				"EventID": 71,
+				"EventName": "Multikill",
+				"EventTime": 1077.732666015625,
+				"KillStreak": 2,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Br1seurDeReves",
+					"Aramitz"
+				],
+				"EventID": 72,
+				"EventName": "ChampionKill",
+				"EventTime": 1079.5472412109376,
+				"KillerName": "NicKlaws",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"EventID": 73,
+				"EventName": "Multikill",
+				"EventTime": 1079.5472412109376,
+				"KillStreak": 3,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Br1seurDeReves"
+				],
+				"EventID": 74,
+				"EventName": "ChampionKill",
+				"EventTime": 1080.5350341796876,
+				"KillerName": "Aramitz",
+				"VictimName": "elboghdady"
+			},
+			{
+				"Assisters": [
+					"Xelphosis"
+				],
+				"EventID": 75,
+				"EventName": "ChampionKill",
+				"EventTime": 1103.62451171875,
+				"KillerName": "NicKlaws",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"Acer": "NicKlaws",
+				"AcingTeam": "ORDER",
+				"EventID": 76,
+				"EventName": "Ace",
+				"EventTime": 1103.62451171875
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 77,
+				"EventName": "TurretKilled",
+				"EventTime": 1112.217041015625,
+				"KillerName": "Br1seurDeReves",
+				"TurretKilled": "Turret_T2_L_01_A"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 78,
+				"EventName": "ChampionKill",
+				"EventTime": 1125.518798828125,
+				"KillerName": "Xelphosis",
+				"VictimName": "jaime20026"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos"
+				],
+				"EventID": 79,
+				"EventName": "ChampionKill",
+				"EventTime": 1155.3548583984376,
+				"KillerName": "elboghdady",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"NicKlaws"
+				],
+				"EventID": 80,
+				"EventName": "ChampionKill",
+				"EventTime": 1166.140380859375,
+				"KillerName": "Xelphosis",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 81,
+				"EventName": "ChampionKill",
+				"EventTime": 1173.145263671875,
+				"KillerName": "SharkForcee",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"ImPôsSibLé"
+				],
+				"EventID": 82,
+				"EventName": "ChampionKill",
+				"EventTime": 1173.864013671875,
+				"KillerName": "Asesina de anos",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"ImPôsSibLé"
+				],
+				"EventID": 83,
+				"EventName": "ChampionKill",
+				"EventTime": 1176.4986572265626,
+				"KillerName": "elboghdady",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"elboghdady"
+				],
+				"EventID": 84,
+				"EventName": "TurretKilled",
+				"EventTime": 1210.8685302734376,
+				"KillerName": "Asesina de anos",
+				"TurretKilled": "Turret_T1_C_010_A"
+			},
+			{
+				"Assisters": [
+					"jaime20026"
+				],
+				"EventID": 85,
+				"EventName": "TurretKilled",
+				"EventTime": 1216.4156494140626,
+				"KillerName": "Asesina de anos",
+				"TurretKilled": "Turret_T1_C_09_A"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"jaime20026"
+				],
+				"EventID": 86,
+				"EventName": "ChampionKill",
+				"EventTime": 1218.6751708984376,
+				"KillerName": "elboghdady",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Br1seurDeReves",
+					"NicKlaws",
+					"Aramitz"
+				],
+				"EventID": 87,
+				"EventName": "ChampionKill",
+				"EventTime": 1221.368896484375,
+				"KillerName": "Xelphosis",
+				"VictimName": "elboghdady"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"Br1seurDeReves",
+					"NicKlaws"
+				],
+				"EventID": 88,
+				"EventName": "ChampionKill",
+				"EventTime": 1221.4410400390626,
+				"KillerName": "Aramitz",
+				"VictimName": "jaime20026"
+			},
+			{
+				"Assisters": [],
+				"EventID": 89,
+				"EventName": "ChampionKill",
+				"EventTime": 1226.0643310546876,
+				"KillerName": "NicKlaws",
+				"VictimName": "Asesina de anos"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"Aramitz"
+				],
+				"EventID": 90,
+				"EventName": "ChampionKill",
+				"EventTime": 1259.3853759765626,
+				"KillerName": "NicKlaws",
+				"VictimName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [],
+				"EventID": 91,
+				"EventName": "ChampionKill",
+				"EventTime": 1259.4658203125,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"ImPôsSibLé"
+				],
+				"EventID": 92,
+				"EventName": "ChampionKill",
+				"EventTime": 1264.22314453125,
+				"KillerName": "SharkForcee",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [],
+				"EventID": 93,
+				"EventName": "ChampionKill",
+				"EventTime": 1266.79296875,
+				"KillerName": "NicKlaws",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"EventID": 94,
+				"EventName": "Multikill",
+				"EventTime": 1266.79296875,
+				"KillStreak": 2,
+				"KillerName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"elboghdady"
+				],
+				"EventID": 95,
+				"EventName": "ChampionKill",
+				"EventTime": 1282.455322265625,
+				"KillerName": "jaime20026",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"Xelphosis",
+					"Br1seurDeReves"
+				],
+				"EventID": 96,
+				"EventName": "ChampionKill",
+				"EventTime": 1284.5068359375,
+				"KillerName": "NicKlaws",
+				"VictimName": "jaime20026"
+			},
+			{
+				"EventID": 97,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1293.2039794921876,
+				"InhibRespawningSoon": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"jaime20026"
+				],
+				"EventID": 98,
+				"EventName": "ChampionKill",
+				"EventTime": 1293.496826171875,
+				"KillerName": "elboghdady",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"jaime20026"
+				],
+				"EventID": 99,
+				"EventName": "ChampionKill",
+				"EventTime": 1294.500732421875,
+				"KillerName": "elboghdady",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"EventID": 100,
+				"EventName": "Multikill",
+				"EventTime": 1294.500732421875,
+				"KillStreak": 2,
+				"KillerName": "elboghdady"
+			},
+			{
+				"Acer": "elboghdady",
+				"AcingTeam": "CHAOS",
+				"EventID": 101,
+				"EventName": "Ace",
+				"EventTime": 1294.500732421875
+			},
+			{
+				"EventID": 102,
+				"EventName": "InhibRespawned",
+				"EventTime": 1308.2967529296876,
+				"InhibRespawned": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"elboghdady"
+				],
+				"EventID": 103,
+				"EventName": "InhibKilled",
+				"EventTime": 1326.5972900390626,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "Asesina de anos"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"elboghdady"
+				],
+				"EventID": 104,
+				"EventName": "ChampionKill",
+				"EventTime": 1349.5045166015626,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Aramitz"
+			},
+			{
+				"Assisters": [
+					"Asesina de anos",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 105,
+				"EventName": "ChampionKill",
+				"EventTime": 1349.5828857421876,
+				"KillerName": "SharkForcee",
+				"VictimName": "Lenfan"
+			},
+			{
+				"Assisters": [
+					"Lenfan",
+					"Xelphosis",
+					"NicKlaws"
+				],
+				"EventID": 106,
+				"EventName": "ChampionKill",
+				"EventTime": 1353.0711669921876,
+				"KillerName": "Br1seurDeReves",
+				"VictimName": "SharkForcee"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"elboghdady"
+				],
+				"EventID": 107,
+				"EventName": "ChampionKill",
+				"EventTime": 1354.2403564453126,
+				"KillerName": "ImPôsSibLé",
+				"VictimName": "Xelphosis"
+			},
+			{
+				"EventID": 108,
+				"EventName": "Multikill",
+				"EventTime": 1354.2403564453126,
+				"KillStreak": 2,
+				"KillerName": "ImPôsSibLé"
+			},
+			{
+				"Assisters": [],
+				"EventID": 109,
+				"EventName": "ChampionKill",
+				"EventTime": 1356.8262939453126,
+				"KillerName": "NicKlaws",
+				"VictimName": "Asesina de anos"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 110,
+				"EventName": "ChampionKill",
+				"EventTime": 1357.4508056640626,
+				"KillerName": "jaime20026",
+				"VictimName": "Br1seurDeReves"
+			},
+			{
+				"Assisters": [
+					"SharkForcee",
+					"Asesina de anos",
+					"elboghdady",
+					"ImPôsSibLé"
+				],
+				"EventID": 111,
+				"EventName": "ChampionKill",
+				"EventTime": 1361.8197021484376,
+				"KillerName": "jaime20026",
+				"VictimName": "NicKlaws"
+			},
+			{
+				"EventID": 112,
+				"EventName": "Multikill",
+				"EventTime": 1361.8197021484376,
+				"KillStreak": 2,
+				"KillerName": "jaime20026"
+			},
+			{
+				"Acer": "jaime20026",
+				"AcingTeam": "CHAOS",
+				"EventID": 113,
+				"EventName": "Ace",
+				"EventTime": 1361.8197021484376
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "ARAM",
+		"gameTime": 1368.7730712890626,
+		"mapName": "Map12",
+		"mapNumber": 12,
+		"mapTerrain": "Default"
+	}
+}
