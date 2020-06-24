@@ -14,6 +14,7 @@ from pcsd_cog.states import StateMachine, StateLobby
 class Mycog(commands.Cog):
     @commands.command()
     async def schedule(self, ctx):
+        await lavalink.connect(ctx.author.voice.channel)
         machine = StateMachine(StateLobby(ctx))
         print("Running state machine")
 
@@ -27,9 +28,7 @@ class Mycog(commands.Cog):
     @commands.command()
     async def test(self, ctx):
         machine = StateMachine(StateLobby(ctx))
-        await lavalink.connect(ctx.author.voice.channel)
         player = lavalink.get_player(ctx.guild.id)
-
         player.store("channel", ctx.channel.id)
         player.store("guild", ctx.guild.id)
         query = Query.process_input("https://www.youtube.com/watch?v=Y_Vq0SPu6y8", None)

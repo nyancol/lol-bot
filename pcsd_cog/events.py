@@ -1,28 +1,8 @@
 from enum import Enum
-import requests
 from typing import List, Optional, Mapping
 from pcsd_cog.players import Player
+import dataclasses
 from dataclasses import dataclass
-
-
-class Rule:
-    def __init__(self, rule):
-        self._rule: Mapping[str, str] = rule
-
-    def __equal__(self, other: Mapping[str, str]):
-        return self._rule.items() <= other.items()
-
-    def __repr__(self):
-        return str(self._rule)
-
-    def distance(self, rule):
-        score = 0
-        for k, v in {k: v for k, v in rule._rule.items() if k in self._rule}.items():
-            if self._rule[k] == v:
-                score += 1
-            else:
-                return 0
-        return score
 
 
 class Event:
@@ -60,12 +40,10 @@ class EventEndGameStats(Event):
 
 @dataclass
 class EventData(Event):
-    EventID: int
+    Players: List[Player]
     EventName: str
+    EventID: int
     EventTime: float
-
-    def to_rule(self, players: List[Player]) -> Rule:
-        raise NotImplementedError
 
 
 class EventGameStart(EventData):
@@ -77,24 +55,47 @@ class EventAce(EventData):
     Acer: str
     AcingTeam: str
 
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "Acer." + attr, getattr(players[self.Acer], attr))
+
 
 @dataclass
 class EventFirstBlood(EventData):
     Recipient: str
+
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "Recipient." + attr, getattr(players[self.Recipient], attr))
 
 
 @dataclass
 class EventFirstBrick(EventData):
     KillerName: str
 
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+
+
 class EventMinionsSpawning(EventData):
     pass
+
 
 @dataclass
 class EventTurretKilled(EventData):
     TurretKilled: str
     KillerName: str
     Assisters: List[str]
+
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
 
 
 @dataclass
@@ -104,12 +105,22 @@ class EventDragonKill(EventData):
     KillerName: str
     Assisters: List[str]
 
+    def __post_init__(self):
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
 
 @dataclass
 class EventBaronKill(EventData):
     Stolen: bool
     KillerName: str
     Assisters: List[str]
+
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
 
 
 @dataclass
@@ -118,6 +129,11 @@ class EventHeraldKill(EventData):
     KillerName: str
     Assisters: List[str]
 
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
 
 @dataclass
 class EventChampionKill(EventData):
@@ -125,28 +141,29 @@ class EventChampionKill(EventData):
     KillerName: str
     Assisters: List[str]
 
-    def to_rule(self, players: Mapping[str, Player]) -> Rule:
-        rule = {"team": players[self.VictimName].team}
-        rule["championVictim"] = players[self.VictimName].championName
-        if players[self.VictimName].position:
-            rule["killerPosition"] = players[self.VictimName].position
-        if self.KillerName in players and players[self.KillerName].position:
-            rule["victimPosition"] = players[self.VictimName].position
-        if any([self.KillerName.startswith(e) for e in ["Minion_", "Turret_", "Dragon", "Herald_", "Baron_", "SRU_Baron"]]):
-            rule["killer"] = self.KillerName.split('_')[0]
-        else:
-            rule["championKiller"] = players[self.KillerName].championName
-        return Rule(rule)
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+            setattr(self, "VictimName." + attr, getattr(players[self.VictimName], attr))
+            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+
 
 @dataclass
 class EventMultikill(EventData):
     KillerName: str
     KillStreak: int
 
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+
 
 @dataclass
 class EventInhibRespawned(EventData):
     pass
+
 
 @dataclass
 class EventInhibKilled(EventData):
@@ -154,11 +171,22 @@ class EventInhibKilled(EventData):
     KillerName: str
     Assisters: List[str]
 
+    def __post_init__(self):
+        players = self.Players
+        for attr in Player.__annotations__:
+            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+
 
 @dataclass
 class EventInhibRespawningSoon(EventData):
     pass
 
+
 @dataclass
 class EventGameEnd(EventData):
     Result: str
+
+
+class EventIdle(EventData):
+    pass

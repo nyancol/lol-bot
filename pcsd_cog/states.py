@@ -1,51 +1,50 @@
-from typing import List, DefaultDict, Dict
-from pcsd_cog.events import *
-from pcsd_cog import reader
-from pcsd_cog.reader import Rule
-from pcsd_cog.players import Player
-from collections import defaultdict
-from redbot.core.commands import Context
 from pathlib import Path
+from redbot.core.commands import Context
+from typing import List, DefaultDict, Dict, Optional
 import random
+import lavalink
+import lavalink.player_manager.Player
+from lavalink.read_api import Track
+import requests
 
+from pcsd_cog.events import EventData, EventIdle, EventGameStats, EventGameEnd
+from pcsd_cog.players import Player
+from pcsd_cog.model import Music, Rule
 
 
 class State:
     def __init__(self, ctx: Context):
         self.host: str = "192.168.1.11"
-        self._ctx = ctx
-        self._dj = ctx.bot.cogs["Audio"]
-        self._root = "/home/pi/pcsd_bot/data/cogs/Audio/localtracks/"
+        self._ctx: Context = ctx
+        self._player: lavalink.player_manager.Player = lavalink.get_player(ctx.guild.id).connect()
+        # await self._player.wait_until_ready()
+        self._root: str = "/home/pi/pcsd_bot/data/cogs/Audio/localtracks/"
+        self.current_music: Optional[Music] = None
 
-    async def tick(self) -> 'State':
+    async def tick(self) -> State:
         raise NotImplementedError
 
-    async def play_background(self, track):
-        if track.startswith("https://"):
-            return await self._dj.command_play(ctx=self._ctx, query=track)
-        return await self._dj.command_play(ctx=self._ctx, query=self._root + track)
+    async def play_music(self, track: Music) -> None:
+        track_obj: Track = (await self._player.search_yt(track.name))[0]
+        if not self._player.is_playing() or self.current_music is None or self.current_music < track:
+            self.current_music = track
+            await self._player.stop()
+            self._player.add(self._ctx.author, track_obj)
+            await self._player.play()
 
-    async def play_sfx(self, track):
-        if track.startswith("https://"):
-            return await self._dj.command_play(ctx=self._ctx, query=track)
-        return await self._dj.command_play(ctx=self._ctx, query=self._root + track)
-
-    async def stop(self):
-        return await self._dj.command_stop(ctx=self._ctx)
-
-    async def skip(self):
-        return await self._dj.command_skip(ctx=self._ctx)
-
-    def event_to_path(self, event, **argv):
-        path = Path(self._root) / type(event).__name__
-        for k, v in argv.items():
-            path /= f"{k}={v}"
-        if path.exists():
-            return [f.as_posix()[len(self._root):] for f in path.iterdir() if f.is_file()]
+    async def play_sfx(self, track: str):
+        track_sfx: Track = (await self._player.search_yt(track))[0]
+        if self._player.is_playing():
+            self._player.add(self._ctx.author, track_sfx)
+            track_music = self._player.current
+            track_music.start_timestamp(self._player.position)
+            track_music.seekable = True
+            self._player.add(self._ctx.author, track_music)
+            await self._player.skip()
         else:
-            return []
+            self._player.add(self._ctx.author, track_sfx)
 
-    def builder(self, state, *argc, **argv):
+    def builder(self, state, *argc, **argv) -> State:
         return state(self._ctx, *argc, **argv)
 
 
@@ -53,156 +52,81 @@ class StateMachine:
     def __init__(self, state: State):
         self.state = state
 
-    async def tick(self):
+    async def tick(self) -> None:
         self.state = await self.state.tick()
 
 
 class StateDisconnected(State):
-    async def tick(self):
+    async def tick(self) -> State:
         raise NotImplementedError
 
 class StateConnected(State):
-    async def tick(self):
+    async def tick(self) -> State:
         raise NotImplementedError
 
 
 class StateLobby(State):
-    async def tick(self):
+    async def tick(self) -> State:
         return self.builder(StateGame)
-
 
 class StateGame(State):
     def __init__(self, *argc, **argv):
         super().__init__(*argc, **argv)
-        players = self.fetch_playerlist()
-        self.players: Map[str, Player] = {p.summonerName: p for p in players}
         self.current_id: int = 0
-
-        # cell_range = "EVENEMENTS!A36:M41"
-        # values = reader.get_sheet(cell_range)
-        # self.mapping: Mapping[Event, Mapping[Rule, str]] = reader.parse(values)
+        self.rules_sfx: Rules = model.parse_sfx()
+        self.rules_music: Rules = model.parse_music()
 
     def fetch_gamestats(self) -> EventGameStats:
         return requests.get("https://" + self.host + ":2999/liveclientdata/gamestats", verify=False).json()
 
     def fetch_playerlist(self) -> List[Player]:
         try:
-            print("fetching player list")
             response = requests.get("https://" + self.host + ":2999/liveclientdata/playerlist", verify=False)
-            print(response)
-            response = response.json()
+            playerlist = response.json()
         except requests.exceptions.ConnectionError as exc:
-            print(exc)
-            return None
+            raise Exception(f"Failed requesting playerlist: {exc}")
         except TypeError as exc:
-            print(f"Error when fetching Playerlist: {response}")
-            return None
-        return [Player(**p) for p in response]
-
-    @staticmethod
-    def parse_gamedata(response) -> List[EventData]:
-        event_list = []
-        for e in response["Events"]:
-            event_class_str = "Event" + e["EventName"]
-            event_class = eval(event_class_str)
-            try:
-                event_list.append(event_class(**e))
-            except Exception as exc:
-                print(e)
-        # with open("./eventdata.json", "a") as f:
-            # f.write('\n'.join(event_list))
-        return event_list
+            raise Exception(f"Failed requesting playerlist: {exc}")
+        return [Player(**p) for p in playerlist]
 
     def fetch_gamedata(self) -> List[EventData]:
+        players: List[Player] = self.fetch_playerlist()
         params = {"eventID": self.current_id}
         try:
             response = requests.get("https://" + self.host + ":2999/liveclientdata/eventdata", params=params, verify=False).json()
         except Exception as exc:
             print(exc)
             return []
-        return self.parse_gamedata(response)
+
+        event_list: List[EventData] = [EventIdle(players, "EventIdle", self.current_id - 1, 0.0)]
+        for e in response["Events"]:
+            event_class_str = "Event" + e["EventName"]
+            event_class = eval(event_class_str)
+            try:
+                event_list.append(event_class(**{"Players": players, **e}))
+            except Exception as exc:
+                print(e)
+        return event_list
 
     async def tick(self) -> State:
-        events = self.fetch_gamedata()
-        if not self.is_playing():
-            await self.play_background()
+        events: List[EventData] = self.fetch_gamedata()
+        for e in events:
+            self.current_id = max(e.EventID, self.current_id) + 1
+            track_sfx: str = self.rules_sfx.match(e)
+            track_music: Music = self.rules_music.match(e)
 
-        for e in [e for e in events if e]:
-            self.current_id = max(event.EventID, self.current_id) + 1
-            track = self.eventdata_to_track(event)
-            if track:
-                # await self.stop()
-                await self.play_sfx(track)
+            if track_sfx:
+                # TODO: add probabilities here
+                await self.play_sfx(track_sfx)
+
+            if track_music:
+                await self.play_music(track_music)
 
         if any([isinstance(e, EventGameEnd) for e in events]):
             return self.builder(StateGameEnd)
         return self
 
-    async def play_background(self):
-        pass
-
-    async def play_sfx(self):
-        pass
-
-    def eventdata_to_track(self, event):
-        track = None
-        # if type(event) in self.mapping:
-        #     print("Found ChampionKill")
-        #     scores = {event.to_rule(self.players).distance(r): t for r, t in self.mapping[type(event)].items()}
-        #     max_score = max(scores.keys())
-        #     if max_score > 0:
-        #         track = scores[max_score]
-        #     print(f"Returning track: {track}")
-        #     return track
-
-        if isinstance(event, EventChampionKill):
-            pass
-            # if event.KillerName.startswith("Minion_"):
-            #     team = "ORDER" if self.players[event.VictimName].team == "CHAOS" else "CHAOS"
-            #     track = self.event_to_path(event, team=team)
-            # elif event.KillerName.startswith("Turret_"):
-            #     team = "ORDER" if self.players[event.VictimName].team == "CHAOS" else "CHAOS"
-            #     track = self.event_to_path(event, team=team)
-            # else:
-            #     try:
-            #         track = self.event_to_path(event, team=self.players[event.KillerName].team)
-            #     except Exception as exc:
-            #         print(f"{exc} - {event.KillerName} - {self.players}")
-        elif isinstance(event, EventMultikill):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventMinionsSpawning):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventTurretKilled):
-            if event.KillerName.startswith("Minion_"):
-                pass
-            else:
-                # track = self._soundfx(event, team=self.players[event.KillerName].team)
-                track = self.event_to_path(event)
-        elif isinstance(event, EventDragonKill):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventBaronKill):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventHeraldKill):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventInhibKilled):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventGameEnd):
-            track = self.event_to_path(event, Result=event.Result)
-        elif isinstance(event, EventGameStart):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventFirstBlood):
-            track = self.event_to_path(event)
-        elif isinstance(event, EventInhibRespawningSoon):
-            pass
-
-        if track and isinstance(track, list):
-            if len(track) > 1:
-                track = track[random.randint(0, len(track) - 1)]
-            else:
-                track = track[0]
-        return track
-
 
 class StateGameEnd(State):
-    async def tick(self):
+    async def tick(self) -> State:
         return self
