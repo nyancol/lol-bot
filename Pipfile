@@ -6,12 +6,15 @@ verify_ssl = true
 [dev-packages]
 pytest = "*"
 pytest-asyncio = "*"
+mypy = "*"
 
 [packages]
 requests = "*"
 google-api-python-client = "*"
 google-auth-httplib2 = "*"
 google-auth-oauthlib = "*"
+red-discordbot = "*"
+red-lavalink = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
