@@ -53,5 +53,4 @@ def test_music_priorities():
     with open("tests/sample_dragonkill.json") as f:
         event = EventDragonKill(Players=players, **json.load(f))
     music_2 = rules.match(event)
-
     assert music_2 > music_1

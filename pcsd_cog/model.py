@@ -4,6 +4,7 @@ from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from typing import List, Optional, Mapping, Tuple, Union, Callable, Any, MutableMapping, Iterable
+from mypy_extensions import VarArg, Arg
 import os.path
 import pickle
 import re
@@ -32,20 +33,22 @@ class Music:
 
 
 class Operand(Enum):
-    eq = 0
-    ne = 1
-    ge = 2
-    gt = 3
-    le = 4
-    lt = 5
-    contains = 6
+    eq = (lambda l, r: l == r,)
+    ne = (lambda l, r: l != r,)
+    ge = (lambda l, r: l >= r,)
+    gt = (lambda l, r: l > r,)
+    le = (lambda l, r: l <= r,)
+    lt = (lambda l, r: l < r,)
+    like = (lambda l, r: re.match(r, l) is not None,)
+    contains = (lambda l, r: l in r,)
 
-    def apply(self, left: Union[List[Any], Any], right: Any) -> bool:
+    def __init__(self, f):
+        self._value_ = f
+
+    def __call__(self, left: Union[List[Any], Any], right: Any) -> bool:
         if isinstance(left, list):
-            return any([getattr(l, f"__{self.name}__")(right) for l in left])
-        # if isinstance(right, list) and (self is not Operand.contains):
-        #     return any([getattr(l, f"__{self.name}__")(right) for l in left])
-        return getattr(left, f"__{self.name}__")(right)
+            return any([self.value(l, right) for l in left])
+        return self.value(left, right)
 
     @staticmethod
     def builder(opstr) -> Operand:
@@ -63,8 +66,10 @@ class Operand(Enum):
             return Operand.le
         elif opstr == "<":
             return Operand.lt
-        elif opstr == "in":
+        elif opstr.lower() == "in":
             return Operand.contains
+        elif opstr.lower() == "like":
+            return Operand.like
         else:
             raise Exception(f"Operand {opstr} not supported")
 
@@ -118,7 +123,7 @@ class Rule:
         # Filtering
         for rule, op, value in self._rule:
             try:
-                if op.apply(getattr_rec(event, rule[:]), value):
+                if op(getattr_rec(event, rule[:]), value):
                     score = score + 1 if score > -1 else 1
                 else:
                     return -1
