@@ -2,7 +2,7 @@ from pcsd_cog.model import parse_music, parse_sfx
 import json
 from pcsd_cog.events import EventChampionKill, EventDragonKill, EventIdle
 from pcsd_cog.players import Player
-from pcsd_cog.model import Music
+from pcsd_cog.model import Music, getattr_rec
 
 
 def test_parse_music():
@@ -54,3 +54,22 @@ def test_music_priorities():
         event = EventDragonKill(Players=players, **json.load(f))
     music_2 = rules.match(event)
     assert music_2 > music_1
+
+
+def test_count():
+    rules = parse_music()
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill_2.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    assert getattr_rec(event, ["COUNT(Assisters)"]) == 4
+
+
+def test_count_assists():
+    rules = parse_sfx()
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill_2.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    track = rules.match(event)
+    assert track == "https://destruction"

@@ -79,10 +79,13 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
         return obj
 
     attr = attr_list.pop(0)
-    if isinstance(getattr(obj, attr), list):
+    count_re = r"COUNT\((.+)\)"
+    if re.match(count_re, attr):
+        match = re.match(count_re, attr).groups()[0]
+        return len(getattr(obj, match))
+    elif isinstance(getattr(obj, attr), list):
         obj_elements = getattr(obj, attr)
-        attr = attr_list.pop(0)
-        return [getattr_rec(getattr(e, attr), attr_list) for e in obj_elements]
+        return [getattr_rec(e, attr_list) for e in obj_elements]
     return getattr_rec(getattr(obj, attr), attr_list)
 
 
@@ -122,12 +125,13 @@ class Rule:
 
         # Filtering
         for rule, op, value in self._rule:
+            # print(f"Rule {rule}, {op}, {value}, {event}")
             try:
                 if op(getattr_rec(event, rule[:]), value):
                     score = score + 1 if score > -1 else 1
                 else:
                     return -1
-            except AttributeError:
+            except AttributeError as exc:
                 return -1
         return score
 
@@ -188,7 +192,7 @@ def get_sheet(cell_range):
 
 
 def parse_sfx() -> Rules:
-    cell_range = 'TEST_SFX!A2:H30'
+    cell_range = 'TEST_SFX!A2:H60'
     rows = get_sheet(cell_range)
     rules = Rules()
     rules_width = 5
@@ -198,7 +202,12 @@ def parse_sfx() -> Rules:
         rule = Rule()
         for cell in [c for c in row[:rules_width] if c]:
             elements = cell.split(' ')
-            rule += (elements[0].split('.'), Operand.builder(elements[1]), elements[2])
+            value = elements[2]
+            try:
+                value = int(value)
+            except:
+                pass
+            rule += (elements[0].split('.'), Operand.builder(elements[1]), value)
         rules += (rule, row[link_index])
     return rules
 
@@ -222,6 +231,11 @@ def parse_music() -> Rules:
             rule = Rule()
         for cell in [c for c in row[:rules_width] if c]:
             elements = cell.split(' ')
-            rule += (elements[0].split('.'), Operand.builder(elements[1]), elements[2])
+            value = elements[2]
+            try:
+                value = int(value)
+            except:
+                pass
+            rule += (elements[0].split('.'), Operand.builder(elements[1]), value)
         rules += (rule, Music(row[link_index], int(row[priority_index])))
     return rules
