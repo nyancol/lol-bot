@@ -73,3 +73,9 @@ class Player:
     team: str
     skinName: Optional[str] = None
     rawSkinName: Optional[str] = None
+
+    def __repr__(self):
+        return (self.championName, self.summonerName).__repr__()
+
+    def __post_init__(self):
+        self.scores = Scores(**self.scores)

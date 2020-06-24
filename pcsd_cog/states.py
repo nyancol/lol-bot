@@ -1,10 +1,10 @@
+from __future__ import annotations
+
 from pathlib import Path
 from redbot.core.commands import Context
-from typing import List, DefaultDict, Dict, Optional
+from typing import List, DefaultDict, Dict, Optional, Mapping
 import random
 import lavalink
-import lavalink.player_manager.Player
-from lavalink.read_api import Track
 import requests
 
 from pcsd_cog.events import EventData, EventIdle, EventGameStats, EventGameEnd
@@ -25,7 +25,7 @@ class State:
         raise NotImplementedError
 
     async def play_music(self, track: Music) -> None:
-        track_obj: Track = (await self._player.search_yt(track.name))[0]
+        track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))[0]
         if not self._player.is_playing() or self.current_music is None or self.current_music < track:
             self.current_music = track
             await self._player.stop()
@@ -33,7 +33,7 @@ class State:
             await self._player.play()
 
     async def play_sfx(self, track: str):
-        track_sfx: Track = (await self._player.search_yt(track))[0]
+        track_sfx: lavalink.read_api.Track = (await self._player.search_yt(track))[0]
         if self._player.is_playing():
             self._player.add(self._ctx.author, track_sfx)
             track_music = self._player.current

@@ -1,29 +1,57 @@
-from dataclasses import dataclass
-from pcsd_cog.events import Rule
-from pcsd_cog import reader
-
-def test_mapping_generation():
-    cell_range = "TESTS!A2:E9"
-    values = reader.get_sheet(cell_range)
-    mapping = reader.parse(values)
-    print(mapping)
+from pcsd_cog.model import parse_music, parse_sfx
+import json
+from pcsd_cog.events import EventChampionKill, EventDragonKill, EventIdle
+from pcsd_cog.players import Player
+from pcsd_cog.model import Music
 
 
-def test_distance():
-    events = [
-             Rule({"team": "ORDER", "killer": "Minion"}),
-             Rule({"team": "ORDER"}),
-             Rule({"team": "CHAOS", "killer": "Minion"}),
-             Rule({"team": "CHAOS"}),
-             Rule({}),
-             ]
-    
-    expected_scores = [2, 1, 0, 0, 0]
+def test_parse_music():
+    print(parse_music())
 
-    cell_range = "TESTS!A1:E9"
-    values = reader.get_sheet(cell_range)
-    mapping = reader.parse(values)["EventInhibKilled"]
 
-    rule = list(mapping.keys())[0]
-    scores = [rule.distance(r) for r in events]
-    assert scores == expected_scores
+def test_parse_sfx():
+    print(parse_sfx())
+
+
+def test_sfx_matching():
+    rules = parse_sfx()
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    track = rules.match(event)
+    assert track == "http://success_2"
+
+
+def test_music_matching_event():
+    rules = parse_music()
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    music = rules.match(event)
+    assert music == Music(name="http://success", priority=0)
+
+
+def test_music_matching_idle():
+    rules = parse_music()
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    event = EventIdle(Players=players, EventID=0, EventName="EventIdle", EventTime=0.0)
+    music = rules.match(event)
+    assert music == Music("https://success_2", 5)
+
+
+def test_music_priorities():
+    rules = parse_music()
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    music_1 = rules.match(event)
+
+    with open("tests/sample_dragonkill.json") as f:
+        event = EventDragonKill(Players=players, **json.load(f))
+    music_2 = rules.match(event)
+
+    assert music_2 > music_1

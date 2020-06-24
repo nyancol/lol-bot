@@ -1,0 +1,11 @@
+{
+  "EventID": 0,
+  "EventName": "DragonKill",
+  "EventTime": 0.00000000000000000,
+  "DragonType": "Earth",
+  "Stolen": "False",
+  "KillerName": "Winner",
+  "Assisters": [
+    "almost_winner"
+  ]
+}

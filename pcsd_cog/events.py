@@ -1,8 +1,9 @@
 from enum import Enum
-from typing import List, Optional, Mapping
+from typing import List, Optional, Mapping, Union
 from pcsd_cog.players import Player
 import dataclasses
-from dataclasses import dataclass
+from dataclasses import dataclass, make_dataclass
+
 
 
 class Event:
@@ -45,6 +46,10 @@ class EventData(Event):
     EventID: int
     EventTime: float
 
+    def __post_init__(self):
+        self.Champion = make_dataclass("Champion", [(p.championName, Player) for p in self.Players])(**{p.championName: p for p in self.Players})
+        self.Summoner = make_dataclass("Summoner", [(p.summonerName, Player) for p in self.Players])(**{p.summonerName: p for p in self.Players})
+
 
 class EventGameStart(EventData):
     pass
@@ -56,9 +61,9 @@ class EventAce(EventData):
     AcingTeam: str
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "Acer." + attr, getattr(players[self.Acer], attr))
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Acer = players[self.Acer]
 
 
 @dataclass
@@ -66,9 +71,9 @@ class EventFirstBlood(EventData):
     Recipient: str
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "Recipient." + attr, getattr(players[self.Recipient], attr))
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Recipient = self.Players[self.Recipient]
 
 
 @dataclass
@@ -76,9 +81,9 @@ class EventFirstBrick(EventData):
     KillerName: str
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
 
 
 class EventMinionsSpawning(EventData):
@@ -92,10 +97,10 @@ class EventTurretKilled(EventData):
     Assisters: List[str]
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
-            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
+        self.Assisters = [player for name, player in players.items() if name in self.Assisters]
 
 
 @dataclass
@@ -106,9 +111,10 @@ class EventDragonKill(EventData):
     Assisters: List[str]
 
     def __post_init__(self):
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
-            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+        players = {p.summonerName: p for p in self.Players}
+        super().__post_init__()
+        self.Killer = players[self.KillerName]
+        self.Assisters = [player for name, player in players.items() if name in self.Assisters]
 
 @dataclass
 class EventBaronKill(EventData):
@@ -117,10 +123,10 @@ class EventBaronKill(EventData):
     Assisters: List[str]
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
-            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
+        self.Assisters = [player for name, player in players.items() if name in self.Assisters]
 
 
 @dataclass
@@ -130,23 +136,26 @@ class EventHeraldKill(EventData):
     Assisters: List[str]
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
-            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
+        self.Assisters = [player for name, player in players.items() if name in self.Assisters]
+
 
 @dataclass
 class EventChampionKill(EventData):
     VictimName: str
     KillerName: str
-    Assisters: List[str]
+    Assisters: List[Union[str, Player]]
+    Killer: Optional[Player] = None
+    Victim: Optional[Player] = None
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
-            setattr(self, "VictimName." + attr, getattr(players[self.VictimName], attr))
-            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
+        self.Victim = players[self.VictimName]
+        self.Assisters = [player for name, player in players.items() if name in self.Assisters]
 
 
 @dataclass
@@ -155,9 +164,9 @@ class EventMultikill(EventData):
     KillStreak: int
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
 
 
 @dataclass
@@ -172,10 +181,10 @@ class EventInhibKilled(EventData):
     Assisters: List[str]
 
     def __post_init__(self):
-        players = self.Players
-        for attr in Player.__annotations__:
-            setattr(self, "KillerName." + attr, getattr(players[self.KillerName], attr))
-            setattr(self, "Assisters." + attr, [getattr(players[a], attr) for a in self.Assisters])
+        super().__post_init__()
+        players = {p.summonerName: p for p in self.Players}
+        self.Killer = players[self.KillerName]
+        self.Assisters = [player for name, player in players.items() if name in self.Assisters]
 
 
 @dataclass

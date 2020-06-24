@@ -1,0 +1,10 @@
+{
+  "EventID": 0,
+  "EventName": "ChampionKill",
+  "EventTime": 0.00000000000000000,
+  "VictimName": "Looser",
+  "KillerName": "Winner",
+  "Assisters": [
+    "almost_winner"
+  ]
+}

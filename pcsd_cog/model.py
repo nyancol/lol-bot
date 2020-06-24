@@ -1,13 +1,15 @@
+from __future__ import annotations
+
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from typing import List, Optional, Mapping, Tuple, Union, Callable, Any, MutableMapping
-from mypy_extensions import VarArg
+from typing import List, Optional, Mapping, Tuple, Union, Callable, Any, MutableMapping, Iterable
 import os.path
 import pickle
 import re
 from enum import Enum
 from dataclasses import dataclass
+
 
 from pcsd_cog import events
 from pcsd_cog.events import Event, EventData
@@ -39,8 +41,10 @@ class Operand(Enum):
     contains = 6
 
     def apply(self, left: Union[List[Any], Any], right: Any) -> bool:
-        if isinstance(right, list):
+        if isinstance(left, list):
             return any([getattr(l, f"__{self.name}__")(right) for l in left])
+        # if isinstance(right, list) and (self is not Operand.contains):
+        #     return any([getattr(l, f"__{self.name}__")(right) for l in left])
         return getattr(left, f"__{self.name}__")(right)
 
     @staticmethod
@@ -66,6 +70,9 @@ class Operand(Enum):
 
 
 def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
+    if not attr_list:
+        return obj
+
     attr = attr_list.pop(0)
     if isinstance(getattr(obj, attr), list):
         obj_elements = getattr(obj, attr)
@@ -78,8 +85,8 @@ class OperandAgg(Enum):
     MIN = 0
     MAX = 1
 
-    def apply(self, players: List[Player], attr: List[str]) -> Player:
-        return max(players, key=lambda p: getattr_rec(p, attr))
+    def apply(self, players: Iterable[Player], attr: List[str]) -> Player:
+        return max(players, key=lambda p: getattr_rec(p, attr[:]))
 
     @staticmethod
     def builder(opstr: str) -> OperandAgg:
@@ -92,30 +99,35 @@ class OperandAgg(Enum):
 
 
 class Rule:
-    def __init__(self,
-                 rule: Optional[Tuple[List[str], Operand, str]] = None,
-                 agg: Optional[Tuple[List[str], OperandAgg]] = None):
-        self._rule: List[Tuple[List[str], Operand, str]] = [rule] if rule else []
-        self._agg: Optional[Tuple[List[str], OperandAgg]] = agg
+    def __init__(self, agg: Optional[Tuple[List[str], OperandAgg]] = None):
+        self._agg: Optional[Tuple[List[str], OperandAgg]] = agg if agg else None
+        self._rule: List[Tuple[List[str], Operand, str]] = []
 
     def __add__(self, other: Tuple[List[str], Operand, str]) -> Rule:
         self._rule.append(other)
         return self
 
     def __mul__(self, event: EventData) -> int:
-        score = 0
+        score = -1
 
         # Pre Aggregation
         if self._agg:
-            event.Players = [self._agg[1].apply(event.Players, self._agg[0])]
+            assert self._agg[0][0] == "Players"
+            event.Players = [self._agg[1].apply(event.Players, self._agg[0][1:][:])]
 
         # Filtering
         for rule, op, value in self._rule:
-            if op.apply(getattr_rec(event, rule), value):
-                score += 1
-            else:
-                score = 0
+            try:
+                if op.apply(getattr_rec(event, rule[:]), value):
+                    score = score + 1 if score > -1 else 1
+                else:
+                    return -1
+            except AttributeError:
+                return -1
         return score
+
+    def __repr__(self):
+        return (self._rule.__repr__(), self._agg.__repr__()).__repr__()
 
 
 class Rules:
@@ -139,61 +151,72 @@ class Rules:
                 score = r_score
         return res
 
+    def __repr__(self):
+        return self._rules.__repr__()
+
+def gauth():
+    creds = None
+    SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+    if os.path.exists('token.pickle'):
+        with open('token.pickle', 'rb') as token:
+            creds = pickle.load(token)
+    # If there are no (valid) credentials available, let the user log in.
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                'credentials.json', SCOPES)
+            creds = flow.run_local_server(port=0)
+        # Save the credentials for the next run
+        with open('token.pickle', 'wb') as token:
+            pickle.dump(creds, token)
+    return creds
+
 
 def get_sheet(cell_range):
     SPREADSHEET_ID = "1we_1P6c7dxkJ-x5ORuDBtQusOkrjMLmfgQdTJweNNgc"
-    SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-    with open('token.pickle', 'rb') as token:
-        creds = pickle.load(token)
-    service = build('sheets', 'v4', credentials=creds)
+    service = build('sheets', 'v4', credentials=gauth())
     sheet = service.spreadsheets()
     result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=cell_range).execute()
     return result.get('values', [])
 
 
-def _parse_section(rows) -> Rules:
-    event = getattr(events, rows[0][0])
-    rules: Rules = Rules()
-    for row in rows:
-        music = None
-        rule = Rule((["event"], Operand.eq, event))
-        for i, (cell1, cell2) in enumerate(zip(row[1:], row[2:])):
-            rule += (cell1.split('=')[0].split('.'), Operand.eq, cell1.split('=')[1])
-            if i+3 == len(row):
-                music = cell2
-        if not music:
-            raise Exception(f"Music not found at line: {row}")
-        rules += (rule, music)
+def parse_sfx() -> Rules:
+    cell_range = 'TEST_SFX!A2:H30'
+    rows = get_sheet(cell_range)
+    rules = Rules()
+    rules_width = 5
+    link_index = 7
+
+    for i, row in enumerate([row for row in rows if row]):
+        rule = Rule()
+        for cell in [c for c in row[:rules_width] if c]:
+            elements = cell.split(' ')
+            rule += (elements[0].split('.'), Operand.builder(elements[1]), elements[2])
+        rules += (rule, row[link_index])
     return rules
 
 
-def parse_music(rows) -> Rules:
-    sections = []
-    current_section = []
+def parse_music() -> Rules:
+    cell_range = 'TEST_MUSIC!A2:I30'
+    rows = get_sheet(cell_range)
     rules = Rules()
-    for i, row in enumerate(rows):
-        if any([v != '' for v in row]):
-            current_section.append(row)
-        if all([v == '' for v in row]) and current_section != [] or i+1 == len(rows):
-            sections.append(current_section)
-            current_section = []
+    rules_width = 5
+    agg_index, link_index, priority_index = 6, 7, 8
 
-    for section in sections:
-        rules.extend(_parse_section(section))
-    return rules
+    agg_values = '|'.join([f"({agg.name})" for agg in OperandAgg])
+    agg_re = rf"({agg_values})\((.+)\)"
 
-
-def parse_sfx(rows) -> Rules:
-    sections = []
-    current_section = []
-    rules = Rules()
-    for i, row in enumerate(rows):
-        if any([v != '' for v in row]):
-            current_section.append(row)
-        if all([v == '' for v in row]) and current_section != [] or i+1 == len(rows):
-            sections.append(current_section)
-            current_section = []
-
-    for section in sections:
-        rules.extend(_parse_section(section))
+    for i, row in enumerate([row for row in rows if row]):
+        match = re.match(agg_re, row[agg_index])
+        if match:
+            elements = match.groups()
+            rule = Rule((elements[3].split('.'), OperandAgg.builder(elements[0])))
+        else:
+            rule = Rule()
+        for cell in [c for c in row[:rules_width] if c]:
+            elements = cell.split(' ')
+            rule += (elements[0].split('.'), Operand.builder(elements[1]), elements[2])
+        rules += (rule, Music(row[link_index], int(row[priority_index])))
     return rules
