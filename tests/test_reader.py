@@ -79,4 +79,11 @@ def test_preaggregation(rules_music):
 
 
 def test_music_queue(rules_music):
-    pass
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    music_1 = rules_music.match(event)
+    music_2 = rules_music.match(event)
+    assert music_1.name == "http://success"
+    assert music_2.name == "https://success_2"
