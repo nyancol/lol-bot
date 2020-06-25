@@ -14,8 +14,9 @@ from pcsd_cog.states import StateMachine, StateLobby
 class Mycog(commands.Cog):
     @commands.command()
     async def schedule(self, ctx):
-        await lavalink.connect(ctx.author.voice.channel)
-        machine = StateMachine(StateLobby(ctx))
+        player = await lavalink.connect(ctx.author.voice.channel)
+        await player.wait_until_ready()
+        self.machine = StateMachine(StateLobby(ctx))
         print("Running state machine")
 
         async def periodic():
@@ -24,6 +25,10 @@ class Mycog(commands.Cog):
                 await asyncio.sleep(1)
 
         await periodic()
+
+    @commands.command()
+    async def data_refresh(self, ctx):
+        self.machine.refresh()
 
     @commands.command()
     async def test(self, ctx):

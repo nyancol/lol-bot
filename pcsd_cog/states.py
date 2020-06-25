@@ -9,7 +9,21 @@ import requests
 
 from pcsd_cog.events import EventData, EventIdle, EventGameStats, EventGameEnd
 from pcsd_cog.players import Player
+from pcsd_cog import model
 from pcsd_cog.model import Music, Rule
+from datetime import datetime, timedelta
+
+
+class SFXEnabled:
+    def __init__(self):
+        self.last: Optional[datetime] = None
+
+    @property
+    def enabled(self):
+        if self.last is None or datetime.now() - self.last > timedelta(minutes=1):
+            self.last = datetime.now()
+            return True
+        return False
 
 
 class State:
@@ -23,6 +37,9 @@ class State:
 
     async def tick(self) -> State:
         raise NotImplementedError
+
+    def refresh(self) -> None:
+        pass
 
     async def play_music(self, track: Music) -> None:
         track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))[0]
@@ -52,6 +69,9 @@ class StateMachine:
     def __init__(self, state: State):
         self.state = state
 
+    def refresh(self) -> None:
+        self.state.refresh()
+
     async def tick(self) -> None:
         self.state = await self.state.tick()
 
@@ -69,12 +89,21 @@ class StateLobby(State):
     async def tick(self) -> State:
         return self.builder(StateGame)
 
+
 class StateGame(State):
     def __init__(self, *argc, **argv):
         super().__init__(*argc, **argv)
         self.current_id: int = 0
-        self.rules_sfx: Rules = model.parse_sfx()
-        self.rules_music: Rules = model.parse_music()
+        range_sfx = 'SFX!A2:I30'
+        self.rules_sfx: Rules = model.parse_sfx(range_sfx)
+
+        range_music = 'MUSIC!A2:I30'
+        self.rules_music: Rules = model.parse_music(range_music)
+        self.sfx_manager = SFXEnabled()
+
+    def refresh(self) -> None:
+        self.rules_sfx = model.parse_sfx()
+        self.rules_music = model.parse_music()
 
     def fetch_gamestats(self) -> EventGameStats:
         return requests.get("https://" + self.host + ":2999/liveclientdata/gamestats", verify=False).json()
@@ -115,8 +144,7 @@ class StateGame(State):
             track_sfx: str = self.rules_sfx.match(e)
             track_music: Music = self.rules_music.match(e)
 
-            if track_sfx:
-                # TODO: add probabilities here
+            if track_sfx and self.sfx_manager.enabled():
                 await self.play_sfx(track_sfx)
 
             if track_music:

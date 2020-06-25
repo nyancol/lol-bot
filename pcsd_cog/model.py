@@ -10,6 +10,7 @@ import pickle
 import re
 from enum import Enum
 from dataclasses import dataclass
+import random
 
 
 from pcsd_cog import events
@@ -78,11 +79,12 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
     if not attr_list:
         return obj
 
-    attr = attr_list.pop(0)
+    attr: str = attr_list.pop(0)
     count_re = r"COUNT\((.+)\)"
-    if re.match(count_re, attr):
-        match = re.match(count_re, attr).groups()[0]
-        return len(getattr(obj, match))
+    match = re.match(count_re, attr)
+    if match:
+        attr = match.groups()[0]
+        return len(getattr(obj, attr))
     elif isinstance(getattr(obj, attr), list):
         obj_elements = getattr(obj, attr)
         return [getattr_rec(e, attr_list) for e in obj_elements]
@@ -90,11 +92,14 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
 
 
 class OperandAgg(Enum):
-    MIN = 0
-    MAX = 1
+    MIN = (lambda players, key: max(players, key=key),)
+    MAX = (lambda players, key: min(players, key=key),)
 
-    def apply(self, players: Iterable[Player], attr: List[str]) -> Player:
-        return max(players, key=lambda p: getattr_rec(p, attr[:]))
+    def __init__(self, f):
+        self._value_ = f
+
+    def __call__(self, players: Iterable[Player], attr: List[str]) -> Player:
+        return self.value(players, lambda p: getattr_rec(p, attr[:]))
 
     @staticmethod
     def builder(opstr: str) -> OperandAgg:
@@ -121,7 +126,7 @@ class Rule:
         # Pre Aggregation
         if self._agg:
             assert self._agg[0][0] == "Players"
-            event.Players = [self._agg[1].apply(event.Players, self._agg[0][1:][:])]
+            event.Players = [self._agg[1](event.Players, self._agg[0][1:][:])]
 
         # Filtering
         for rule, op, value in self._rule:
@@ -152,13 +157,22 @@ class Rules:
 
     def match(self, event: EventData) -> Optional[Union[str, Music]]:
         score = 0
-        res = None
+        res: List[Tuple[Rule, Union[str, Music]]] = []
         for rule, track in self._rules.items():
             r_score = rule * event
             if r_score > score:
-                res = track
+                res = [(rule, track)]
                 score = r_score
-        return res
+            elif r_score == score:
+                res.append((rule, track))
+        if res:
+            random.shuffle(res)
+            rule = res[0][0]
+            track = res[0][1]
+            if isinstance(track, Music):
+                del self._rules[rule]
+            return track
+        return None
 
     def __repr__(self):
         return self._rules.__repr__()
@@ -191,8 +205,7 @@ def get_sheet(cell_range):
     return result.get('values', [])
 
 
-def parse_sfx() -> Rules:
-    cell_range = 'TEST_SFX!A2:H60'
+def parse_sfx(cell_range) -> Rules:
     rows = get_sheet(cell_range)
     rules = Rules()
     rules_width = 5
@@ -212,8 +225,7 @@ def parse_sfx() -> Rules:
     return rules
 
 
-def parse_music() -> Rules:
-    cell_range = 'TEST_MUSIC!A2:I30'
+def parse_music(cell_range) -> Rules:
     rows = get_sheet(cell_range)
     rules = Rules()
     rules_width = 5
