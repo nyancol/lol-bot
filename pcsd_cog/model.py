@@ -33,48 +33,6 @@ class Music:
         return self.priority >= other.priority
 
 
-class Operand(Enum):
-    eq = (lambda l, r: l == r,)
-    ne = (lambda l, r: l != r,)
-    ge = (lambda l, r: l >= r,)
-    gt = (lambda l, r: l > r,)
-    le = (lambda l, r: l <= r,)
-    lt = (lambda l, r: l < r,)
-    like = (lambda l, r: re.match(r, l) is not None,)
-    contains = (lambda l, r: l in r,)
-
-    def __init__(self, f):
-        self._value_ = f
-
-    def __call__(self, left: Union[List[Any], Any], right: Any) -> bool:
-        if isinstance(left, list):
-            return any([self.value(l, right) for l in left])
-        return self.value(left, right)
-
-    @staticmethod
-    def builder(opstr) -> Operand:
-        if opstr == "==":
-            return Operand.eq
-        elif opstr == "!=":
-            return Operand.ne
-        elif opstr == "!=":
-            return Operand.ne
-        elif opstr == ">=":
-            return Operand.ge
-        elif opstr == ">":
-            return Operand.gt
-        elif opstr == "<=":
-            return Operand.le
-        elif opstr == "<":
-            return Operand.lt
-        elif opstr.lower() == "in":
-            return Operand.contains
-        elif opstr.lower() == "like":
-            return Operand.like
-        else:
-            raise Exception(f"Operand {opstr} not supported")
-
-
 def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
     if not attr_list:
         return obj
@@ -91,52 +49,122 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
     return getattr_rec(getattr(obj, attr), attr_list)
 
 
-class OperandAgg(Enum):
-    MIN = (lambda players, key: max(players, key=key),)
-    MAX = (lambda players, key: min(players, key=key),)
+class Expression:
+    class AggOperand(Enum):
+        MAX = (max,)
+        MIN = (min,)
+        COUNT = (len,)
+
+        def __init__(self, f):
+            self._value_ = f
+
+        def __call__(self, value, **args):
+            return self.value(l, **args)
+
+    def __init__(self, exp):
+        self.attr: Any = exp
+        regex_agg = r"(MAX|MIN|COUNT|max|min|count)\((.+)\)(\.\w+)+"
+        match_agg = re.match(regex_agg, exp)
+        self.agg_op: Optional[AggOperand] = None
+        self.remaining: Optional[List[str]] = None
+
+        match = re.match(regex_agg, exp)
+        if match:
+            self.agg_op = AggOperand[match.group(1).upper()]
+            self.attr = match.group(2)
+            if match.group(3) is not None:
+                self.remaining = match.group(3).split('.')
+
+        path_regex = r"(\w+\.)+\w+"
+        match_path = re.match(path_regex, self.attr)
+        if match_path:
+            self.attr = self.attr.split('.')
+        else:
+            try:
+                self.attr = int(self.attr)
+            except ValueError:
+                pass
+
+    def resolve(self, obj) -> Any:
+        value: Any = self.attr
+        if isinstance(self.attr, list) and self.agg_op is None:
+            value = getattr_rec(obj, self.attr)
+        if self.agg_op and self.remaining is None:
+            value = self.agg_op(value)
+        elif self.agg_op and self.remaining:
+            list_attr = self.attr.pop(0)
+            agg_attr = self.agg_op(list_attr, key=lambda e: getattr_rec(e, self.attr[:]))
+            value = getattr_rec(agg_attr, self.remaining)
+        return value
+
+
+class Predicate(Enum):
+    eq = (lambda l, r: l == r,)
+    ne = (lambda l, r: l != r,)
+    ge = (lambda l, r: l >= r,)
+    gt = (lambda l, r: l > r,)
+    le = (lambda l, r: l <= r,)
+    lt = (lambda l, r: l < r,)
+    like = (lambda l, r: re.match(r, l) is not None,)
+    contains = (lambda l, r: l in r,)
 
     def __init__(self, f):
         self._value_ = f
 
-    def __call__(self, players: Iterable[Player], attr: List[str]) -> Player:
-        return self.value(players, lambda p: getattr_rec(p, attr[:]))
+    def __call__(self, left: Any, right: Any) -> bool:
+        return self.value(left, right)
 
     @staticmethod
-    def builder(opstr: str) -> OperandAgg:
-        if opstr == "MAX":
-            return OperandAgg.MAX
-        elif opstr == "MIN":
-            return OperandAgg.MIN
+    def builder(opstr) -> Predicate:
+        if opstr == "==":
+            return Predicate.eq
+        elif opstr == "!=":
+            return Predicate.ne
+        elif opstr == "!=":
+            return Predicate.ne
+        elif opstr == ">=":
+            return Predicate.ge
+        elif opstr == ">":
+            return Predicate.gt
+        elif opstr == "<=":
+            return Predicate.le
+        elif opstr == "<":
+            return Predicate.lt
+        elif opstr.lower() == "in":
+            return Predicate.contains
+        elif opstr.lower() == "like":
+            return Predicate.like
         else:
-            raise Exception(f"Unknown operand: {opstr}")
+            raise Exception(f"Predicate {opstr} not supported")
 
 
 class Rule:
-    def __init__(self, agg: Optional[Tuple[List[str], OperandAgg]] = None):
-        self._agg: Optional[Tuple[List[str], OperandAgg]] = agg if agg else None
-        self._rule: List[Tuple[List[str], Operand, str]] = []
+    def __init__(self):
+        self._rule: List[Tuple[Expression, Predicate, Expression]] = []
 
-    def __add__(self, other: Tuple[List[str], Operand, str]) -> Rule:
-        self._rule.append(other)
+    def __add__(self, cell: str) -> Rule:
+        elements = cell.split(' ')
+        l_exp, pred, r_exp = (Expression(elements[0]),
+                              Predicate.builder(elements[1]),
+                              Expression(elements[2]))
+        self._rule.append((l_exp, pred, r_exp))
         return self
 
+    @staticmethod
+    def _match(rule: Tuple[Expression, Predicate, Expression], event: EventData) -> bool:
+        try:
+            return rule[1](rule[0].resolve(event), rule[2].resolve(event))
+        except AttributeError as exc:
+            return False
+
     def __mul__(self, event: EventData) -> int:
-        score = -1
+        score: int = -1
 
-        # Pre Aggregation
-        if self._agg:
-            assert self._agg[0][0] == "Players"
-            event.Players = [self._agg[1](event.Players, self._agg[0][1:][:])]
-
-        # Filtering
-        for rule, op, value in self._rule:
+        for sub_rule in self._rule:
             # print(f"Rule {rule}, {op}, {value}, {event}")
-            try:
-                if op(getattr_rec(event, rule[:]), value):
-                    score = score + 1 if score > -1 else 1
-                else:
-                    return -1
-            except AttributeError as exc:
+            if Rule._match(sub_rule, event):
+                score = score + 1 if score > -1 else 1
+            else:
                 return -1
         return score
 
@@ -205,8 +233,7 @@ def get_sheet(cell_range):
     return result.get('values', [])
 
 
-def parse_sfx(cell_range) -> Rules:
-    rows = get_sheet(cell_range)
+def parse_sfx(rows: List[List[str]]) -> Rules:
     rules = Rules()
     rules_width = 5
     link_index = 7
@@ -214,40 +241,19 @@ def parse_sfx(cell_range) -> Rules:
     for i, row in enumerate([row for row in rows if row]):
         rule = Rule()
         for cell in [c for c in row[:rules_width] if c]:
-            elements = cell.split(' ')
-            value = elements[2]
-            try:
-                value = int(value)
-            except:
-                pass
-            rule += (elements[0].split('.'), Operand.builder(elements[1]), value)
+            rule += cell
         rules += (rule, row[link_index])
     return rules
 
 
-def parse_music(cell_range) -> Rules:
-    rows = get_sheet(cell_range)
+def parse_music(rows: List[List[str]]) -> Rules:
     rules = Rules()
     rules_width = 5
-    agg_index, link_index, priority_index = 6, 7, 8
-
-    agg_values = '|'.join([f"({agg.name})" for agg in OperandAgg])
-    agg_re = rf"({agg_values})\((.+)\)"
+    link_index, priority_index = 7, 8
 
     for i, row in enumerate([row for row in rows if row]):
-        match = re.match(agg_re, row[agg_index])
-        if match:
-            elements = match.groups()
-            rule = Rule((elements[3].split('.'), OperandAgg.builder(elements[0])))
-        else:
-            rule = Rule()
+        rule = Rule()
         for cell in [c for c in row[:rules_width] if c]:
-            elements = cell.split(' ')
-            value = elements[2]
-            try:
-                value = int(value)
-            except:
-                pass
-            rule += (elements[0].split('.'), Operand.builder(elements[1]), value)
+            rule += cell
         rules += (rule, Music(row[link_index], int(row[priority_index])))
     return rules
