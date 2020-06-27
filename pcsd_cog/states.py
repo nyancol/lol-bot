@@ -94,16 +94,18 @@ class StateGame(State):
     def __init__(self, *argc, **argv):
         super().__init__(*argc, **argv)
         self.current_id: int = 0
-        range_sfx = 'SFX!A2:I30'
-        self.rules_sfx: Rules = model.parse_sfx(range_sfx)
+        rows: List[List[str]] = model.get_sheet('SFX!A2:I30')
+        self.rules_sfx: Rules = model.parse_sfx(rows)
 
-        range_music = 'MUSIC!A2:I30'
-        self.rules_music: Rules = model.parse_music(range_music)
+        rows: List[List[str]] = model.get_sheet('MUSIC!A2:I30')
+        self.rules_music: Rules = model.parse_music(rows)
         self.sfx_manager = SFXEnabled()
 
     def refresh(self) -> None:
-        self.rules_sfx = model.parse_sfx()
-        self.rules_music = model.parse_music()
+        rows_sfx: List[List[str]] = model.get_sheet('SFX!A2:I30')
+        self.rules_sfx = model.parse_sfx(rows_sfx)
+        rows_music: List[List[str]] = model.get_sheet('MUSIC!A2:I30')
+        self.rules_music = model.parse_music(rows_music)
 
     def fetch_gamestats(self) -> EventGameStats:
         return requests.get("https://" + self.host + ":2999/liveclientdata/gamestats", verify=False).json()
