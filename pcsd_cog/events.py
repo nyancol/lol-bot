@@ -48,7 +48,8 @@ class EventData(Event):
 
     def __post_init__(self):
         self.Champion = make_dataclass("Champion", [(p.championName, Player) for p in self.Players])(**{p.championName: p for p in self.Players})
-        self.Summoner = make_dataclass("Summoner", [(p.summonerName, Player) for p in self.Players])(**{p.summonerName: p for p in self.Players})
+        summoner_class = make_dataclass("Summoner", [(p.summonerName.replace(' ', '_'), Player) for p in self.Players])
+        self.Summoner = summoner_class(**{p.summonerName.replace(' ', '_'): p for p in self.Players})
 
 
 class EventGameStart(EventData):

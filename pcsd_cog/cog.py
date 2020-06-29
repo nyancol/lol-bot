@@ -21,8 +21,8 @@ class Mycog(commands.Cog):
 
         async def periodic():
             while True:
-                await machine.tick()
-                await asyncio.sleep(1)
+                await self.machine.tick()
+                await asyncio.sleep(5)
 
         await periodic()
 

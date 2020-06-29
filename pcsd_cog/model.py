@@ -5,7 +5,7 @@ from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from typing import List, Optional, Mapping, Tuple, Union, Callable, Any, MutableMapping, Iterable
-from mypy_extensions import VarArg, Arg
+# from mypy_extensions import VarArg, Arg
 import os.path
 import pickle
 import re
@@ -257,10 +257,13 @@ def parse_sfx(rows: List[List[str]]) -> Rules:
     link_index = 7
 
     for i, row in enumerate([row for row in rows if row]):
+        if all([cell == "" for cell in row]):
+            continue
         rule = Rule()
         for cell in [c for c in row[:rules_width] if c]:
             rule += cell
-        rules += (rule, row[link_index])
+        if row[link_index].strip():
+            rules += (rule, row[link_index])
     return rules
 
 
@@ -271,7 +274,8 @@ def parse_music(rows: List[List[str]]) -> Rules:
 
     for i, row in enumerate([row for row in rows if row]):
         rule = Rule()
-        for cell in [c for c in row[:rules_width] if c]:
+        for cell in [c for c in row[:rules_width] if c.strip()]:
             rule += cell
-        rules += (rule, Music(row[link_index], int(row[priority_index])))
+        if row[link_index].strip():
+            rules += (rule, Music(row[link_index], int(row[priority_index])))
     return rules

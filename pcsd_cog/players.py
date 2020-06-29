@@ -74,6 +74,9 @@ class Player:
     skinName: Optional[str] = None
     rawSkinName: Optional[str] = None
 
+    def __post_init__(self):
+        self.summonerName = self.summonerName.replace(' ', '_')
+
     def __repr__(self):
         return (self.championName, self.summonerName).__repr__()
 
