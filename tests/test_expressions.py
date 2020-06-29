@@ -1,5 +1,7 @@
+import json
 from pcsd_cog import model
-from pcsd_cog.events import EventData
+from pcsd_cog.players import Player
+from pcsd_cog.events import EventData, EventChampionKill
 
 
 ## EQ
@@ -60,3 +62,60 @@ def test_aaa_like_aa():
 def test_baa_notlike_aa():
     rule = model.Rule() + "ba LIKE aa.*"
     assert model.Rule._match(rule._rule[0], EventData("", "", "", "")) == False
+
+
+## EVENTS
+def test_players_eq():
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    rule = (model.Rule() + "Players.championName == Annie")
+    assert model.Rule._match(rule._rule[0], event)
+    rule = (model.Rule() + "Players.summonerName == Winner")
+    assert model.Rule._match(rule._rule[0], event)
+    rule = (model.Rule() + "Players.summonerName == asdf")
+    assert model.Rule._match(rule._rule[0], event) == False
+
+
+def test_players_count_1():
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    rule = (model.Rule() + "COUNT(Assisters) == 1")
+    assert model.Rule._match(rule._rule[0], event)
+
+
+def test_players_count_4():
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill_2.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    rule = (model.Rule() + "COUNT(Assisters) == 4")
+    assert model.Rule._match(rule._rule[0], event)
+
+
+def test_players_max_champname():
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    event = EventData(players, "", "", "")
+    rule = (model.Rule() + "MAX(Players.scores.kills).championName == Annie")
+    assert model.Rule._match(rule._rule[0], event)
+
+
+def test_players_max_kills():
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    event = EventData(players, "", "", "")
+    rule = (model.Rule() + "MAX(Players.scores.kills).scores.kills == 3")
+    assert model.Rule._match(rule._rule[0], event)
+
+
+def test_invalid_path():
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    with open("tests/sample_championkill.json") as f:
+        event = EventChampionKill(Players=players, **json.load(f))
+    rule = (model.Rule() + "TurretKilled == asdf")
+    assert model.Rule._match(rule._rule[0], event) == False

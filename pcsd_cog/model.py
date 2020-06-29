@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from traceback import format_exc
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
@@ -37,6 +38,7 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
     if not attr_list:
         return obj
 
+    attr_list = attr_list[:]
     attr: str = attr_list.pop(0)
     count_re = r"COUNT\((.+)\)"
     match = re.match(count_re, attr)
@@ -49,21 +51,22 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
     return getattr_rec(getattr(obj, attr), attr_list)
 
 
+class AggOperand(Enum):
+    MAX = (max,)
+    MIN = (min,)
+    COUNT = (len,)
+
+    def __init__(self, f):
+        self._value_ = f
+
+    def __call__(self, l, **args):
+        return self.value(l, **args)
+
+
 class Expression:
-    class AggOperand(Enum):
-        MAX = (max,)
-        MIN = (min,)
-        COUNT = (len,)
-
-        def __init__(self, f):
-            self._value_ = f
-
-        def __call__(self, value, **args):
-            return self.value(l, **args)
-
     def __init__(self, exp):
         self.attr: Any = exp
-        regex_agg = r"(MAX|MIN|COUNT|max|min|count)\((.+)\)(\.\w+)+"
+        regex_agg = r"(MAX|MIN|COUNT|max|min|count)\((.+)\)(.*)"
         match_agg = re.match(regex_agg, exp)
         self.agg_op: Optional[AggOperand] = None
         self.remaining: Optional[List[str]] = None
@@ -71,30 +74,38 @@ class Expression:
         match = re.match(regex_agg, exp)
         if match:
             self.agg_op = AggOperand[match.group(1).upper()]
-            self.attr = match.group(2)
-            if match.group(3) is not None:
-                self.remaining = match.group(3).split('.')
-
-        path_regex = r"(\w+\.)+\w+"
-        match_path = re.match(path_regex, self.attr)
-        if match_path:
-            self.attr = self.attr.split('.')
+            self.attr = match.group(2).split('.')
+            assert self.attr != [], self.attr
+            if match.group(3):
+                self.remaining = [e for e in match.group(3).split('.') if e]
         else:
-            try:
-                self.attr = int(self.attr)
-            except ValueError:
-                pass
+            path_regex = r"(\w+\.)+\w+"
+            match_path = re.match(path_regex, self.attr)
+            if match_path:
+                self.attr = self.attr.split('.')
+                assert self.attr != [], self.attr
+            else:
+                try:
+                    self.attr = int(self.attr)
+                except ValueError:
+                    pass
 
     def resolve(self, obj) -> Any:
         value: Any = self.attr
         if isinstance(self.attr, list) and self.agg_op is None:
             value = getattr_rec(obj, self.attr)
-        if self.agg_op and self.remaining is None:
-            value = self.agg_op(value)
+        elif self.agg_op and self.remaining is None:
+            value = self.agg_op(getattr_rec(obj, self.attr))
         elif self.agg_op and self.remaining:
-            list_attr = self.attr.pop(0)
-            agg_attr = self.agg_op(list_attr, key=lambda e: getattr_rec(e, self.attr[:]))
+            list_values = getattr(obj, self.attr.pop(0))
+            agg_attr = self.agg_op(list_values, key=lambda v: getattr_rec(v, self.attr[:]))
             value = getattr_rec(agg_attr, self.remaining)
+        elif isinstance(self.attr, str):
+            try:
+                value = getattr(obj, self.attr)
+            except AttributeError:
+                # print(f"No resolution possible for {self.attr} with {obj}")
+                pass
         return value
 
 
@@ -153,15 +164,22 @@ class Rule:
     @staticmethod
     def _match(rule: Tuple[Expression, Predicate, Expression], event: EventData) -> bool:
         try:
-            return rule[1](rule[0].resolve(event), rule[2].resolve(event))
+            l_value = rule[0].resolve(event)
+            r_value = rule[2].resolve(event)
+            if isinstance(l_value, list) and not isinstance(r_value, list):
+                return any([rule[1](l, r_value) for l in l_value])
+            elif not isinstance(l_value, list) and isinstance(r_value, list):
+                return any([rule[1](l_value, r) for r in r_value])
+            else:
+                return rule[1](l_value, r_value)
         except AttributeError as exc:
+            # print(f"Matching error: {exc} - {format_exc()}")
             return False
 
     def __mul__(self, event: EventData) -> int:
         score: int = -1
 
         for sub_rule in self._rule:
-            # print(f"Rule {rule}, {op}, {value}, {event}")
             if Rule._match(sub_rule, event):
                 score = score + 1 if score > -1 else 1
             else:
@@ -169,7 +187,7 @@ class Rule:
         return score
 
     def __repr__(self):
-        return (self._rule.__repr__(), self._agg.__repr__()).__repr__()
+        return (self._rule.__repr__()).__repr__()
 
 
 class Rules:

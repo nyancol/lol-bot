@@ -1,21 +1,59 @@
-from pcsd_cog.model import parse_music, parse_sfx
 import json
-from pcsd_cog.events import EventChampionKill, EventDragonKill, EventIdle
-from pcsd_cog.players import Player
-from pcsd_cog.model import Music, getattr_rec
 import pytest
+
+from pcsd_cog import events
+from pcsd_cog import model
+from pcsd_cog.events import EventChampionKill, EventDragonKill, EventIdle
+from pcsd_cog.model import Music, getattr_rec
+from pcsd_cog.model import parse_music, parse_sfx, Music, getattr_rec
+from pcsd_cog.players import Player
+
+
+def test_multiple_subrules():
+    rule = model.Rule()
+    rule += "1 == 1"
+    rule += "1 == 2"
+    assert len(rule._rule) == 2
+
+def test_match_2_rules():
+    rules = model.Rules()
+    rule = model.Rule() + "KillerName == Winner"
+    rules += (rule, "ok")
+    rule = model.Rule() + "KillerName == Looser"
+    rules += (rule, "ko")
+
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    event = events.EventChampionKill(players, "", 0, 0.0, "Looser", "Winner", [])
+    res = rules.match(event)
+    assert res == "ok"
+
+
+def test_match_element_in_list():
+    rules = model.Rules()
+    rule = model.Rule() + "Assisters.summonerName == assister_1"
+    rules += (rule, "ok")
+    rule = model.Rule() + "Assisters.summonerName == Winner"
+    rules += (rule, "ko")
+
+    with open("tests/sample_players.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+    event = events.EventChampionKill(players, "", 0, 0.0, "Looser", "Winner", ["assister_1", "assister_2"])
+    res = rules.match(event)
+    assert res == "ok"
+
 
 
 @pytest.fixture
 def rules_sfx():
-    range_sfx = 'TEST_SFX!A2:I40'
-    return parse_sfx(range_sfx)
+    rows = model.get_sheet('TEST_SFX!A2:I40')
+    return parse_sfx(rows)
 
 
 @pytest.fixture
 def rules_music():
-    range_music = 'TEST_MUSIC!A2:I30'
-    return parse_music(range_music)
+    rows = model.get_sheet('TEST_MUSIC!A2:I30')
+    return parse_music(rows)
 
 
 def test_sfx_matching(rules_sfx):
@@ -48,12 +86,12 @@ def test_music_priorities(rules_music):
     with open("tests/sample_players.json") as f:
         players = [Player(**p) for p in json.load(f)]
     with open("tests/sample_championkill.json") as f:
-        event = EventChampionKill(Players=players, **json.load(f))
-    music_1 = rules_music.match(event)
+        event_champion = EventChampionKill(Players=players, **json.load(f))
+    music_1 = rules_music.match(event_champion)
 
     with open("tests/sample_dragonkill.json") as f:
-        event = EventDragonKill(Players=players, **json.load(f))
-    music_2 = rules_music.match(event)
+        event_dragon = EventDragonKill(Players=players, **json.load(f))
+    music_2 = rules_music.match(event_dragon)
     assert music_2 > music_1
 
 
