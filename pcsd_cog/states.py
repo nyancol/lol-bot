@@ -48,9 +48,11 @@ class State:
 
     async def play_music(self, track: Music) -> None:
         print(f"Loading music track: {track.name}")
-        track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))
-        print(f"Track found: {track_obj} - {track_obj.tracks}")
-        track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))[0]
+        try:
+            track_obj = (await self._player.load_tracks(track.name)).tracks[0]
+        except IndexError:
+            print(f"No tracks found for: {track.name}")
+            return
         if not self._player.is_playing or self.current_music is None or self.current_music < track:
             self.current_music = track
             await self._player.stop()
@@ -59,18 +61,17 @@ class State:
 
     async def play_sfx(self, track: str):
         print(f"Loading sfx track: {track}")
-        await self._player.connect()
-        track_sfx: lavalink.read_api.Track = (await self._player.search_yt(track))
-        track_sfx = track_sfx.tracks[0]
-        if self._player.is_playing():
+        track_sfx = (await self._player.load_tracks(track)).tracks[0]
+        if self._player.is_playing and self._player.current:
             self._player.add(self.author, track_sfx)
             track_music = self._player.current
-            track_music.start_timestamp(self._player.position)
+            track_music.start_timestamp = self._player.position
             track_music.seekable = True
             self._player.add(self.author, track_music)
             await self._player.skip()
         else:
             self._player.add(self.author, track_sfx)
+            await self._player.play()
 
     def builder(self, state, *argc, **argv) -> State:
         return state(self._player, *argc, **argv)
@@ -130,7 +131,6 @@ class StateGame(State):
 
     def fetch_gamedata(self) -> List[EventData]:
         players: List[Player] = self.fetch_playerlist()
-        print(f"Pulling from {self.current_id}")
         params = {"eventID": self.current_id}
         try:
             response = requests.get("https://" + self.host + ":2999/liveclientdata/eventdata", params=params, verify=False).json()
@@ -153,6 +153,8 @@ class StateGame(State):
         for e in events:
             if e.EventName != "Idle":
                 self.current_id = max(e.EventID, self.current_id) + 1
+            else:
+                print(e)
             track_sfx: str = self.rules_sfx.match(e)
             track_music: Music = self.rules_music.match(e)
             print(f"SFX: {track_sfx}, MUSIC: {track_music}")

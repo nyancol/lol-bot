@@ -3,6 +3,8 @@ import json
 import asyncio
 from redbot.cogs.audio.core.commands.player import PlayerCommands
 from redbot.cogs.audio.core.commands.localtracks import LocalTrackCommands
+from redbot.cogs.audio.audio_dataclasses import Query
+
 
 from time import sleep
 import lavalink
@@ -13,8 +15,12 @@ from pcsd_cog.states import StateMachine, StateLobby
 class Mycog(commands.Cog):
     @commands.command()
     async def schedule(self, ctx):
-        player = await lavalink.connect(ctx.author.voice.channel)
+        # player = await lavalink.connect(ctx.author.voice.channel)
+        await lavalink.connect(ctx.author.voice.channel)
+        player = lavalink.get_player(ctx.guild.id)
         await player.wait_until_ready()
+        player.store("channel", ctx.channel.id)
+        player.store("guild", ctx.guild.id)
         self.machine = StateMachine(StateLobby(player))
         print("Running state machine")
 
@@ -36,16 +42,15 @@ class Mycog(commands.Cog):
         # player = lavalink.get_player(ctx.guild_id)
         # from discord.channel import VoiceChannel
         # channel = VoiceChannel
-        player = await lavalink.connect(ctx.author.voice.channel)
-        # player.store("channel", ctx.channel.id)
-        # player.store("guild", ctx.guild.id)
-        tracks = await player.search_yt("https://www.youtube.com/watch?v=Y_Vq0SPu6y8")
-        print(tracks, tracks.tracks)
-
-        # result, called_api = await ctx.bot.cogs["Audio"].api_interface.fetch_track(ctx, player, query)
-        # track_music = result.tracks[0]
-        # player.add(ctx.author, track_music)
-        # await player.play()
+        # player = await lavalink.connect(ctx.author.voice.channel)
+        await lavalink.connect(ctx.author.voice.channel)
+        player = lavalink.get_player(ctx.guild.id)
+        await player.wait_until_ready()
+        player.store("channel", ctx.channel.id)
+        player.store("guild", ctx.guild.id)
+        results = await player.load_tracks("https://youtu.be/KMTRqAgLw04")
+        player.add(ctx.author, results.tracks[0])
+        await player.play()
         # print("Music is now playing")
         # await asyncio.sleep(30)
 

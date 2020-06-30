@@ -1,4 +1,5 @@
 from enum import Enum
+import re
 from typing import List, Optional, Mapping, Union
 from pcsd_cog.players import Player
 import dataclasses
@@ -39,6 +40,9 @@ class EventEndGameStats(Event):
 
 
 
+def name_cleaner(string):
+    return re.sub(r"[0-9\. ']+", "_", string)
+
 @dataclass
 class EventData(Event):
     Players: List[Player]
@@ -47,9 +51,10 @@ class EventData(Event):
     EventTime: float
 
     def __post_init__(self):
-        self.Champion = make_dataclass("Champion", [(p.championName, Player) for p in self.Players])(**{p.championName: p for p in self.Players})
-        summoner_class = make_dataclass("Summoner", [(p.summonerName.replace(' ', '_'), Player) for p in self.Players])
-        self.Summoner = summoner_class(**{p.summonerName.replace(' ', '_'): p for p in self.Players})
+        champion_class = make_dataclass("Champion", [(name_cleaner(p.championName), Player) for p in self.Players])
+        self.Champion = champion_class(**{name_cleaner(p.championName): p for p in self.Players})
+        summoner_class = make_dataclass("Summoner", [(name_cleaner(p.summonerName), Player) for p in self.Players])
+        self.Summoner = summoner_class(**{name_cleaner(p.summonerName): p for p in self.Players})
 
 
 class EventGameStart(EventData):
