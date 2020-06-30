@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from traceback import format_exc
+import json
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from typing import List, Optional, Mapping, Tuple, Union, Callable, Any, MutableMapping, Iterable
-# from mypy_extensions import VarArg, Arg
+
 import os.path
 import pickle
 import re
@@ -40,12 +40,7 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
 
     attr_list = attr_list[:]
     attr: str = attr_list.pop(0)
-    count_re = r"COUNT\((.+)\)"
-    match = re.match(count_re, attr)
-    if match:
-        attr = match.groups()[0]
-        return len(getattr(obj, attr))
-    elif isinstance(getattr(obj, attr), list):
+    if isinstance(getattr(obj, attr), list):
         obj_elements = getattr(obj, attr)
         return [getattr_rec(e, attr_list) for e in obj_elements]
     return getattr_rec(getattr(obj, attr), attr_list)
@@ -89,6 +84,14 @@ class Expression:
                     self.attr = int(self.attr)
                 except ValueError:
                     pass
+                try:
+                    self.attr = bool(self.attr)
+                except ValueError:
+                    pass
+                try:
+                    self.attr = json.loads(self.attr)
+                except TypeError:
+                    pass
 
     def resolve(self, obj) -> Any:
         value: Any = self.attr
@@ -109,8 +112,14 @@ class Expression:
         return value
 
 
+def predicate_eq(l, r):
+    if isinstance(l, list) and isinstance(r, list):
+        print(f"Comparing lists: {sorted(l) == sorted(r)}")
+        return sorted(l) == sorted(r)
+    return l == r
+
 class Predicate(Enum):
-    eq = (lambda l, r: l == r,)
+    eq = (predicate_eq,)
     ne = (lambda l, r: l != r,)
     ge = (lambda l, r: l >= r,)
     gt = (lambda l, r: l > r,)
@@ -166,6 +175,7 @@ class Rule:
         try:
             l_value = rule[0].resolve(event)
             r_value = rule[2].resolve(event)
+            print("Resolution", l_value, r_value)
             if isinstance(l_value, list) and not isinstance(r_value, list):
                 return any([rule[1](l, r_value) for l in l_value])
             elif not isinstance(l_value, list) and isinstance(r_value, list):
@@ -173,7 +183,6 @@ class Rule:
             else:
                 return rule[1](l_value, r_value)
         except AttributeError as exc:
-            # print(f"Matching error: {exc} - {format_exc()}")
             return False
 
     def __mul__(self, event: EventData) -> int:

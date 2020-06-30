@@ -119,3 +119,16 @@ def test_invalid_path():
         event = EventChampionKill(Players=players, **json.load(f))
     rule = (model.Rule() + "TurretKilled == asdf")
     assert model.Rule._match(rule._rule[0], event) == False
+
+
+def test_compare_list():
+    with open("tests/sample_players_cleannames.json") as f:
+        players = [Player(**p) for p in json.load(f)]
+        for p in [p for p in players if p.team == "ORDER"]:
+            p.isDead = True
+
+    event = EventData(players, "", "", "")
+    rule = (model.Rule() + "ORDER.isDead == [true, true, true, true, true]")
+    assert model.Rule._match(rule._rule[0], event) == True
+    rule = (model.Rule() + "ORDER.isDead == [false, true, true, true, true]")
+    assert model.Rule._match(rule._rule[0], event) == False
