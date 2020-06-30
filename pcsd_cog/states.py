@@ -30,7 +30,12 @@ class State:
     def __init__(self, ctx: Context):
         self.host: str = "192.168.1.11"
         self._ctx: Context = ctx
+        print(f"Author: {self._ctx.author}")
+        print(f"Guild id: {self._ctx.guild.id}")
         self._player: lavalink.player_manager.Player = None # lavalink.get_player(ctx.guild.id).connect()
+        # guild id: 121737990723600387
+        # channel id: 121737991201882112
+        # self._player: lavalink.player_manager.Player = lavalink.get_player(ctx.guild.id) # .connect()
         # await self._player.wait_until_ready()
         self._root: str = "/home/pi/pcsd_bot/data/cogs/Audio/localtracks/"
         self.current_music: Optional[Music] = None
