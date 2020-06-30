@@ -97,8 +97,8 @@ class Expression:
         elif self.agg_op and self.remaining is None:
             value = self.agg_op(getattr_rec(obj, self.attr))
         elif self.agg_op and self.remaining:
-            list_values = getattr(obj, self.attr.pop(0))
-            agg_attr = self.agg_op(list_values, key=lambda v: getattr_rec(v, self.attr[:]))
+            list_values = getattr(obj, self.attr[:].pop(0))
+            agg_attr = self.agg_op(list_values, key=lambda v: getattr_rec(v, self.attr[1:][:]))
             value = getattr_rec(agg_attr, self.remaining)
         elif isinstance(self.attr, str):
             try:

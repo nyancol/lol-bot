@@ -27,15 +27,15 @@ class SFXEnabled:
 
 
 class State:
-    def __init__(self, ctx: Context):
+    def __init__(self, player):
         self.host: str = "192.168.1.11"
-        self._ctx: Context = ctx
-        print(f"Author: {self._ctx.author}")
-        print(f"Guild id: {self._ctx.guild.id}")
-        self._player: lavalink.player_manager.Player = None # lavalink.get_player(ctx.guild.id).connect()
-        # guild id: 121737990723600387
+        # print(f"Author: {self._ctx.author}")
+        # print(f"Guild id: {self._ctx.guild.id}")
+        self.author = "Le Prophète#7328"
         # channel id: 121737991201882112
-        # self._player: lavalink.player_manager.Player = lavalink.get_player(ctx.guild.id) # .connect()
+        # guild_id: int = 121737990723600387
+        # self._player: lavalink.player_manager.Player = lavalink.get_player(guild_id)
+        self._player = player
         # await self._player.wait_until_ready()
         self._root: str = "/home/pi/pcsd_bot/data/cogs/Audio/localtracks/"
         self.current_music: Optional[Music] = None
@@ -47,36 +47,33 @@ class State:
         pass
 
     async def play_music(self, track: Music) -> None:
-        self._player = lavalink.get_player(self._ctx.guild.id) # .connect()
-        # await self._player.connect()
-        print(f"Loading track: {track.name}")
+        print(f"Loading music track: {track.name}")
         track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))
         print(f"Track found: {track_obj} - {track_obj.tracks}")
-        track_obj = track_obj.tracks[0]
-        # track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))[0]
+        track_obj: lavalink.rest_api.Track = (await self._player.search_yt(track.name))[0]
         if not self._player.is_playing or self.current_music is None or self.current_music < track:
             self.current_music = track
             await self._player.stop()
-            self._player.add(self._ctx.author, track_obj)
+            self._player.add(self.author, track_obj)
             await self._player.play()
 
     async def play_sfx(self, track: str):
-        self._player = lavalink.get_player(self._ctx.guild.id) # .connect()
+        print(f"Loading sfx track: {track}")
         await self._player.connect()
         track_sfx: lavalink.read_api.Track = (await self._player.search_yt(track))
         track_sfx = track_sfx.tracks[0]
         if self._player.is_playing():
-            self._player.add(self._ctx.author, track_sfx)
+            self._player.add(self.author, track_sfx)
             track_music = self._player.current
             track_music.start_timestamp(self._player.position)
             track_music.seekable = True
-            self._player.add(self._ctx.author, track_music)
+            self._player.add(self.author, track_music)
             await self._player.skip()
         else:
-            self._player.add(self._ctx.author, track_sfx)
+            self._player.add(self.author, track_sfx)
 
     def builder(self, state, *argc, **argv) -> State:
-        return state(self._ctx, *argc, **argv)
+        return state(self._player, *argc, **argv)
 
 
 class StateMachine:
@@ -153,14 +150,15 @@ class StateGame(State):
 
     async def tick(self) -> State:
         events: List[EventData] = self.fetch_gamedata()
-        print(f"Events: {events}")
         for e in events:
             if e.EventName != "Idle":
                 self.current_id = max(e.EventID, self.current_id) + 1
             track_sfx: str = self.rules_sfx.match(e)
             track_music: Music = self.rules_music.match(e)
+            print(f"SFX: {track_sfx}, MUSIC: {track_music}")
 
-            if track_sfx and self.sfx_manager.enabled():
+            if track_sfx and self.sfx_manager.enabled:
+                print("Playing sfx")
                 await self.play_sfx(track_sfx)
 
             if track_music:
