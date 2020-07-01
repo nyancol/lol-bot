@@ -137,7 +137,7 @@
       "wardScore": 0.0
     },
     "skinID": 0,
-    "summonerName": "assister_1",
+    "summonerName": "assister_a",
     "summonerSpells": {
       "summonerSpellOne": {
         "displayName": "Flash",
@@ -188,7 +188,7 @@
       "wardScore": 0.0
     },
     "skinID": 0,
-    "summonerName": "assister_2",
+    "summonerName": "assister_b",
     "summonerSpells": {
       "summonerSpellOne": {
         "displayName": "Flash",
@@ -239,7 +239,7 @@
       "wardScore": 0.0
     },
     "skinID": 0,
-    "summonerName": "assister_3",
+    "summonerName": "assister_c",
     "summonerSpells": {
       "summonerSpellOne": {
         "displayName": "Flash",
@@ -290,7 +290,7 @@
       "wardScore": 0.0
     },
     "skinID": 0,
-    "summonerName": "assister_4",
+    "summonerName": "assister_d",
     "summonerSpells": {
       "summonerSpellOne": {
         "displayName": "Flash",

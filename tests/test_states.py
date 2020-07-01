@@ -18,7 +18,7 @@ def player():
     m_player.stop = AsyncMock()
     m_player.skip = AsyncMock()
     m_player.connect = AsyncMock()
-    m_player.search_yt = AsyncMock()
+    m_player.load_tracks = AsyncMock()
     return m_player
 
 

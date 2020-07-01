@@ -55,8 +55,8 @@ class EventData(Event):
         self.Champion = champion_class(**{name_cleaner(p.championName): p for p in self.Players})
         summoner_class = make_dataclass("Summoner", [(name_cleaner(p.summonerName), Player) for p in self.Players])
         self.Summoner = summoner_class(**{name_cleaner(p.summonerName): p for p in self.Players})
-        self.ORDER = [p for p in self.Players if p.team == "ORDER"]
-        self.CHAOS = [p for p in self.Players if p.team == "CHAOS"]
+        self.Order = [p for p in self.Players if p.team == "ORDER"]
+        self.Chaos = [p for p in self.Players if p.team == "CHAOS"]
 
 
 class EventGameStart(EventData):

@@ -38,12 +38,19 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
     if not attr_list:
         return obj
 
-    attr_list = attr_list[:]
-    attr: str = attr_list.pop(0)
+
+    a_list = attr_list[:]
+    attr: str = a_list.pop(0)
+
+    try:
+        getattr(obj, attr)
+    except TypeError:
+        return attr_list
+
     if isinstance(getattr(obj, attr), list):
         obj_elements = getattr(obj, attr)
-        return [getattr_rec(e, attr_list) for e in obj_elements]
-    return getattr_rec(getattr(obj, attr), attr_list)
+        return [getattr_rec(e, a_list) for e in obj_elements]
+    return getattr_rec(getattr(obj, attr), a_list)
 
 
 class AggOperand(Enum):
@@ -69,52 +76,33 @@ class Expression:
         match = re.match(regex_agg, exp)
         if match:
             self.agg_op = AggOperand[match.group(1).upper()]
-            self.attr = match.group(2).split('.')
-            assert self.attr != [], self.attr
+            self.attr = match.group(2)
             if match.group(3):
                 self.remaining = [e for e in match.group(3).split('.') if e]
-        else:
-            path_regex = r"(\w+\.)+\w+"
-            match_path = re.match(path_regex, self.attr)
-            if match_path:
-                self.attr = self.attr.split('.')
-                assert self.attr != [], self.attr
-            else:
-                try:
-                    self.attr = int(self.attr)
-                except ValueError:
-                    pass
-                try:
-                    self.attr = bool(self.attr)
-                except ValueError:
-                    pass
-                try:
-                    self.attr = json.loads(self.attr)
-                except TypeError:
-                    pass
 
     def resolve(self, obj) -> Any:
         value: Any = self.attr
-        if isinstance(self.attr, list) and self.agg_op is None:
-            value = getattr_rec(obj, self.attr)
-        elif self.agg_op and self.remaining is None:
-            value = self.agg_op(getattr_rec(obj, self.attr))
-        elif self.agg_op and self.remaining:
-            list_values = getattr(obj, self.attr[:].pop(0))
-            agg_attr = self.agg_op(list_values, key=lambda v: getattr_rec(v, self.attr[1:][:]))
-            value = getattr_rec(agg_attr, self.remaining)
-        elif isinstance(self.attr, str):
+        try:
+            getattr(obj, self.attr.split('.')[0])
+            attr = self.attr.split('.')
+            if self.agg_op is None:
+                value = getattr_rec(obj, attr)
+            elif self.agg_op and self.remaining is None:
+                value = self.agg_op(getattr_rec(obj, attr))
+            elif self.agg_op and self.remaining:
+                list_values = getattr(obj, attr[0])
+                agg_attr = self.agg_op(list_values, key=lambda v: getattr_rec(v, attr[1:][:]))
+                value = getattr_rec(agg_attr, self.remaining)
+        except AttributeError:
             try:
-                value = getattr(obj, self.attr)
-            except AttributeError:
-                # print(f"No resolution possible for {self.attr} with {obj}")
+                value = json.loads(self.attr)
+            except (TypeError, json.decoder.JSONDecodeError):
                 pass
         return value
 
 
 def predicate_eq(l, r):
     if isinstance(l, list) and isinstance(r, list):
-        print(f"Comparing lists: {sorted(l) == sorted(r)}")
         return sorted(l) == sorted(r)
     return l == r
 
@@ -175,7 +163,7 @@ class Rule:
         try:
             l_value = rule[0].resolve(event)
             r_value = rule[2].resolve(event)
-            print("Resolution", l_value, r_value)
+            # print("Resolution", rule[0], l_value, rule[2], r_value)
             if isinstance(l_value, list) and not isinstance(r_value, list):
                 return any([rule[1](l, r_value) for l in l_value])
             elif not isinstance(l_value, list) and isinstance(r_value, list):
@@ -271,8 +259,12 @@ def parse_sfx(rows: List[List[str]]) -> Rules:
         rule = Rule()
         for cell in [c for c in row[:rules_width] if c]:
             rule += cell
-        if row[link_index].strip():
-            rules += (rule, row[link_index])
+        try:
+            if row[link_index].strip():
+                rules += (rule, row[link_index])
+        except IndexError:
+            print(row)
+            raise Exception()
     return rules
 
 

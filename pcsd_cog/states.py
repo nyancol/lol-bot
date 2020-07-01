@@ -29,14 +29,8 @@ class SFXEnabled:
 class State:
     def __init__(self, player):
         self.host: str = "192.168.1.11"
-        # print(f"Author: {self._ctx.author}")
-        # print(f"Guild id: {self._ctx.guild.id}")
         self.author = "Le Prophète#7328"
-        # channel id: 121737991201882112
-        # guild_id: int = 121737990723600387
-        # self._player: lavalink.player_manager.Player = lavalink.get_player(guild_id)
         self._player = player
-        # await self._player.wait_until_ready()
         self._root: str = "/home/pi/pcsd_bot/data/cogs/Audio/localtracks/"
         self.current_music: Optional[Music] = None
 
