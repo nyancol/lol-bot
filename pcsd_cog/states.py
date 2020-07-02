@@ -107,7 +107,7 @@ class StateGame(State):
     def refresh(self) -> None:
         rows_sfx: List[List[str]] = model.get_sheet('SFX!B48:I64')
         self.rules_sfx = model.parse_sfx(rows_sfx)
-        rows_music: List[List[str]] = model.get_sheet('MUSIC!A15:I164')
+        rows_music: List[List[str]] = model.get_sheet('MUSIC!A15:I180')
         self.rules_music = model.parse_music(rows_music)
 
     def fetch_gamestats(self) -> EventGameStats:
@@ -150,12 +150,14 @@ class StateGame(State):
             else:
                 print(e)
             track_sfx: str = self.rules_sfx.match(e)
-            track_music: Music = self.rules_music.match(e)
-            print(f"SFX: {track_sfx}, MUSIC: {track_music}")
+            track_music: Optional[Music] = None
+            if not self._player.current or self._player.is_playing is None: #  and self._player.current is None :
+                track_music: Music = self.rules_music.match(e)
+            print(f"SFX: {track_sfx}, MUSIC: {track_music} - {self._player.is_playing} - {self._player.current}")
 
-            if track_sfx and self.sfx_manager.enabled:
-                print("Playing sfx")
-                await self.play_sfx(track_sfx)
+            # if track_sfx and self.sfx_manager.enabled:
+            #     print("Playing sfx")
+            #     await self.play_sfx(track_sfx)
 
             if track_music:
                 await self.play_music(track_music)
