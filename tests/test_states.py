@@ -19,6 +19,8 @@ def player():
     m_player.skip = AsyncMock()
     m_player.connect = AsyncMock()
     m_player.load_tracks = AsyncMock()
+    m_player.is_playing = False
+    m_player.current = None
     return m_player
 
 
