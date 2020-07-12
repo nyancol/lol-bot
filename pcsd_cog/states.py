@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 from pathlib import Path
 from redbot.core.commands import Context
 from typing import List, DefaultDict, Dict, Optional, Mapping
@@ -47,16 +48,23 @@ class State:
         except IndexError:
             print(f"No tracks found for: {track.name}")
             return
-        if not self._player.is_playing or self.current_music is None or self.current_music < track:
+        if self._player.current is None or self.current_music is None or self.current_music < track:
+            print(f"Playing music {track}")
             self.current_music = track
-            await self._player.stop()
+            if self._player.current:
+                await self._player.stop()
             self._player.add(self.author, track_obj)
+            track.played = True
             await self._player.play()
+            while self._player.current is None:
+                await asyncio.sleep(1)
+        else:
+            print(f"Not playing music {track}")
 
     async def play_sfx(self, track: str):
         print(f"Loading sfx track: {track}")
         track_sfx = (await self._player.load_tracks(track)).tracks[0]
-        if self._player.is_playing and self._player.current:
+        if self._player.current:
             self._player.add(self.author, track_sfx)
             track_music = self._player.current
             track_music.start_timestamp = self._player.position
@@ -107,7 +115,7 @@ class StateGame(State):
     def refresh(self) -> None:
         rows_sfx: List[List[str]] = model.get_sheet('SFX!B48:I64')
         self.rules_sfx = model.parse_sfx(rows_sfx)
-        rows_music: List[List[str]] = model.get_sheet('MUSIC!A15:I180')
+        rows_music: List[List[str]] = model.get_sheet('MUSIC!A15:I260')
         self.rules_music = model.parse_music(rows_music)
 
     def fetch_gamestats(self) -> EventGameStats:
@@ -147,17 +155,17 @@ class StateGame(State):
         for e in events:
             if e.EventName != "Idle":
                 self.current_id = max(e.EventID, self.current_id) + 1
+            if e.EventName == "GameEnd":
+                print("Game End", e)
             else:
                 print(e)
-            track_sfx: str = self.rules_sfx.match(e)
-            track_music: Optional[Music] = None
-            if not self._player.current or self._player.is_playing is None: #  and self._player.current is None :
-                track_music: Music = self.rules_music.match(e)
+            track_sfx: Optional[str] = self.rules_sfx.match(e)
+            track_music: Optional[Music] = self.rules_music.match(e)
             print(f"SFX: {track_sfx}, MUSIC: {track_music} - {self._player.is_playing} - {self._player.current}")
 
-            # if track_sfx and self.sfx_manager.enabled:
-            #     print("Playing sfx")
-            #     await self.play_sfx(track_sfx)
+            #if track_sfx and self.sfx_manager.enabled:
+                #print("Playing sfx")
+                #await self.play_sfx(track_sfx)
 
             if track_music:
                 await self.play_music(track_music)

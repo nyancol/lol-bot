@@ -27,7 +27,7 @@ class Mycog(commands.Cog):
         async def periodic():
             while True:
                 await self.machine.tick()
-                await asyncio.sleep(1)
+                await asyncio.sleep(5)
 
         await periodic()
 
@@ -48,9 +48,10 @@ class Mycog(commands.Cog):
         await player.wait_until_ready()
         player.store("channel", ctx.channel.id)
         player.store("guild", ctx.guild.id)
-        results = await player.load_tracks("https://youtu.be/KMTRqAgLw04")
-        player.add(ctx.author, results.tracks[0])
-        await player.play()
+        print(player.current, player.is_playing)
+        # results = await player.load_tracks("https://youtu.be/KMTRqAgLw04")
+        # player.add(ctx.author, results.tracks[0])
+        # await player.play()
         # print("Music is now playing")
         # await asyncio.sleep(30)
 
