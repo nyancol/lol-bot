@@ -14,6 +14,7 @@ from dataclasses import dataclass
 import random
 
 
+from pcsd_cog.calculator import Expression
 from pcsd_cog import events
 from pcsd_cog.events import Event, EventData
 from pcsd_cog.players import Player
@@ -33,74 +34,6 @@ class Music:
         return self.priority > other.priority
     def __ge__(self, other: Music) -> bool:
         return self.priority >= other.priority
-
-
-def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
-    if not attr_list:
-        return obj
-
-
-    a_list = attr_list[:]
-    attr: str = a_list.pop(0)
-
-    try:
-        getattr(obj, attr)
-    except TypeError:
-        return attr_list
-
-    if isinstance(getattr(obj, attr), list):
-        obj_elements = getattr(obj, attr)
-        return [getattr_rec(e, a_list) for e in obj_elements]
-    return getattr_rec(getattr(obj, attr), a_list)
-
-
-class AggOperand(Enum):
-    MAX = (max,)
-    MIN = (min,)
-    SUM = (sum,)
-    COUNT = (len,)
-
-    def __init__(self, f):
-        self._value_ = f
-
-    def __call__(self, l, **args):
-        return self.value(l, **args)
-
-
-class Expression:
-    def __init__(self, exp):
-        self.attr: Any = exp
-        regex_agg = r"(SUM|MAX|MIN|COUNT|sum|max|min|count)\((.+)\)(.*)"
-        match_agg = re.match(regex_agg, exp)
-        self.agg_op: Optional[AggOperand] = None
-        self.remaining: Optional[List[str]] = None
-
-        match = re.match(regex_agg, exp)
-        if match:
-            self.agg_op = AggOperand[match.group(1).upper()]
-            self.attr = match.group(2)
-            if match.group(3):
-                self.remaining = [e for e in match.group(3).split('.') if e]
-
-    def resolve(self, obj) -> Any:
-        value: Any = self.attr
-        try:
-            getattr(obj, self.attr.split('.')[0])
-            attr = self.attr.split('.')
-            if self.agg_op is None:
-                value = getattr_rec(obj, attr)
-            elif self.agg_op and self.remaining is None:
-                value = self.agg_op(getattr_rec(obj, attr))
-            elif self.agg_op and self.remaining:
-                list_values = getattr(obj, attr[0])
-                agg_attr = self.agg_op(list_values, key=lambda v: getattr_rec(v, attr[1:][:]))
-                value = getattr_rec(agg_attr, self.remaining)
-        except AttributeError:
-            try:
-                value = json.loads(self.attr)
-            except (TypeError, json.decoder.JSONDecodeError):
-                pass
-        return value
 
 
 def predicate_eq(l, r):
