@@ -4,6 +4,18 @@ from pcsd_cog.players import Player
 from pcsd_cog.events import EventData, EventChampionKill
 
 
+## Music
+def test_compare_priorities():
+    m1 = model.Music("a", 0)
+    m2 = model.Music("b", 1)
+
+    assert m1 < m2
+    assert m1 <= m2
+    assert m2 >= m1
+    assert m2 > m1
+    assert m1 >= m1
+    assert m1 <= m1
+
 ## EQ
 def test_1_eq_1():
     rule = model.Rule() + "1 == 1"
