@@ -23,6 +23,7 @@ from pcsd_cog.players import Player
 class Music:
     name: str
     priority: int
+    played: bool = False
 
     def __le__(self, other: Music) -> bool:
         return self.priority <= other.priority
@@ -56,6 +57,7 @@ def getattr_rec(obj: Any, attr_list: List[str]) -> Union[List[Any], Any]:
 class AggOperand(Enum):
     MAX = (max,)
     MIN = (min,)
+    SUM = (sum,)
     COUNT = (len,)
 
     def __init__(self, f):
@@ -68,7 +70,7 @@ class AggOperand(Enum):
 class Expression:
     def __init__(self, exp):
         self.attr: Any = exp
-        regex_agg = r"(MAX|MIN|COUNT|max|min|count)\((.+)\)(.*)"
+        regex_agg = r"(SUM|MAX|MIN|COUNT|sum|max|min|count)\((.+)\)(.*)"
         match_agg = re.match(regex_agg, exp)
         self.agg_op: Optional[AggOperand] = None
         self.remaining: Optional[List[str]] = None
@@ -200,20 +202,19 @@ class Rules:
 
     def match(self, event: EventData) -> Optional[Union[str, Music]]:
         score = 0
-        res: List[Tuple[Rule, Union[str, Music]]] = []
+        res: List[Union[str, Music]] = []
         for rule, track in self._rules.items():
+            if isinstance(track, Music) and track.played:
+                continue
             r_score = rule * event
             if r_score > score:
-                res = [(rule, track)]
+                res = [track]
                 score = r_score
             elif r_score == score:
-                res.append((rule, track))
+                res.append(track)
         if res:
             random.shuffle(res)
-            rule = res[0][0]
-            track = res[0][1]
-            if isinstance(track, Music):
-                del self._rules[rule]
+            track = res[0]
             return track
         return None
 
