@@ -163,9 +163,9 @@ class StateGame(State):
             track_music: Optional[Music] = self.rules_music.match(e)
             print(f"SFX: {track_sfx}, MUSIC: {track_music} - {self._player.is_playing} - {self._player.current}")
 
-            #if track_sfx and self.sfx_manager.enabled:
-                #print("Playing sfx")
-                #await self.play_sfx(track_sfx)
+            if track_sfx and self.sfx_manager.enabled:
+                print("Playing sfx")
+                await self.play_sfx(track_sfx)
 
             if track_music:
                 await self.play_music(track_music)

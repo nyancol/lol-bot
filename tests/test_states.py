@@ -89,6 +89,7 @@ async def test_currentid_increment(state_game, players, event_championkill):
         e.EventID = i
 
     state_game.fetch_gamedata = lambda: events
+    state_game.play_music = AsyncMock()
     assert state_game.current_id == 0
     await state_game.tick()
     assert state_game.current_id == 10
