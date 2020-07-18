@@ -39,6 +39,13 @@ def test_bool(event):
     assert Expression("true").resolve(event) == True
     assert Expression("false").resolve(event) == False
 
+def test_list(event):
+    assert Expression("[1]").resolve(event) == [1]
+    assert Expression("[1,2,3]").resolve(event) == [1,2,3]
+    assert Expression("[ 1 , 2 , 3 ]").resolve(event) == [1,2,3]
+    assert Expression('["asdf"]').resolve(event) == ["asdf"]
+    assert Expression('["asdf", "sdfg"]').resolve(event) == ["asdf", "sdfg"]
+
 ## Music
 def test_compare_priorities():
     m1 = model.Music("a", 0)
@@ -101,15 +108,30 @@ def test_2_ge_2(event):
 
 
 # LIKE
-def test_aaa_like_aa(event):
+def test_predicate_like_aa(event):
     event = EventData("", "", "", "")
     rule = model.Rule() + "aa LIKE aa.*"
     assert model.Rule._match(rule._rule[0], event)
 
 
-def test_baa_notlike_aa(event):
+def test_predicate_like_not_aa(event):
     rule = model.Rule() + "ba LIKE aa.*"
     assert model.Rule._match(rule._rule[0], event) == False
+
+
+# IN
+def test_predicate_in(event):
+    rule = model.Rule() + "1 IN [1,2,3]"
+    assert model.Rule._match(rule._rule[0], event)
+
+    rule = model.Rule() + "1 IN [1 , 2 , 3]"
+    assert model.Rule._match(rule._rule[0], event)
+
+    rule = model.Rule() + 'Annie IN ["Annie" , "asdf" , "sdfg"]'
+    assert model.Rule._match(rule._rule[0], event)
+
+    rule = model.Rule() + 'Ann ie IN ["Ann ie" , "asdf" , "sdfg"]'
+    assert model.Rule._match(rule._rule[0], event)
 
 
 # COUNT
@@ -142,7 +164,6 @@ def test_sum_list(event):
 # SUM - Event
 def test_sum_simple(event_players):
     assert Expression("SUM(Players.scores.kills)").resolve(event_players) == 3
-
 
 # SUM - Event + remain
 def test_sum_complex(event_players):

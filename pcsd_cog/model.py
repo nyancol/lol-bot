@@ -41,6 +41,8 @@ def predicate_eq(l, r):
         return sorted(l) == sorted(r)
     return l == r
 
+
+
 class Predicate(Enum):
     eq = (predicate_eq,)
     ne = (lambda l, r: l != r,)
@@ -59,37 +61,34 @@ class Predicate(Enum):
 
     @staticmethod
     def builder(opstr) -> Predicate:
-        if opstr == "==":
-            return Predicate.eq
-        elif opstr == "!=":
-            return Predicate.ne
-        elif opstr == "!=":
-            return Predicate.ne
-        elif opstr == ">=":
-            return Predicate.ge
-        elif opstr == ">":
-            return Predicate.gt
-        elif opstr == "<=":
-            return Predicate.le
-        elif opstr == "<":
-            return Predicate.lt
-        elif opstr.lower() == "in":
-            return Predicate.contains
-        elif opstr.lower() == "like":
-            return Predicate.like
+        if opstr in OP_MAPPING:
+            return OP_MAPPING[opstr]
         else:
             raise Exception(f"Predicate {opstr} not supported")
 
+OP_MAPPING = {
+              "==": Predicate.eq,
+              "!=": Predicate.ne,
+              ">=": Predicate.ge,
+              ">": Predicate.gt,
+              "<=": Predicate.le,
+              "<": Predicate.lt,
+              "in": Predicate.contains,
+              "IN": Predicate.contains,
+              "like": Predicate.like,
+              "LIKE": Predicate.like,
+             }
 
 class Rule:
     def __init__(self):
         self._rule: List[Tuple[Expression, Predicate, Expression]] = []
 
     def __add__(self, cell: str) -> Rule:
-        elements = cell.split(' ')
-        l_exp, pred, r_exp = (Expression(elements[0]),
-                              Predicate.builder(elements[1]),
-                              Expression(elements[2]))
+        op = ' ' + ' | '.join(OP_MAPPING.keys()) + ' '
+        elements = list(filter(None, re.split(op, cell)))
+        assert len(elements) == 2, elements
+        l_exp, r_exp = Expression(elements[0]), Expression(elements[1])
+        pred = Predicate.builder(re.findall(op, cell)[0].strip())
         self._rule.append((l_exp, pred, r_exp))
         return self
 
@@ -99,13 +98,9 @@ class Rule:
             l_value = rule[0].resolve(event)
             r_value = rule[2].resolve(event)
             # print("Resolution", rule[0], l_value, rule[2], r_value)
-            if isinstance(l_value, list) and not isinstance(r_value, list):
-                return any([rule[1](l, r_value) for l in l_value])
-            elif not isinstance(l_value, list) and isinstance(r_value, list):
-                return any([rule[1](l_value, r) for r in r_value])
-            else:
-                return rule[1](l_value, r_value)
+            return rule[1](l_value, r_value)
         except AttributeError as exc:
+            print(exc)
             return False
 
     def __mul__(self, event: EventData) -> int:

@@ -169,11 +169,12 @@ class Expression:
         # split_expr = re.findall(rf"[\d.]+|[\w.]+|[\+\-\*/()]", self.expr)
         exp_agg = r"\w+\([\. ,\w\d\]\[]+\)\.?[\.\w]*"
         digits = r"[\d\.]+"
-        alphanum = r"[\w][\w\.\*]*"
+        alphanum = r"[\w][\w\.\* ]*"
         operators = r"[\+\-\*/()]"
+        lists = r'\[[ \w\d",]+\]'
 
-        # split_expr = re.findall(rf"[\d.]+|[\w.]+|\w.\([\w\.]+\)[\w\.]*|[\+\-\*/()]", self.expr)
-        split_expr = re.findall(exp_agg + "|" + digits + "|" + alphanum + "|" + operators, self.expr)
+        split_expr = re.findall(lists + "|" + exp_agg + "|" + digits + "|" + alphanum + "|" + operators, self.expr)
+        # print(self.expr, split_expr)
         tokens = []
         for x in split_expr:
             if x.isdigit() \
