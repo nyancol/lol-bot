@@ -51,10 +51,15 @@ class EventData(Event):
     EventTime: float
 
     def __post_init__(self):
-        champion_class = make_dataclass("Champion", [(name_cleaner(p.championName), Player) for p in self.Players])
-        self.Champion = champion_class(**{name_cleaner(p.championName): p for p in self.Players})
-        summoner_class = make_dataclass("Summoner", [(name_cleaner(p.summonerName), Player) for p in self.Players])
-        self.Summoner = summoner_class(**{name_cleaner(p.summonerName): p for p in self.Players})
+        u_players = []
+        for p in self.Players:
+            if p.championName not in [p.championName for p in u_players]:
+                u_players.append(p)
+
+        champion_class = make_dataclass("Champion", [(name_cleaner(p.championName), Player) for p in u_players])
+        self.Champion = champion_class(**{name_cleaner(p.championName): p for p in u_players})
+        summoner_class = make_dataclass("Summoner", [(name_cleaner(p.summonerName), Player) for p in u_players])
+        self.Summoner = summoner_class(**{name_cleaner(p.summonerName): p for p in u_players})
         self.Order = [p for p in self.Players if p.team == "ORDER"]
         self.Chaos = [p for p in self.Players if p.team == "CHAOS"]
 
