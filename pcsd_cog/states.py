@@ -44,6 +44,9 @@ class State:
     async def tick(self) -> State:
         raise NotImplementedError
 
+    async def stop_music(self) -> None:
+        await self._player.stop()
+
     async def play_music(self, track: Music) -> None:
         print(f"Loading music track: {track.name}")
         try:
@@ -114,6 +117,7 @@ class StateLobby(State):
             if response.status_code != 404:
                 print(response.json())
                 print("Moving to StateGame")
+                await self.stop_music()
                 return self.builder(StateGame)
         except Exception as exc:
             print(exc)

@@ -75,7 +75,7 @@ def calc_binary(x, event: EventData):
     return x[0]
 
 
-def extract_event_data(attr: str, event: EventData) -> Any:
+def extract_event_data(attr: str, event: EventData) -> Optional[Any]:
     regex_agg = r"(SUM|MAX|MIN|COUNT|sum|max|min|count)\((.+)\)(.*)"
     agg_op: Optional[AggOperand] = None
     remaining: Optional[List[str]] = None
@@ -104,7 +104,12 @@ def extract_event_data(attr: str, event: EventData) -> Any:
             try:
                 value = agg_op(getattr_rec(event, attr))
             except AttributeError as exc:
-                value = agg_op(json.loads(attr[0]))
+                try:
+                    value = agg_op(json.loads(attr[0]))
+                except json.devoder.JSONDecodeError as exc:  
+                    if not isinstance(event, EventData):
+                        return None
+                    raise Exception(f"Invalid json field: {attr}") from exc
         elif agg_op and remaining:
             list_values = getattr(event, attr[0])
             agg_attr = agg_op(list_values, key=lambda v: getattr_rec(v, attr[1:][:]))

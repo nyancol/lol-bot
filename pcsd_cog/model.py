@@ -97,9 +97,11 @@ class Rule:
         try:
             l_value = rule[0].resolve(event)
             r_value = rule[2].resolve(event)
+            if l_value is None or r_value is None:
+                return False
             # print("Resolution", rule[0], l_value, rule[2], r_value)
             return rule[1](l_value, r_value)
-        except AttributeError as exc:
+        except (AttributeError, TypeError) as exc:
             print(exc)
             return False
 
