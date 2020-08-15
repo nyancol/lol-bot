@@ -35,11 +35,14 @@ class State:
         self._root: str = "/home/pi/pcsd_bot/data/cogs/Audio/localtracks/"
         self.current_music: Optional[Music] = None
 
+    def refresh(self) -> None:
+        rows_sfx: List[List[str]] = model.get_sheet('SFX!B52:I68')
+        self.rules_sfx = model.parse_sfx(rows_sfx)
+        rows_music: List[List[str]] = model.get_sheet('MUSIC!A15:I260')
+        self.rules_music = model.parse_music(rows_music)
+
     async def tick(self) -> State:
         raise NotImplementedError
-
-    def refresh(self) -> None:
-        pass
 
     async def play_music(self, track: Music) -> None:
         print(f"Loading music track: {track.name}")
@@ -100,9 +103,26 @@ class StateConnected(State):
 
 
 class StateLobby(State):
+    def __init__(self, *argc, **argv):
+        super().__init__(*argc, **argv)
+        self.refresh()
+
     async def tick(self) -> State:
-        print("Moving to StateGame")
-        return self.builder(StateGame)
+        try:
+            response = requests.get("https://" + self.host + ":2999/liveclientdata/playerlist", verify=False, timeout=1)
+            response.json()
+            if response.status_code != 404:
+                print(response.json())
+                print("Moving to StateGame")
+                return self.builder(StateGame)
+        except Exception as exc:
+            print(exc)
+            pass
+        track_music: Optional[Music] = self.rules_music.match(EventLobby())
+        if track_music:
+            await self.play_music(track_music)
+        print("Staying in Lobby")
+        return self
 
 
 class StateGame(State):
@@ -112,12 +132,6 @@ class StateGame(State):
         self.refresh()
         self.sfx_manager = SFXEnabled()
 
-    def refresh(self) -> None:
-        rows_sfx: List[List[str]] = model.get_sheet('SFX!B48:I64')
-        self.rules_sfx = model.parse_sfx(rows_sfx)
-        rows_music: List[List[str]] = model.get_sheet('MUSIC!A15:I260')
-        self.rules_music = model.parse_music(rows_music)
-
     def fetch_gamestats(self) -> EventGameStats:
         return requests.get("https://" + self.host + ":2999/liveclientdata/gamestats", verify=False).json()
 
@@ -126,7 +140,9 @@ class StateGame(State):
             response = requests.get("https://" + self.host + ":2999/liveclientdata/playerlist", verify=False)
             playerlist = response.json()
         except requests.exceptions.ConnectionError as exc:
-            raise Exception(f"Failed requesting playerlist: {exc}")
+            # raise Exception(f"Failed requesting playerlist: {exc}")
+            print(f"Failed requesting players list {exc}")
+            return []
         except TypeError as exc:
             raise Exception(f"Failed requesting playerlist: {exc}")
         return [Player(**p) for p in playerlist]
@@ -177,4 +193,6 @@ class StateGame(State):
 
 class StateGameEnd(State):
     async def tick(self) -> State:
-        return self
+        # wait 30 s of music then move to lobby
+        await asyncio.sleep(30)
+        return self.builder(StateLobby)

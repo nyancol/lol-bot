@@ -11,6 +11,10 @@ class Event:
     pass
 
 
+class EventLobby(Event):
+    EventName: str = "Lobby"
+
+
 class EventActiveplayer(Event):
     pass
 
